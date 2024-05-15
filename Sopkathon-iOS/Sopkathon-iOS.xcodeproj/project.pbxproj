@@ -26,6 +26,8 @@
 		712DF59E2BF524C100F0BCCB /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 712DF59D2BF524C100F0BCCB /* Moya */; };
 		712DF5A02BF524C100F0BCCB /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 712DF59F2BF524C100F0BCCB /* ReactiveMoya */; };
 		712DF5A22BF524C100F0BCCB /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 712DF5A12BF524C100F0BCCB /* RxMoya */; };
+		71EB61A02BF52B8D006E0707 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB619F2BF52B8D006E0707 /* UIView+.swift */; };
+		71EB61A32BF52BE8006E0707 /* className.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB61A22BF52BE8006E0707 /* className.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		712DF5872BF51E5800F0BCCB /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		712DF5882BF51E5800F0BCCB /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		712DF5902BF5225200F0BCCB /* FontLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontLiterals.swift; sourceTree = "<group>"; };
+		71EB619F2BF52B8D006E0707 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		71EB61A22BF52BE8006E0707 /* className.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = className.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,9 +124,10 @@
 		712DF57C2BF51CFB00F0BCCB /* Global */ = {
 			isa = PBXGroup;
 			children = (
-				712DF58F2BF51EE000F0BCCB /* Literals */,
 				712DF57F2BF51D8A00F0BCCB /* Extension */,
+				712DF58F2BF51EE000F0BCCB /* Literals */,
 				712DF57E2BF51D4B00F0BCCB /* Resource */,
+				71EB61A12BF52BC9006E0707 /* Utils */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 		712DF57F2BF51D8A00F0BCCB /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				71EB619F2BF52B8D006E0707 /* UIView+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -169,6 +175,14 @@
 				712DF5902BF5225200F0BCCB /* FontLiterals.swift */,
 			);
 			path = Literals;
+			sourceTree = "<group>";
+		};
+		71EB61A12BF52BC9006E0707 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				71EB61A22BF52BE8006E0707 /* className.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +279,8 @@
 				712DF5692BF5160A00F0BCCB /* ViewController.swift in Sources */,
 				712DF5652BF5160A00F0BCCB /* AppDelegate.swift in Sources */,
 				712DF5672BF5160A00F0BCCB /* SceneDelegate.swift in Sources */,
+				71EB61A02BF52B8D006E0707 /* UIView+.swift in Sources */,
+				71EB61A32BF52BE8006E0707 /* className.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
