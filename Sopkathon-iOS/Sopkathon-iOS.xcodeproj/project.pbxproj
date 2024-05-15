@@ -28,6 +28,8 @@
 		712DF5A22BF524C100F0BCCB /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 712DF5A12BF524C100F0BCCB /* RxMoya */; };
 		71EB61A02BF52B8D006E0707 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB619F2BF52B8D006E0707 /* UIView+.swift */; };
 		71EB61A32BF52BE8006E0707 /* className.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB61A22BF52BE8006E0707 /* className.swift */; };
+		71EB61A52BF52E87006E0707 /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB61A42BF52E87006E0707 /* DTO.swift */; };
+		71EB61A72BF52EBD006E0707 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB61A62BF52EBD006E0707 /* MoyaLoggingPlugin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		712DF5902BF5225200F0BCCB /* FontLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontLiterals.swift; sourceTree = "<group>"; };
 		71EB619F2BF52B8D006E0707 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		71EB61A22BF52BE8006E0707 /* className.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = className.swift; sourceTree = "<group>"; };
+		71EB61A42BF52E87006E0707 /* DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
+		71EB61A62BF52EBD006E0707 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		712DF57B2BF51CF500F0BCCB /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				71EB61A62BF52EBD006E0707 /* MoyaLoggingPlugin.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 		712DF57D2BF51D0000F0BCCB /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				71EB61A42BF52E87006E0707 /* DTO.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -281,6 +287,8 @@
 				712DF5672BF5160A00F0BCCB /* SceneDelegate.swift in Sources */,
 				71EB61A02BF52B8D006E0707 /* UIView+.swift in Sources */,
 				71EB61A32BF52BE8006E0707 /* className.swift in Sources */,
+				71EB61A72BF52EBD006E0707 /* MoyaLoggingPlugin.swift in Sources */,
+				71EB61A52BF52E87006E0707 /* DTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
