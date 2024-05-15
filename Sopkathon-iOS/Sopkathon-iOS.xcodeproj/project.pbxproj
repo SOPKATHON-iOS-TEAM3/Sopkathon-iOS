@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		712DF5652BF5160A00F0BCCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DF5642BF5160A00F0BCCB /* AppDelegate.swift */; };
+		712DF5672BF5160A00F0BCCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DF5662BF5160A00F0BCCB /* SceneDelegate.swift */; };
+		712DF5692BF5160A00F0BCCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DF5682BF5160A00F0BCCB /* ViewController.swift */; };
+		712DF56E2BF5160B00F0BCCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712DF56D2BF5160B00F0BCCB /* Assets.xcassets */; };
+		712DF5712BF5160B00F0BCCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712DF56F2BF5160B00F0BCCB /* LaunchScreen.storyboard */; };
+		712DF5892BF51E5800F0BCCB /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 712DF5832BF51E5800F0BCCB /* Pretendard-SemiBold.otf */; };
+		712DF58A2BF51E5800F0BCCB /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 712DF5842BF51E5800F0BCCB /* Pretendard-Light.otf */; };
+		712DF58B2BF51E5800F0BCCB /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 712DF5852BF51E5800F0BCCB /* Pretendard-Bold.otf */; };
+		712DF58C2BF51E5800F0BCCB /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 712DF5862BF51E5800F0BCCB /* Pretendard-ExtraBold.otf */; };
+		712DF58D2BF51E5800F0BCCB /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 712DF5872BF51E5800F0BCCB /* Pretendard-Regular.otf */; };
+		712DF58E2BF51E5800F0BCCB /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 712DF5882BF51E5800F0BCCB /* Pretendard-Medium.otf */; };
+		712DF5912BF5225200F0BCCB /* FontLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DF5902BF5225200F0BCCB /* FontLiterals.swift */; };
+		712DF5942BF5249B00F0BCCB /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 712DF5932BF5249B00F0BCCB /* Then */; };
+		712DF5972BF524A700F0BCCB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 712DF5962BF524A700F0BCCB /* SnapKit */; };
+		712DF5992BF524A700F0BCCB /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 712DF5982BF524A700F0BCCB /* SnapKit-Dynamic */; };
+		712DF59C2BF524C100F0BCCB /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 712DF59B2BF524C100F0BCCB /* CombineMoya */; };
+		712DF59E2BF524C100F0BCCB /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 712DF59D2BF524C100F0BCCB /* Moya */; };
+		712DF5A02BF524C100F0BCCB /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 712DF59F2BF524C100F0BCCB /* ReactiveMoya */; };
+		712DF5A22BF524C100F0BCCB /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 712DF5A12BF524C100F0BCCB /* RxMoya */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		712DF5612BF5160A00F0BCCB /* Sopkathon-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sopkathon-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		712DF5642BF5160A00F0BCCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		712DF5662BF5160A00F0BCCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		712DF5682BF5160A00F0BCCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		712DF56D2BF5160B00F0BCCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		712DF5702BF5160B00F0BCCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		712DF5722BF5160B00F0BCCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		712DF5832BF51E5800F0BCCB /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		712DF5842BF51E5800F0BCCB /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		712DF5852BF51E5800F0BCCB /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		712DF5862BF51E5800F0BCCB /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		712DF5872BF51E5800F0BCCB /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		712DF5882BF51E5800F0BCCB /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		712DF5902BF5225200F0BCCB /* FontLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontLiterals.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		712DF55E2BF5160A00F0BCCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				712DF5942BF5249B00F0BCCB /* Then in Frameworks */,
+				712DF5972BF524A700F0BCCB /* SnapKit in Frameworks */,
+				712DF59C2BF524C100F0BCCB /* CombineMoya in Frameworks */,
+				712DF59E2BF524C100F0BCCB /* Moya in Frameworks */,
+				712DF5A22BF524C100F0BCCB /* RxMoya in Frameworks */,
+				712DF5992BF524A700F0BCCB /* SnapKit-Dynamic in Frameworks */,
+				712DF5A02BF524C100F0BCCB /* ReactiveMoya in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		712DF5582BF5160A00F0BCCB = {
+			isa = PBXGroup;
+			children = (
+				712DF5632BF5160A00F0BCCB /* Sopkathon-iOS */,
+				712DF5622BF5160A00F0BCCB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		712DF5622BF5160A00F0BCCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				712DF5612BF5160A00F0BCCB /* Sopkathon-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		712DF5632BF5160A00F0BCCB /* Sopkathon-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				712DF5782BF51CCD00F0BCCB /* Application */,
+				712DF57D2BF51D0000F0BCCB /* Data */,
+				712DF57C2BF51CFB00F0BCCB /* Global */,
+				712DF57B2BF51CF500F0BCCB /* Network */,
+				712DF57A2BF51CDD00F0BCCB /* Presentation */,
+				712DF5722BF5160B00F0BCCB /* Info.plist */,
+			);
+			path = "Sopkathon-iOS";
+			sourceTree = "<group>";
+		};
+		712DF5782BF51CCD00F0BCCB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				712DF5642BF5160A00F0BCCB /* AppDelegate.swift */,
+				712DF5662BF5160A00F0BCCB /* SceneDelegate.swift */,
+				712DF56F2BF5160B00F0BCCB /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		712DF57A2BF51CDD00F0BCCB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				712DF5682BF5160A00F0BCCB /* ViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		712DF57B2BF51CF500F0BCCB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		712DF57C2BF51CFB00F0BCCB /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				712DF58F2BF51EE000F0BCCB /* Literals */,
+				712DF57F2BF51D8A00F0BCCB /* Extension */,
+				712DF57E2BF51D4B00F0BCCB /* Resource */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		712DF57D2BF51D0000F0BCCB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		712DF57E2BF51D4B00F0BCCB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				712DF5822BF51E0B00F0BCCB /* Fonts */,
+				712DF56D2BF5160B00F0BCCB /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		712DF57F2BF51D8A00F0BCCB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		712DF5822BF51E0B00F0BCCB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				712DF5852BF51E5800F0BCCB /* Pretendard-Bold.otf */,
+				712DF5862BF51E5800F0BCCB /* Pretendard-ExtraBold.otf */,
+				712DF5842BF51E5800F0BCCB /* Pretendard-Light.otf */,
+				712DF5882BF51E5800F0BCCB /* Pretendard-Medium.otf */,
+				712DF5872BF51E5800F0BCCB /* Pretendard-Regular.otf */,
+				712DF5832BF51E5800F0BCCB /* Pretendard-SemiBold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		712DF58F2BF51EE000F0BCCB /* Literals */ = {
+			isa = PBXGroup;
+			children = (
+				712DF5902BF5225200F0BCCB /* FontLiterals.swift */,
+			);
+			path = Literals;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		712DF5602BF5160A00F0BCCB /* Sopkathon-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 712DF5752BF5160B00F0BCCB /* Build configuration list for PBXNativeTarget "Sopkathon-iOS" */;
+			buildPhases = (
+				712DF55D2BF5160A00F0BCCB /* Sources */,
+				712DF55E2BF5160A00F0BCCB /* Frameworks */,
+				712DF55F2BF5160A00F0BCCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sopkathon-iOS";
+			packageProductDependencies = (
+				712DF5932BF5249B00F0BCCB /* Then */,
+				712DF5962BF524A700F0BCCB /* SnapKit */,
+				712DF5982BF524A700F0BCCB /* SnapKit-Dynamic */,
+				712DF59B2BF524C100F0BCCB /* CombineMoya */,
+				712DF59D2BF524C100F0BCCB /* Moya */,
+				712DF59F2BF524C100F0BCCB /* ReactiveMoya */,
+				712DF5A12BF524C100F0BCCB /* RxMoya */,
+			);
+			productName = "Sopkathon-iOS";
+			productReference = 712DF5612BF5160A00F0BCCB /* Sopkathon-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		712DF5592BF5160A00F0BCCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					712DF5602BF5160A00F0BCCB = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 712DF55C2BF5160A00F0BCCB /* Build configuration list for PBXProject "Sopkathon-iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 712DF5582BF5160A00F0BCCB;
+			packageReferences = (
+				712DF5922BF5249B00F0BCCB /* XCRemoteSwiftPackageReference "Then" */,
+				712DF5952BF524A700F0BCCB /* XCRemoteSwiftPackageReference "SnapKit" */,
+				712DF59A2BF524C100F0BCCB /* XCRemoteSwiftPackageReference "Moya" */,
+			);
+			productRefGroup = 712DF5622BF5160A00F0BCCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				712DF5602BF5160A00F0BCCB /* Sopkathon-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		712DF55F2BF5160A00F0BCCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				712DF5892BF51E5800F0BCCB /* Pretendard-SemiBold.otf in Resources */,
+				712DF58B2BF51E5800F0BCCB /* Pretendard-Bold.otf in Resources */,
+				712DF58C2BF51E5800F0BCCB /* Pretendard-ExtraBold.otf in Resources */,
+				712DF58E2BF51E5800F0BCCB /* Pretendard-Medium.otf in Resources */,
+				712DF58A2BF51E5800F0BCCB /* Pretendard-Light.otf in Resources */,
+				712DF58D2BF51E5800F0BCCB /* Pretendard-Regular.otf in Resources */,
+				712DF5712BF5160B00F0BCCB /* LaunchScreen.storyboard in Resources */,
+				712DF56E2BF5160B00F0BCCB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		712DF55D2BF5160A00F0BCCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				712DF5912BF5225200F0BCCB /* FontLiterals.swift in Sources */,
+				712DF5692BF5160A00F0BCCB /* ViewController.swift in Sources */,
+				712DF5652BF5160A00F0BCCB /* AppDelegate.swift in Sources */,
+				712DF5672BF5160A00F0BCCB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		712DF56F2BF5160B00F0BCCB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				712DF5702BF5160B00F0BCCB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		712DF5732BF5160B00F0BCCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		712DF5742BF5160B00F0BCCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		712DF5762BF5160B00F0BCCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Q4H7X3Q58;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sopkathon-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "th1ngjin.Sopkathon-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		712DF5772BF5160B00F0BCCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Q4H7X3Q58;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sopkathon-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "th1ngjin.Sopkathon-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		712DF55C2BF5160A00F0BCCB /* Build configuration list for PBXProject "Sopkathon-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				712DF5732BF5160B00F0BCCB /* Debug */,
+				712DF5742BF5160B00F0BCCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		712DF5752BF5160B00F0BCCB /* Build configuration list for PBXNativeTarget "Sopkathon-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				712DF5762BF5160B00F0BCCB /* Debug */,
+				712DF5772BF5160B00F0BCCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		712DF5922BF5249B00F0BCCB /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		712DF5952BF524A700F0BCCB /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		712DF59A2BF524C100F0BCCB /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		712DF5932BF5249B00F0BCCB /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 712DF5922BF5249B00F0BCCB /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		712DF5962BF524A700F0BCCB /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 712DF5952BF524A700F0BCCB /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		712DF5982BF524A700F0BCCB /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 712DF5952BF524A700F0BCCB /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		712DF59B2BF524C100F0BCCB /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 712DF59A2BF524C100F0BCCB /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		712DF59D2BF524C100F0BCCB /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 712DF59A2BF524C100F0BCCB /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		712DF59F2BF524C100F0BCCB /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 712DF59A2BF524C100F0BCCB /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		712DF5A12BF524C100F0BCCB /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 712DF59A2BF524C100F0BCCB /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 712DF5592BF5160A00F0BCCB /* Project object */;
+}
