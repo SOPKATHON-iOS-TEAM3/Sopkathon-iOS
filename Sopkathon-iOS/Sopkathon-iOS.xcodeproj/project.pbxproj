@@ -26,6 +26,7 @@
 		712DF59E2BF524C100F0BCCB /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 712DF59D2BF524C100F0BCCB /* Moya */; };
 		712DF5A02BF524C100F0BCCB /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 712DF59F2BF524C100F0BCCB /* ReactiveMoya */; };
 		712DF5A22BF524C100F0BCCB /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 712DF5A12BF524C100F0BCCB /* RxMoya */; };
+		71B5A3B82BF7DBD700D0E957 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5A3B72BF7DBD700D0E957 /* Config.swift */; };
 		71EB61A02BF52B8D006E0707 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB619F2BF52B8D006E0707 /* UIView+.swift */; };
 		71EB61A32BF52BE8006E0707 /* className.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB61A22BF52BE8006E0707 /* className.swift */; };
 		71EB61A52BF52E87006E0707 /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB61A42BF52E87006E0707 /* DTO.swift */; };
@@ -47,6 +48,7 @@
 		712DF5872BF51E5800F0BCCB /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		712DF5882BF51E5800F0BCCB /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		712DF5902BF5225200F0BCCB /* FontLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontLiterals.swift; sourceTree = "<group>"; };
+		71B5A3B72BF7DBD700D0E957 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		71EB619F2BF52B8D006E0707 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		71EB61A22BF52BE8006E0707 /* className.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = className.swift; sourceTree = "<group>"; };
 		71EB61A42BF52E87006E0707 /* DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		712DF57B2BF51CF500F0BCCB /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				71B5A3B72BF7DBD700D0E957 /* Config.swift */,
 				71EB61A62BF52EBD006E0707 /* MoyaLoggingPlugin.swift */,
 			);
 			path = Network;
@@ -283,6 +286,7 @@
 			files = (
 				712DF5912BF5225200F0BCCB /* FontLiterals.swift in Sources */,
 				712DF5692BF5160A00F0BCCB /* ViewController.swift in Sources */,
+				71B5A3B82BF7DBD700D0E957 /* Config.swift in Sources */,
 				712DF5652BF5160A00F0BCCB /* AppDelegate.swift in Sources */,
 				712DF5672BF5160A00F0BCCB /* SceneDelegate.swift in Sources */,
 				71EB61A02BF52B8D006E0707 /* UIView+.swift in Sources */,
@@ -430,6 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8Q4H7X3Q58;
@@ -458,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8Q4H7X3Q58;
