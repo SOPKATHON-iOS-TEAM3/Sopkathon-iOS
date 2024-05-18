@@ -14,7 +14,7 @@ import Then
 final class NicknameViewController: UIViewController {
 
     private let characterImageView = UIImageView().then {
-        $0.image = .imgOnBoarding
+        $0.image = .imgOnboarding
     }
     
     private let nicknameLabel = UILabel().then {
@@ -78,8 +78,8 @@ private extension NicknameViewController {
         characterImageView.snp.makeConstraints {
             $0.top.equalTo(nicknameTextField.snp.bottom).offset(92)
             $0.centerX.equalToSuperview()
-            $0.width.equalTo(296)
-            $0.height.equalTo(123)
+            $0.width.equalTo(303)
+            $0.height.equalTo(98)
         }
         
         nextButton.snp.makeConstraints {
@@ -100,6 +100,7 @@ private extension NicknameViewController {
     
     private func pushToNumOfFriendsVC() {
         let numOfFriendsViewController = NumOfFriendsViewController()
+        numOfFriendsViewController.setLabelText(nickName: nicknameTextField.text)
         self.navigationController?.pushViewController(numOfFriendsViewController, animated: true)
     }
     
@@ -113,7 +114,6 @@ extension NicknameViewController: UITextFieldDelegate {
     
     private func updateButtonState(for text: String) {
         let isNicknameValid = text.count >= 2 && text.count <= 5
-        print(isNicknameValid)
         nextButton.setEnabled(isNicknameValid)
     }
 }
