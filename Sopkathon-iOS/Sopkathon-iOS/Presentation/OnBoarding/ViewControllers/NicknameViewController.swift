@@ -15,33 +15,30 @@ final class NicknameViewController: UIViewController {
 
     private let nicknameLabel = UILabel().then {
         $0.text = "닉네임을 입력하세요"
-        $0.textColor = .black
+        $0.textColor = .white
         $0.textAlignment = .center
         $0.numberOfLines = 1
-        $0.font = .title1
+        $0.font = UIFont(name: "Arita4.0_SB", size: 28)
     }
     
     private let nicknameTextField = UITextField().then {
         $0.font = .title1
-        $0.backgroundColor = .gray
+        $0.backgroundColor = UIColor.gray03
         $0.textAlignment = .center
         $0.layer.cornerRadius = 10
         $0.layer.borderWidth = 1
+        $0.layer.borderColor = UIColor.gray06.cgColor
         let attributes: [NSAttributedString.Key: Any] = [
-            .foregroundColor: UIColor.black,
+            .foregroundColor: UIColor.gray08,
             .font: UIFont.title1
         ]
         let attributedPlaceholder = NSAttributedString(string: "ex. 동글이(최대 5글자)", attributes: attributes)
         $0.attributedPlaceholder = attributedPlaceholder
     }
     
-    private lazy var nextButton = UIButton().then {
-        $0.backgroundColor = .gray
-        $0.setTitle("다음", for: .normal)
-        $0.titleLabel?.font = UIFont(name: "Pretendard-Bold", size: 14)
-        $0.layer.cornerRadius = 10
-        $0.addTarget(self, action: #selector(nextButtonClicked), for: .touchUpInside)
-    }
+    private lazy var nextButton = CustomButton(title: "다음")
+      .setColor(bgColor: .key1, disableColor: .gray08)
+      .setEnabled(false)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +56,7 @@ private extension NicknameViewController {
     }
     
     func setLayout() {
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .background
         
         nicknameLabel.snp.makeConstraints {
             $0.top.equalToSuperview().inset(278)
@@ -103,9 +100,8 @@ extension NicknameViewController: UITextFieldDelegate {
     
     private func updateButtonState(for text: String) {
         let isNicknameValid = text.count >= 2 && text.count <= 5
-        
-        nextButton.backgroundColor = isNicknameValid ? .systemPink : .gray
-        nextButton.setTitleColor(.white, for: .normal)
+        print(isNicknameValid)
+        nextButton.setEnabled(isNicknameValid)
     }
 }
 

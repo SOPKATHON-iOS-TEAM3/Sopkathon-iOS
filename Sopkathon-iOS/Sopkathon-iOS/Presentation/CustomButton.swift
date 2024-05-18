@@ -75,7 +75,7 @@ extension CustomButton {
         self.clipsToBounds = true
         
         self.setBackgroundColor(.gray08, for: .normal)
-        self.setBackgroundColor(.zeroPink, for: .disabled)
+        self.setBackgroundColor(.key1, for: .disabled)
         self.setAttributedTitle(
             NSAttributedString(
                 string: title,
