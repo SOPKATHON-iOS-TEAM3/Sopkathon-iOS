@@ -21,13 +21,11 @@ final class NumOfFriendsViewController: UIViewController {
     }
     
     private let numTextField = UITextField().then {
-        $0.layer.cornerRadius = 20
+        $0.font = .title1
+        $0.layer.cornerRadius = 10
         $0.backgroundColor = .gray
         $0.textColor = .white
-        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: $0.frame.height))
-        $0.leftView = paddingView
-        $0.leftViewMode = .always
-
+        $0.textAlignment = .center
         let attributes: [NSAttributedString.Key: Any] = [
             .foregroundColor: UIColor.black,
             .font: UIFont.title1
@@ -87,8 +85,8 @@ private extension NumOfFriendsViewController {
         }
         
         numTextField.snp.makeConstraints {
-            $0.width.equalTo(120)
-            $0.height.equalTo(56)
+            $0.width.equalTo(105)
+            $0.height.equalTo(60)
         }
         
         numStackView.snp.makeConstraints {
@@ -99,7 +97,7 @@ private extension NumOfFriendsViewController {
         completeButton.snp.makeConstraints {
             $0.bottom.equalToSuperview().inset(84)
             $0.leading.trailing.equalToSuperview().inset(20)
-            $0.height.equalTo(56)
+            $0.height.equalTo(60)
         }
 
     }

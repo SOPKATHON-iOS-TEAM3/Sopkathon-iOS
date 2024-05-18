@@ -8,9 +8,11 @@
 import UIKit
 
 import SnapKit
+import Sopkathon_iOS_Extension
 import Then
 
 final class NicknameViewController: UIViewController {
+    @IBOutlet weak var textField: UITextField!
     
     private let nicknameLabel = UILabel().then {
         $0.text = "닉네임을 입력하세요"
@@ -21,8 +23,17 @@ final class NicknameViewController: UIViewController {
     }
     
     private let nicknameTextField = UITextField().then {
-        $0.layer.cornerRadius = 10
+        $0.font = .title1
         $0.backgroundColor = .gray
+        $0.textAlignment = .center
+        $0.layer.cornerRadius = 10
+        $0.layer.borderWidth = 1
+        let attributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.black,
+            .font: UIFont.title1
+        ]
+        let attributedPlaceholder = NSAttributedString(string: "ex. 동글이(최대 5글자)", attributes: attributes)
+        $0.attributedPlaceholder = attributedPlaceholder
     }
     
     private lazy var nextButton = UIButton().then {
@@ -32,7 +43,7 @@ final class NicknameViewController: UIViewController {
         $0.layer.cornerRadius = 10
         $0.addTarget(self, action: #selector(nextButtonClicked), for: .touchUpInside)
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,11 +56,7 @@ final class NicknameViewController: UIViewController {
 private extension NicknameViewController {
     
     func setHierarchy() {
-        [nicknameLabel, nicknameTextField, nextButton].forEach { [weak self] view in
-            guard let self = self else { return }
-            self.view.addSubview(view)
-        }
-        
+        view.addSubviews(nicknameLabel, nicknameTextField, nextButton)
     }
     
     func setLayout() {
@@ -63,7 +70,7 @@ private extension NicknameViewController {
         nicknameTextField.snp.makeConstraints {
             $0.top.equalTo(nicknameLabel.snp.bottom).offset(25)
             $0.leading.trailing.equalToSuperview().inset(20)
-            $0.height.equalTo(56)
+            $0.height.equalTo(60)
         }
         
         nextButton.snp.makeConstraints {
@@ -74,7 +81,7 @@ private extension NicknameViewController {
     }
     
     func setDelegate() {
-
+        nicknameTextField.delegate = self
     }
     
     /// 화면 전환
@@ -86,4 +93,21 @@ private extension NicknameViewController {
         let numOfFriendsViewController = NumOfFriendsViewController()
         self.navigationController?.pushViewController(numOfFriendsViewController, animated: true)
     }
+    
 }
+
+extension NicknameViewController: UITextFieldDelegate {
+    
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        updateButtonState(for: textField.text ?? "")
+    }
+    
+    private func updateButtonState(for text: String) {
+        let isNicknameValid = text.count >= 2 && text.count <= 5
+        
+        nextButton.backgroundColor = isNicknameValid ? .systemPink : .gray
+        nextButton.setTitleColor(.white, for: .normal)
+    }
+}
+
+
