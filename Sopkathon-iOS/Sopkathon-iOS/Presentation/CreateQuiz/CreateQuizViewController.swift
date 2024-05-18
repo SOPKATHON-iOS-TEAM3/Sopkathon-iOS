@@ -26,7 +26,7 @@ class CreateQuizeViewController: UIViewController {
                                                                                       title: "세번째 질문을 만들어보세요.",
                                                                                       subTitle: "정답과 오답을 입력해주세요.\n퀴즈에는 선지가 랜덤으로 보여져요",
                                                                                       subTitleThin: "퀴즈에는 선지가 랜덤으로 보여져요",
-                                                                                      quizQuestionList: .init(placeHolder: "ex. 내 인생 드라마는 최대 30자",
+                                                                                      quizQuestionList: .init(placeHolder: "ex. 샤워할 때, 머리부터 씻는다. 최대 30자",
                                                                                                               data: ""),
                                                                                       quizCorrectAnswerList: .init(placeHolder: "정답을 입력하세요. (최대 16자)",
                                                                                                                    data: ""),
