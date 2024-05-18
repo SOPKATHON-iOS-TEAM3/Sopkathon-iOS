@@ -55,9 +55,6 @@ final class CreateQuizView: UIView {
 // MARK: - Delegate
 extension CreateQuizView: UICollectionViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView.contentOffset.x > 0 {
-            let index = max(ceil(((UIScreen.main.bounds.width / 2.0) + scrollView.contentOffset.x) / UIScreen.main.bounds.width) - 1, 0)
-            navigationView.pageIndexView.setIndex(selectedIndex: Int(index))
-        }
+        navigationView.pageIndexView.setIndex(offsetX: scrollView.contentOffset.x)
     }
 }

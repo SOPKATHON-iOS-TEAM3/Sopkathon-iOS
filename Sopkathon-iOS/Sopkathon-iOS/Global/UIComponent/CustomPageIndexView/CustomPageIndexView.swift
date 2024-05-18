@@ -26,10 +26,13 @@ class CustomPageIndexView: UIStackView {
     // MARK: - Data Source
     // MARK: - Delegate
     // MARK: - Actions
-    func setIndex(selectedIndex: Int) {
-        subviews.enumerated().forEach { index, view in
-            if let itemView = view as? CustomPageIndexItem {
-                itemView.bindState(state: index == selectedIndex)
+    func setIndex(offsetX: CGFloat) {
+        if offsetX >= 0 {
+            let selectedIndex = max(ceil(((UIScreen.main.bounds.width / 2.0) + offsetX) / UIScreen.main.bounds.width) - 1, 0)
+            subviews.enumerated().forEach { index, view in
+                if let itemView = view as? CustomPageIndexItem {
+                    itemView.bindState(state: index == Int(selectedIndex))
+                }
             }
         }
     }
@@ -46,7 +49,7 @@ class CustomPageIndexView: UIStackView {
             customItem.layer.cornerRadius = 20
             customItem.clipsToBounds = true
         }
-        setIndex(selectedIndex: 0)
+        setIndex(offsetX: 0)
         return self
     }
 }
