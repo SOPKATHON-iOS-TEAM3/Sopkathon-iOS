@@ -73,14 +73,10 @@ class CreateQuizeViewController: UIViewController {
         switch index {
         case 0:
             self.getCurrentPageInfo(index: 0)
-            self.createQuizeView.collectionView.setContentOffset(.init(x: Int(UIScreen.main.bounds.width), y: 0), animated: true)
         case 1:
             self.getCurrentPageInfo(index: 1)
-            self.createQuizeView.collectionView.setContentOffset(.init(x: Int(UIScreen.main.bounds.width) * 2, y: 0), animated: true)
         default:
             self.getCurrentPageInfo(index: 2)
-            let vc = CreateQuizResultViewController()
-            self.navigationController?.pushViewController(vc, animated: true)
         }
         
     }
@@ -142,6 +138,76 @@ extension CreateQuizeViewController: QuizeNavigationProtocol {
 }
 extension CreateQuizeViewController: CreateQuizProtocol {
     func getItem(data: CreateQuizViewDataItem) {
+        let index = createQuizeView.navigationView.pageIndexView.index
+        switch index {
+        case 0:
+            createQuiz(data: data,
+                       index: index)
+            self.createQuizeView.collectionView.setContentOffset(.init(x: Int(UIScreen.main.bounds.width), y: 0), animated: true)
+        case 1:
+            createQuiz(data: data,
+                       index: index)
+            self.createQuizeView.collectionView.setContentOffset(.init(x: Int(UIScreen.main.bounds.width) * 2, y: 0), animated: true)
+        default:
+            let vc = CreateQuizResultViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
         print(data)
+    }
+}
+
+extension CreateQuizeViewController {
+    func createQuiz(data: CreateQuizViewDataItem,
+                    index: Int) {
+        CreateQuizService.shared.postCreateQuiz(body: .init(quizID: index,
+                                                            questionText: data.quizQuestionList.data),
+                                                completion: { result in
+            switch result {
+            case .success(let t):
+                if let result = t as? CreateQuizResponseDTO {
+                    print(result.message)
+                    self.createAnswer(data: data,
+                                      index: index)
+                }
+            case .requestErr:
+                print("requestErr")
+            case .decodedErr:
+                print("decodedErr")
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+        })
+    }
+    
+    func createAnswer(data: CreateQuizViewDataItem,
+                      index: Int) {
+        CreateQuizService.shared.postCreateAnswer(body: .init(questionID: index,
+                                                              answers: [.init(answerText: data.quizCorrectAnswerList.data,
+                                                                              isCorrect: true),
+                                                                        .init(answerText: data.quizInCorrectAnswerList.data,
+                                                                              isCorrect: true)]), completion: { result in
+            switch result {
+            case .success(let t):
+                if let result = t as? CreateQuizResponseDTO {
+                    print(result.message)
+                }
+            case .requestErr:
+                print("requestErr")
+            case .decodedErr:
+                print("decodedErr")
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+            
+        })
     }
 }

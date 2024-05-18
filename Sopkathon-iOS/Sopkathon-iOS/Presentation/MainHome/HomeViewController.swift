@@ -263,7 +263,7 @@ final class HomeViewController: UIViewController {
     
     @objc
     private func pushToMakeQuizViewController() {
-        let vc = ViewController()
+        let vc = CreateQuizeViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
