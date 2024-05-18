@@ -15,6 +15,7 @@ final class CopyCodeView: UIView {
         setUI()
         setLayout()
         setConfig()
+        codeLabel.text = UserDefaults.standard.string(forKey: "code")
     }
     // MARK: - UIComponents
     private let backgroundImageView = UIImageView().then {
@@ -34,7 +35,7 @@ final class CopyCodeView: UIView {
         $0.textColor = .white
         $0.text = "초대코드 복사하기"
     }
-    private let codeLabel = UILabel().then {
+    let codeLabel = UILabel().then {
         $0.font = .body7_m_18
         $0.textColor = .white
     }

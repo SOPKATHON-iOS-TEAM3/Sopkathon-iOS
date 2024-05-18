@@ -13,8 +13,12 @@ import Then
 
 final class NicknameViewController: UIViewController {
 
+    private let logoImageView = UIImageView().then {
+        $0.image = .logo
+    }
+    
     private let characterImageView = UIImageView().then {
-        $0.image = .imgOnBoarding
+        $0.image = .imgNickChara
     }
     
     private let nicknameLabel = UILabel().then {
@@ -52,17 +56,25 @@ final class NicknameViewController: UIViewController {
         setHierarchy()
         setLayout()
         setDelegate()
+        setupTapGesture()
     }
 }
 
 private extension NicknameViewController {
     
     func setHierarchy() {
-        view.addSubviews(characterImageView,nicknameLabel, nicknameTextField, nextButton)
+        view.addSubviews(logoImageView, characterImageView,nicknameLabel, nicknameTextField, nextButton)
     }
     
     func setLayout() {
         self.view.backgroundColor = .background
+        
+        logoImageView.snp.makeConstraints {
+            $0.top.equalToSuperview().inset(70)
+            $0.centerX.equalToSuperview()
+            $0.width.equalTo(161)
+            $0.height.equalTo(28)
+        }
         
         nicknameLabel.snp.makeConstraints {
             $0.top.equalToSuperview().inset(278)
@@ -102,6 +114,15 @@ private extension NicknameViewController {
         let numOfFriendsViewController = NumOfFriendsViewController()
         numOfFriendsViewController.setLabelText(nickName: nicknameTextField.text)
         self.navigationController?.pushViewController(numOfFriendsViewController, animated: true)
+    }
+    
+    private func setupTapGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc private func dismissKeyboard() {
+        view.endEditing(true)
     }
     
 }

@@ -16,6 +16,7 @@ class CreateQuizResultViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        bindGesture()
     }
     // MARK: - UI & Layout
     // MARK: - Methods
@@ -26,7 +27,7 @@ class CreateQuizResultViewController: UIViewController {
     }
     
     @objc private func codeViewTapped(_ sender: UITapGestureRecognizer) {
-//        UIPasteboard.general.string = createQuizResultView.copyCodeView
+        UIPasteboard.general.string = UserDefaults.standard.string(forKey: "code")
         
     }
     // MARK: - Data Source

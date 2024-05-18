@@ -9,4 +9,5 @@ import Foundation
 struct CreateQuizResponseDTO: Codable {
     let status: Int
     let message: String
+    let inviteCode: String?
 }

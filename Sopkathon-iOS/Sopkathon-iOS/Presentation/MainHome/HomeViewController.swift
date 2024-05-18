@@ -52,7 +52,7 @@ final class HomeViewController: UIViewController {
     }
     
     private let backgroundCloudImageView = UIImageView().then {
-        $0.image = .imgCloud
+        $0.image = .imgHome
     }
     
     private let MainView = UIView().then {
@@ -250,7 +250,7 @@ final class HomeViewController: UIViewController {
         
         backgroundCloudImageView.snp.makeConstraints {
             $0.top.equalToSuperview().inset(99)
-            $0.trailing.equalToSuperview()
+            $0.trailing.equalToSuperview().inset(34)
         }
         
         view.bringSubviewToFront(topVStackView)
@@ -289,7 +289,7 @@ final class HomeViewController: UIViewController {
     
     @objc
     private func pushToSolveQuizViewController() {
-        let vc = SolveQuizViewController()
+        let vc = InviteCodeViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

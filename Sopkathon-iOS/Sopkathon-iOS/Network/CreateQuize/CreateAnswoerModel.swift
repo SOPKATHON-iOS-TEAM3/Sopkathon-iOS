@@ -8,7 +8,7 @@ import Foundation
 // MARK: - Welcome
 struct CreateAnswoerModel: Codable {
     let questionID: Int
-    let answers: [Answer]
+    let answers: [CreateAnswer]
 
     enum CodingKeys: String, CodingKey {
         case questionID = "questionId"
@@ -17,7 +17,7 @@ struct CreateAnswoerModel: Codable {
 }
 
 // MARK: - Answer
-struct Answer: Codable {
+struct CreateAnswer: Codable {
     let answerText: String
     let isCorrect: Bool
 }

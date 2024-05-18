@@ -198,6 +198,7 @@ extension CreateQuizeViewController {
             case .success(let t):
                 if let result = t as? CreateQuizResponseDTO {
                     print(result.message)
+                    UserDefaults.standard.setValue(result.inviteCode, forKey: "code")
                 }
             case .requestErr:
                 print("requestErr")

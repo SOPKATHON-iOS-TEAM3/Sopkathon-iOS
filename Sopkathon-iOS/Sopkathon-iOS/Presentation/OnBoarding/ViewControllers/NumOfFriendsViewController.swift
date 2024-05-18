@@ -21,6 +21,10 @@ final class NumOfFriendsViewController: UIViewController {
     
     private var nickName: String?
     
+    private let logoImageView = UIImageView().then {
+        $0.image = .logo
+    }
+    
     private let characterImageView = UIImageView().then {
         $0.image = .imgOnboarding2
     }
@@ -76,21 +80,27 @@ final class NumOfFriendsViewController: UIViewController {
         setHierarchy()
         setLayout()
         setDelegate()
+        setupTapGesture()
     }
 }
 
 extension NumOfFriendsViewController {
     
     func setHierarchy() {
-        view.addSubviews(characterImageView,friendsLabel, numStackView, completeButton)
+        view.addSubviews(logoImageView,characterImageView,friendsLabel, numStackView, completeButton)
         
     }
     
     func setLayout() {
         self.view.backgroundColor = .background
-        //navigationItem.hidesBackButton = true
+        navigationItem.hidesBackButton = true
         
-        
+        logoImageView.snp.makeConstraints {
+            $0.top.equalToSuperview().inset(70)
+            $0.centerX.equalToSuperview()
+            $0.width.equalTo(161)
+            $0.height.equalTo(28)
+        }
         friendsLabel.snp.makeConstraints {
             $0.top.equalToSuperview().inset(250)
             $0.leading.trailing.equalToSuperview()
@@ -172,6 +182,14 @@ extension NumOfFriendsViewController {
         self.navigationController?.pushViewController(homeViewController, animated: true)
     }
     
+    private func setupTapGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc private func dismissKeyboard() {
+        view.endEditing(true)
+    }
     
 }
 
