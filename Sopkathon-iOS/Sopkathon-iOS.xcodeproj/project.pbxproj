@@ -28,6 +28,10 @@
 		712531532BF929D50099E8F8 /* Arita4.0_T.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7125314E2BF929D50099E8F8 /* Arita4.0_T.otf */; };
 		712531542BF929D50099E8F8 /* Arita4.0_SB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7125314F2BF929D50099E8F8 /* Arita4.0_SB.otf */; };
 		712531552BF929D50099E8F8 /* Arita4.0_M.otf in Resources */ = {isa = PBXBuildFile; fileRef = 712531502BF929D50099E8F8 /* Arita4.0_M.otf */; };
+		7125315D2BF9467D0099E8F8 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7125315C2BF9467D0099E8F8 /* NetworkResult.swift */; };
+		7125315F2BF946B00099E8F8 /* MainTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7125315E2BF946B00099E8F8 /* MainTargetType.swift */; };
+		712531612BF946F20099E8F8 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712531602BF946F20099E8F8 /* MainService.swift */; };
+		712531632BF948220099E8F8 /* memberDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712531622BF948220099E8F8 /* memberDTO.swift */; };
 		712DF5652BF5160A00F0BCCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DF5642BF5160A00F0BCCB /* AppDelegate.swift */; };
 		712DF5672BF5160A00F0BCCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DF5662BF5160A00F0BCCB /* SceneDelegate.swift */; };
 		712DF5692BF5160A00F0BCCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DF5682BF5160A00F0BCCB /* ViewController.swift */; };
@@ -83,6 +87,10 @@
 		7125314E2BF929D50099E8F8 /* Arita4.0_T.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_T.otf; sourceTree = "<group>"; };
 		7125314F2BF929D50099E8F8 /* Arita4.0_SB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_SB.otf; sourceTree = "<group>"; };
 		712531502BF929D50099E8F8 /* Arita4.0_M.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_M.otf; sourceTree = "<group>"; };
+		7125315C2BF9467D0099E8F8 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		7125315E2BF946B00099E8F8 /* MainTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTargetType.swift; sourceTree = "<group>"; };
+		712531602BF946F20099E8F8 /* MainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
+		712531622BF948220099E8F8 /* memberDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memberDTO.swift; sourceTree = "<group>"; };
 		712DF5612BF5160A00F0BCCB /* Sopkathon-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sopkathon-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		712DF5642BF5160A00F0BCCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		712DF5662BF5160A00F0BCCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -271,6 +279,9 @@
 				0D6A0FE22BF94A5100BD8A15 /* SignUpMemberResponseModel.swift */,
 				0D6A0FE62BF94B8900BD8A15 /* SignUpMemberRequestModel.swift */,
 				0D6A0FE42BF94B1100BD8A15 /* UserTargetType.swift */,
+				7125315C2BF9467D0099E8F8 /* NetworkResult.swift */,
+				7125315E2BF946B00099E8F8 /* MainTargetType.swift */,
+				712531602BF946F20099E8F8 /* MainService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -291,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				71EB61A42BF52E87006E0707 /* DTO.swift */,
+				712531622BF948220099E8F8 /* memberDTO.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -475,6 +487,7 @@
 				712DF5912BF5225200F0BCCB /* FontLiterals.swift in Sources */,
 				A2AE1B0D2BF9021400490751 /* SolveQuizViewController.swift in Sources */,
 				0D6A0FE32BF94A5100BD8A15 /* SignUpMemberResponseModel.swift in Sources */,
+				7125315D2BF9467D0099E8F8 /* NetworkResult.swift in Sources */,
 				A2C93E0E2BF91DEC00CF7932 /* AnswerView.swift in Sources */,
 				712DF5692BF5160A00F0BCCB /* ViewController.swift in Sources */,
 				36879A072BF8FE2600CDF610 /* CustomPageIndexView.swift in Sources */,
@@ -489,6 +502,7 @@
 				712DF5672BF5160A00F0BCCB /* SceneDelegate.swift in Sources */,
 				36879A1C2BF9095300CDF610 /* InputQuestionView.swift in Sources */,
 				71EB61A02BF52B8D006E0707 /* UIView+.swift in Sources */,
+				7125315F2BF946B00099E8F8 /* MainTargetType.swift in Sources */,
 				A2C93E0C2BF9147300CF7932 /* SolveQuizCollectionViewCell.swift in Sources */,
 				A2C93E142BF9410400CF7932 /* HomeViewController.swift in Sources */,
 				A2AE1B0F2BF9024100490751 /* ResultQuizViewController.swift in Sources */,
@@ -500,8 +514,11 @@
 				0D6A0FE72BF94B8900BD8A15 /* SignUpMemberRequestModel.swift in Sources */,
 				36879A1E2BF918D100CDF610 /* PaddingLabel.swift in Sources */,
 				71EB61A72BF52EBD006E0707 /* MoyaLoggingPlugin.swift in Sources */,
+				7125314B2BF920AB0099E8F8 /* HomeViewController.swift in Sources */,
+				712531612BF946F20099E8F8 /* MainService.swift in Sources */,
 				71EB61A52BF52E87006E0707 /* DTO.swift in Sources */,
 				36879A0A2BF8FEBE00CDF610 /* CustomPageIndexItem.swift in Sources */,
+				712531632BF948220099E8F8 /* memberDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +541,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BASE_URL = "http://43.202.197.114:8080";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -587,6 +605,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BASE_URL = "http://43.202.197.114:8080";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -643,7 +662,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				BASE_URL = "";
+				BASE_URL = "http://43.202.197.114:8080";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U24ZACT97M;
@@ -672,7 +691,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				BASE_URL = "";
+				BASE_URL = "http://43.202.197.114:8080";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U24ZACT97M;
