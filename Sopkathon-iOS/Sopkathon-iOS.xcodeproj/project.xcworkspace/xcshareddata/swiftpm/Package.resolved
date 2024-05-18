@@ -1,4 +1,5 @@
 {
+  "originHash" : "30d511849a6bfc5c699c263f58f2b1d5867e77d23130b42925fe8543b6ebb269",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -50,8 +51,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SOPKATHON-iOS-TEAM3/Sopkathon-iOS-Extension",
       "state" : {
-        "revision" : "fe2cd056d4b740e59b313dce8db7c4e65d106598",
-        "version" : "1.0.1"
+        "revision" : "3b6992086c1be941d5504dc1cc710d38bee8b992",
+        "version" : "1.0.2"
       }
     },
     {
@@ -64,5 +65,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
