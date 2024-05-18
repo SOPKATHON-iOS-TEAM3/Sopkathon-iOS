@@ -155,11 +155,13 @@ extension NumOfFriendsViewController {
         MemberService.shared.signUp(request: request) { [weak self] response in
             switch response {
             case .success(let data):
+                
                 print("성공")
                 self?.pushToHomeVC()
                 guard let data = data as? SignUpMemberResponseModel else {
                     print("디코딩 안돼")
                     return }
+                UserDefaults.standard.setValue(data.memberId, forKey: "userId")
                 dump(data)
             case .requestErr:
                 print("요청 오류 입니다")

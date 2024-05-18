@@ -6,6 +6,7 @@ import Then
 
 class CustomPageIndexView: UIStackView {
     // MARK: properties
+    var index: Int = 0
     init() {
         super.init(frame: .zero)
         self.setConfig()
@@ -29,6 +30,7 @@ class CustomPageIndexView: UIStackView {
     func setIndex(offsetX: CGFloat) {
         if offsetX >= 0 {
             let selectedIndex = max(ceil(((UIScreen.main.bounds.width / 2.0) + offsetX) / UIScreen.main.bounds.width) - 1, 0)
+            self.index = Int(selectedIndex)
             subviews.enumerated().forEach { index, view in
                 if let itemView = view as? CustomPageIndexItem {
                     itemView.bindState(state: index == Int(selectedIndex))
@@ -38,6 +40,7 @@ class CustomPageIndexView: UIStackView {
     }
     
     func setIndex(selectedIndex: Int) {
+        self.index = Int(selectedIndex)
         subviews.enumerated().forEach { index, view in
             if let itemView = view as? CustomPageIndexItem {
                 itemView.bindState(state: index == Int(selectedIndex))

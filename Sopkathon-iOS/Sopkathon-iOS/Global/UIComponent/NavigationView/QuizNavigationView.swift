@@ -19,7 +19,7 @@ class QuizNavigationView: UIView {
         $0.addTarget(self,
                      action: #selector(backButtonTap),
                      for: .touchUpInside)
-        $0.setImage(.checkmark, for: .normal)
+        $0.setImage(.icBack, for: .normal)
     }
     
     let pageIndexView = CustomPageIndexView()

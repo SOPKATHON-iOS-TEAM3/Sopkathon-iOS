@@ -10,4 +10,5 @@ import Foundation
 struct memberDTO: Codable {
     let memberId: Int
     let targetFriend: Int
+    let nickName: String
 }
