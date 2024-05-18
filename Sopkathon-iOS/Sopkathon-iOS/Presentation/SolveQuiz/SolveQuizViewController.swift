@@ -16,6 +16,7 @@ final class SolveQuizViewController: UIViewController {
     // MARK: - Properties
     
     var index = 0
+    var backgroundColors: [UIColor] = [.subBlue, .mainPink, .subPurple]
     
     // MARK: - UI Components
     
@@ -29,7 +30,7 @@ final class SolveQuizViewController: UIViewController {
     }
         
     private lazy var solveQuizCollectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout).then {
-        $0.backgroundColor = .gray
+        $0.backgroundColor = .subBlue
         $0.showsHorizontalScrollIndicator = false
         $0.isScrollEnabled = false
         $0.delegate = self
@@ -111,6 +112,7 @@ extension SolveQuizViewController: UICollectionViewDataSource {
 
 extension SolveQuizViewController: NextButtonProtocol {
     func pagingToNextQuestion() {
+        solveQuizCollectionView.backgroundColor = backgroundColors[min(index + 1, 2)]
         solveQuizCollectionView.setContentOffset(CGPoint(x: Int(UIScreen.main.bounds.width) * min(index + 1, 2), y: 0), animated: true)
 
         if index == 2 {

@@ -15,22 +15,36 @@ class SolveQuizCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Properties
     
+    var isFirstAnswerChecked: Bool = false
+    var isSecondAnswerChecked: Bool = false
     var delegate: NextButtonProtocol?
     
     // MARK: - UI Components
     
     private let questionLabel = UILabel().then {
-        $0.font = .title1
+        $0.font = .title1_b_28
         $0.text = "내가 좋아하는 색깔은?"
-        $0.textColor = .black
+        $0.textColor = .white
     }
     
-    private let firstAnswerView = AnswerView()
-    private let secondAnswerView = AnswerView()
+    private lazy var firstAnswerView = AnswerView(isTop: true)
+        .then {
+            let tap = UITapGestureRecognizer(target: self, 
+                                             action: #selector(answerViewDidTap(_:)))
+            $0.addGestureRecognizer(tap)
+        }
+    private lazy var secondAnswerView = AnswerView()
+        .then {
+            let tap = UITapGestureRecognizer(target: self,
+                                             action: #selector(answerViewDidTap(_:)))
+            $0.addGestureRecognizer(tap)
+        }
     
-    private lazy var nextButton = CustomButton(title: "다음").then {
-        $0.addTarget(self, action: #selector(nextButtonDidTap), for: .touchUpInside)
-    }
+    private lazy var nextButton = CustomButton(title: "다음")
+        .setColor(bgColor: UIColor.background, disableColor: UIColor.gray13)
+        .then {
+            $0.addTarget(self, action: #selector(nextButtonDidTap), for: .touchUpInside)
+        }
     
     // MARK: - Init
     
@@ -78,5 +92,19 @@ class SolveQuizCollectionViewCell: UICollectionViewCell {
     @objc
     func nextButtonDidTap() {
         delegate?.pagingToNextQuestion()
+    }
+    
+    @objc
+    func answerViewDidTap(_ sender: UIView) {
+        guard let sender = sender as? AnswerView else { return }
+//        if sender.isTop {
+//            isFirstAnswerChecked.toggle()
+//            firstAnswerView.layer.borderColor = isFirstAnswerChecked ? UIColor.white.cgColor : nil
+//            firstAnswerView.layer.borderWidth = isFirstAnswerChecked ? 1.0 : 0.0
+//        } else {
+//            isSecondAnswerChecked.toggle()
+//            secondAnswerView.layer.borderColor = isSecondAnswerChecked ? UIColor.white.cgColor : nil
+//            secondAnswerView.layer.borderWidth = isSecondAnswerChecked ? 1.0 : 0.0
+//        }
     }
 }
