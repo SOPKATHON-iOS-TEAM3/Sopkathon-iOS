@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D58BE2B2BF8E40D008FE0BD /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58BE2A2BF8E40D008FE0BD /* NicknameViewController.swift */; };
+		0D58BE2D2BF8EC23008FE0BD /* NumOfFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58BE2C2BF8EC23008FE0BD /* NumOfFriendsViewController.swift */; };
 		36879A042BF8FDB100CDF610 /* CreateQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A032BF8FDB100CDF610 /* CreateQuizViewController.swift */; };
 		36879A072BF8FE2600CDF610 /* CustomPageIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A062BF8FE2600CDF610 /* CustomPageIndexView.swift */; };
 		36879A0A2BF8FEBE00CDF610 /* CustomPageIndexItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A092BF8FEBE00CDF610 /* CustomPageIndexItem.swift */; };
@@ -42,6 +44,7 @@
 		7195ACEB2BF8D69100CD4579 /* Arita4.0_SB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7195ACE62BF8D69100CD4579 /* Arita4.0_SB.otf */; };
 		7195ACEC2BF8D69100CD4579 /* Arita4.0_L.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7195ACE72BF8D69100CD4579 /* Arita4.0_L.otf */; };
 		7195ACED2BF8D69100CD4579 /* Arita4.0_T.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7195ACE82BF8D69100CD4579 /* Arita4.0_T.otf */; };
+		7195ACF02BF9018700CD4579 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195ACEF2BF9018700CD4579 /* CustomButton.swift */; };
 		71B5A3B82BF7DBD700D0E957 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5A3B72BF7DBD700D0E957 /* Config.swift */; };
 		71EB61A02BF52B8D006E0707 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB619F2BF52B8D006E0707 /* UIView+.swift */; };
 		71EB61A32BF52BE8006E0707 /* className.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB61A22BF52BE8006E0707 /* className.swift */; };
@@ -50,6 +53,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D58BE2A2BF8E40D008FE0BD /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
+		0D58BE2C2BF8EC23008FE0BD /* NumOfFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumOfFriendsViewController.swift; sourceTree = "<group>"; };
 		36879A032BF8FDB100CDF610 /* CreateQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizViewController.swift; sourceTree = "<group>"; };
 		36879A062BF8FE2600CDF610 /* CustomPageIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageIndexView.swift; sourceTree = "<group>"; };
 		36879A092BF8FEBE00CDF610 /* CustomPageIndexItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageIndexItem.swift; sourceTree = "<group>"; };
@@ -80,6 +85,7 @@
 		7195ACE62BF8D69100CD4579 /* Arita4.0_SB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_SB.otf; sourceTree = "<group>"; };
 		7195ACE72BF8D69100CD4579 /* Arita4.0_L.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_L.otf; sourceTree = "<group>"; };
 		7195ACE82BF8D69100CD4579 /* Arita4.0_T.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_T.otf; sourceTree = "<group>"; };
+		7195ACEF2BF9018700CD4579 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		71B5A3B72BF7DBD700D0E957 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		71EB619F2BF52B8D006E0707 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		71EB61A22BF52BE8006E0707 /* className.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = className.swift; sourceTree = "<group>"; };
@@ -105,6 +111,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D58BE282BF8E3C3008FE0BD /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				0D58BE292BF8E3CB008FE0BD /* ViewControllers */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		0D58BE292BF8E3CB008FE0BD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D58BE2A2BF8E40D008FE0BD /* NicknameViewController.swift */,
+				0D58BE2C2BF8EC23008FE0BD /* NumOfFriendsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		36879A022BF8FD7800CDF610 /* CreateQuiz */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +236,9 @@
 			isa = PBXGroup;
 			children = (
 				36879A022BF8FD7800CDF610 /* CreateQuiz */,
+				0D58BE282BF8E3C3008FE0BD /* OnBoarding */,
 				712DF5682BF5160A00F0BCCB /* ViewController.swift */,
+				7195ACEF2BF9018700CD4579 /* CustomButton.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -405,9 +430,12 @@
 				36879A042BF8FDB100CDF610 /* CreateQuizViewController.swift in Sources */,
 				36879A0E2BF9009B00CDF610 /* QuizNavigationView.swift in Sources */,
 				712DF5652BF5160A00F0BCCB /* AppDelegate.swift in Sources */,
+				7195ACF02BF9018700CD4579 /* CustomButton.swift in Sources */,
 				712DF5672BF5160A00F0BCCB /* SceneDelegate.swift in Sources */,
 				36879A1C2BF9095300CDF610 /* InputQuestionView.swift in Sources */,
 				71EB61A02BF52B8D006E0707 /* UIView+.swift in Sources */,
+				0D58BE2D2BF8EC23008FE0BD /* NumOfFriendsViewController.swift in Sources */,
+				0D58BE2B2BF8E40D008FE0BD /* NicknameViewController.swift in Sources */,
 				71EB61A32BF52BE8006E0707 /* className.swift in Sources */,
 				36879A0C2BF9004B00CDF610 /* CreateQuizView.swift in Sources */,
 				36879A1E2BF918D100CDF610 /* PaddingLabel.swift in Sources */,
