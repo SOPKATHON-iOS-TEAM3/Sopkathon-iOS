@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D58BE2B2BF8E40D008FE0BD /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58BE2A2BF8E40D008FE0BD /* NicknameViewController.swift */; };
+		0D58BE2D2BF8EC23008FE0BD /* NumOfFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58BE2C2BF8EC23008FE0BD /* NumOfFriendsViewController.swift */; };
 		712DF5652BF5160A00F0BCCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DF5642BF5160A00F0BCCB /* AppDelegate.swift */; };
 		712DF5672BF5160A00F0BCCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DF5662BF5160A00F0BCCB /* SceneDelegate.swift */; };
 		712DF5692BF5160A00F0BCCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DF5682BF5160A00F0BCCB /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		0D58BE2A2BF8E40D008FE0BD /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
+		0D58BE2C2BF8EC23008FE0BD /* NumOfFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumOfFriendsViewController.swift; sourceTree = "<group>"; };
 		712DF5612BF5160A00F0BCCB /* Sopkathon-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sopkathon-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		712DF5642BF5160A00F0BCCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		712DF5662BF5160A00F0BCCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				0D58BE2A2BF8E40D008FE0BD /* NicknameViewController.swift */,
+				0D58BE2C2BF8EC23008FE0BD /* NumOfFriendsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				712DF5652BF5160A00F0BCCB /* AppDelegate.swift in Sources */,
 				712DF5672BF5160A00F0BCCB /* SceneDelegate.swift in Sources */,
 				71EB61A02BF52B8D006E0707 /* UIView+.swift in Sources */,
+				0D58BE2D2BF8EC23008FE0BD /* NumOfFriendsViewController.swift in Sources */,
 				0D58BE2B2BF8E40D008FE0BD /* NicknameViewController.swift in Sources */,
 				71EB61A32BF52BE8006E0707 /* className.swift in Sources */,
 				71EB61A72BF52EBD006E0707 /* MoyaLoggingPlugin.swift in Sources */,
