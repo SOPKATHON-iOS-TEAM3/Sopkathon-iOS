@@ -50,6 +50,8 @@
 		71EB61A32BF52BE8006E0707 /* className.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB61A22BF52BE8006E0707 /* className.swift */; };
 		71EB61A52BF52E87006E0707 /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB61A42BF52E87006E0707 /* DTO.swift */; };
 		71EB61A72BF52EBD006E0707 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB61A62BF52EBD006E0707 /* MoyaLoggingPlugin.swift */; };
+		A2AE1B0D2BF9021400490751 /* SolveQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AE1B0C2BF9021400490751 /* SolveQuizViewController.swift */; };
+		A2AE1B0F2BF9024100490751 /* ResultQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AE1B0E2BF9024100490751 /* ResultQuizViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +93,8 @@
 		71EB61A22BF52BE8006E0707 /* className.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = className.swift; sourceTree = "<group>"; };
 		71EB61A42BF52E87006E0707 /* DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
 		71EB61A62BF52EBD006E0707 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
+		A2AE1B0C2BF9021400490751 /* SolveQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveQuizViewController.swift; sourceTree = "<group>"; };
+		A2AE1B0E2BF9024100490751 /* ResultQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultQuizViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +239,7 @@
 		712DF57A2BF51CDD00F0BCCB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				A2AE1B0B2BF901E900490751 /* SolveQuiz */,
 				36879A022BF8FD7800CDF610 /* CreateQuiz */,
 				0D58BE282BF8E3C3008FE0BD /* OnBoarding */,
 				712DF5682BF5160A00F0BCCB /* ViewController.swift */,
@@ -321,6 +326,15 @@
 				71EB61A22BF52BE8006E0707 /* className.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		A2AE1B0B2BF901E900490751 /* SolveQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				A2AE1B0C2BF9021400490751 /* SolveQuizViewController.swift */,
+				A2AE1B0E2BF9024100490751 /* ResultQuizViewController.swift */,
+			);
+			path = SolveQuiz;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,6 +435,7 @@
 			files = (
 				36879A102BF900F200CDF610 /* QuizeNavigationProtocol.swift in Sources */,
 				712DF5912BF5225200F0BCCB /* FontLiterals.swift in Sources */,
+				A2AE1B0D2BF9021400490751 /* SolveQuizViewController.swift in Sources */,
 				712DF5692BF5160A00F0BCCB /* ViewController.swift in Sources */,
 				36879A072BF8FE2600CDF610 /* CustomPageIndexView.swift in Sources */,
 				36879A172BF904F400CDF610 /* InputAnswerView.swift in Sources */,
@@ -434,6 +449,7 @@
 				712DF5672BF5160A00F0BCCB /* SceneDelegate.swift in Sources */,
 				36879A1C2BF9095300CDF610 /* InputQuestionView.swift in Sources */,
 				71EB61A02BF52B8D006E0707 /* UIView+.swift in Sources */,
+				A2AE1B0F2BF9024100490751 /* ResultQuizViewController.swift in Sources */,
 				0D58BE2D2BF8EC23008FE0BD /* NumOfFriendsViewController.swift in Sources */,
 				0D58BE2B2BF8E40D008FE0BD /* NicknameViewController.swift in Sources */,
 				71EB61A32BF52BE8006E0707 /* className.swift in Sources */,
@@ -599,7 +615,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "th1ngjin.Sopkathon-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "th1ngjin.Sopkathon-iOSs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -628,7 +644,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "th1ngjin.Sopkathon-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "th1ngjin.Sopkathon-iOSs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
