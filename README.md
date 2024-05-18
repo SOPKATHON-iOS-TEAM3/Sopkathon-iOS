@@ -1,8 +1,7 @@
-## 1. 서비스 이름 및 간단한 소개 📱 
-### To.0 (가제)
+## 1. 서비스 이름 및 간단한 소개 📱
+### TO.0, Too
 - 의미: Too = 함께라는 의미, 모르는 사람의 정보가 0이 되도록 돕겠다는 의미
 - 간단 소개: 서로에 대한 사전 정보를 퀴즈라는 게임식 형태로, 미리 제공함으로써 첫 대화를 수월하게 도와준다.
-
 ## 2. 주요 기능 🛠️
 - 친해져야 하는 사람의 숫자, 시각적으로 제공
 - 본인의 정보에 대한 퀴즈 제작
@@ -448,9 +447,16 @@ import Then
     ├── ViewControllers
     └── Views
 ```
-## 6. 아요 팀원들의 사진 📸
+
+## 6. 시연 영상 🎥
+|ㅇㄹㅇㄹㅇ|
+|--|
+
+## 7. 아요 팀원들의 사진 📸
 ### Before 😎
 |![KakaoTalk_Photo_2024-05-18-22-06-46](https://github.com/SOPKATHON-iOS-TEAM3/Sopkathon-iOS/assets/87434861/fb4b54b9-0499-456e-8c70-894c78b884ca)|![KakaoTalk_Photo_2024-05-18-22-06-51](https://github.com/SOPKATHON-iOS-TEAM3/Sopkathon-iOS/assets/87434861/2fa4cd81-faac-4c68-85bf-2857ed7240a0)|
 |--|--|
 
-### After
+### After 🤤
+| | |
+|--|--|
