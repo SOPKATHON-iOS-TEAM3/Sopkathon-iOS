@@ -15,17 +15,23 @@ import Combine
 final class HomeViewController: UIViewController {
     
     // MARK: - UIComponents
+    
+    private let mainLogoVoew = UIImageView().then {
+        $0.image = .imgLogo
+    }
+    
     private let logoView = UIImageView().then {
         $0.backgroundColor = .red
     }
     
     private let homeMainTitleLabel = UILabel().then {
-        $0.text = "00 님의 tootoo"
+        $0.text = "00 님의 투투"
         $0.font = .title1_b_28
+        $0.textColor = .white
     }
     
     private let friendInfoView = UIView().then {
-        $0.backgroundColor = .black
+        $0.backgroundColor = .gray15
         $0.layer.cornerRadius = 10
     }
     
@@ -37,8 +43,8 @@ final class HomeViewController: UIViewController {
     
     private let numOfFriendLabel = UILabel().then {
         $0.text = "7명"
-        $0.font = .body2_m_16
-        $0.textColor = .white
+        $0.font = .body3_sb_22
+        $0.textColor = .subBlue
     }
     
     private let backgroundCloudImageView = UIImageView().then {
@@ -46,14 +52,14 @@ final class HomeViewController: UIViewController {
     }
     
     private let MainView = UIView().then {
-        $0.backgroundColor = .black
+        $0.backgroundColor = .gray15
         $0.layer.cornerRadius = 10
     }
     
     private let pointHomeMainLabel = UILabel().then {
         $0.text = "0"
         $0.font = .count_sb_100
-        $0.textColor = .white
+        $0.textColor = .mainPink
     }
     
     private let pointHomeMainInfoLabel = UILabel().then {
@@ -66,15 +72,17 @@ final class HomeViewController: UIViewController {
     
     private lazy var makeQuizButton = UIButton().then {
         $0.setTitle("퀴즈 만들기", for: .normal)
-        $0.backgroundColor = .red
+        $0.backgroundColor = .mainPink
         $0.layer.cornerRadius = 10
+        $0.titleLabel?.font = .btn_sb_24
         $0.addTarget(self, action: #selector(pushToMakeQuizViewController), for: .touchUpInside)
     }
     
     private lazy var solveQuizButton = UIButton().then {
         $0.setTitle("퀴즈 풀기", for: .normal)
-        $0.backgroundColor = .blue
+        $0.backgroundColor = .subBlue
         $0.layer.cornerRadius = 10
+        $0.titleLabel?.font = .btn_sb_24
         $0.addTarget(self, action: #selector(pushToSolveQuizViewController), for: .touchUpInside)
     }
     
@@ -118,7 +126,7 @@ final class HomeViewController: UIViewController {
     
     private let bottomView = UIView().then {
         $0.layer.cornerRadius = 10
-        $0.backgroundColor = .zeroPink
+        $0.backgroundColor = .gray700
     }
     
     private let resultInfoView = UILabel().then {
@@ -143,16 +151,22 @@ final class HomeViewController: UIViewController {
     // MARK: - UI & Layout
     
     private func setUI() {
-        view.backgroundColor = .zeroPink
+        view.backgroundColor = .background
     }
     
     private func setHierarchy() {
         view.addSubviews(
+            mainLogoVoew,
             topVStackView,
             middleVStackView,
             bottomView,
             backgroundCloudImageView
         )
+        
+        mainLogoVoew.snp.makeConstraints {
+            $0.top.equalTo(view.snp.top).offset(53.3)
+            $0.centerX.equalToSuperview()
+        }
         
         friendInfoView.addSubviews(
             presentFriendLabel,
@@ -217,7 +231,7 @@ final class HomeViewController: UIViewController {
         
         pointHomeMainInfoLabel.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.top.equalTo(pointHomeMainLabel.snp.bottom).offset(46)
+            $0.top.equalTo(pointHomeMainLabel.snp.bottom).offset(56)
             $0.width.equalTo(267)
         }
         
