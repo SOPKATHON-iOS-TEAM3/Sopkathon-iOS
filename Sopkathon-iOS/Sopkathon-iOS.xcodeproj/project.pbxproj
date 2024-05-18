@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		368799D22BF8B2AC00CDF610 /* Sopkathon-iOS-Extension in Frameworks */ = {isa = PBXBuildFile; productRef = 368799D12BF8B2AC00CDF610 /* Sopkathon-iOS-Extension */; };
 		712DF5652BF5160A00F0BCCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DF5642BF5160A00F0BCCB /* AppDelegate.swift */; };
 		712DF5672BF5160A00F0BCCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DF5662BF5160A00F0BCCB /* SceneDelegate.swift */; };
 		712DF5692BF5160A00F0BCCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DF5682BF5160A00F0BCCB /* ViewController.swift */; };
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368799D22BF8B2AC00CDF610 /* Sopkathon-iOS-Extension in Frameworks */,
 				712DF5942BF5249B00F0BCCB /* Then in Frameworks */,
 				712DF5972BF524A700F0BCCB /* SnapKit in Frameworks */,
 				712DF59C2BF524C100F0BCCB /* CombineMoya in Frameworks */,
@@ -218,6 +220,7 @@
 				712DF59D2BF524C100F0BCCB /* Moya */,
 				712DF59F2BF524C100F0BCCB /* ReactiveMoya */,
 				712DF5A12BF524C100F0BCCB /* RxMoya */,
+				368799D12BF8B2AC00CDF610 /* Sopkathon-iOS-Extension */,
 			);
 			productName = "Sopkathon-iOS";
 			productReference = 712DF5612BF5160A00F0BCCB /* Sopkathon-iOS.app */;
@@ -251,6 +254,7 @@
 				712DF5922BF5249B00F0BCCB /* XCRemoteSwiftPackageReference "Then" */,
 				712DF5952BF524A700F0BCCB /* XCRemoteSwiftPackageReference "SnapKit" */,
 				712DF59A2BF524C100F0BCCB /* XCRemoteSwiftPackageReference "Moya" */,
+				368799D02BF8B2AC00CDF610 /* XCRemoteSwiftPackageReference "Sopkathon-iOS-Extension" */,
 			);
 			productRefGroup = 712DF5622BF5160A00F0BCCB /* Products */;
 			projectDirPath = "";
@@ -511,6 +515,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		368799D02BF8B2AC00CDF610 /* XCRemoteSwiftPackageReference "Sopkathon-iOS-Extension" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SOPKATHON-iOS-TEAM3/Sopkathon-iOS-Extension";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		712DF5922BF5249B00F0BCCB /* XCRemoteSwiftPackageReference "Then" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devxoul/Then";
@@ -538,6 +550,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		368799D12BF8B2AC00CDF610 /* Sopkathon-iOS-Extension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 368799D02BF8B2AC00CDF610 /* XCRemoteSwiftPackageReference "Sopkathon-iOS-Extension" */;
+			productName = "Sopkathon-iOS-Extension";
+		};
 		712DF5932BF5249B00F0BCCB /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 712DF5922BF5249B00F0BCCB /* XCRemoteSwiftPackageReference "Then" */;

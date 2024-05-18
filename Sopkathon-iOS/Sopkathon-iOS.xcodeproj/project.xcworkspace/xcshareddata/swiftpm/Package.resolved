@@ -1,4 +1,5 @@
 {
+  "originHash" : "218ecf0b86b7d568428fa72f6aa1a6c8a5714d8abfca4d8ca2d16bc36552bdb8",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -46,6 +47,15 @@
       }
     },
     {
+      "identity" : "sopkathon-ios-extension",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SOPKATHON-iOS-TEAM3/Sopkathon-iOS-Extension",
+      "state" : {
+        "revision" : "05568c57f25b28c8cf7b1fadb29d466eee6b5c7f",
+        "version" : "1.0.0"
+      }
+    },
+    {
       "identity" : "then",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/devxoul/Then",
@@ -55,5 +65,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
