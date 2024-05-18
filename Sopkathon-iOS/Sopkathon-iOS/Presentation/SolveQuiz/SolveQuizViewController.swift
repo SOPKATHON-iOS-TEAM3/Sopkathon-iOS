@@ -40,6 +40,12 @@ final class SolveQuizViewController: UIViewController {
     
     // MARK: - Life Cycle
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -67,6 +73,10 @@ final class SolveQuizViewController: UIViewController {
     
     // MARK: - Methods
     
+    private func showResultQuizViewController() {
+        let resultQuizViewController = ResultQuizViewController()
+        self.navigationController?.pushViewController(resultQuizViewController, animated: true)
+    }
 }
 
 // MARK: - UICollectionViewDelegate
@@ -102,5 +112,9 @@ extension SolveQuizViewController: UICollectionViewDataSource {
 extension SolveQuizViewController: NextButtonProtocol {
     func pagingToNextQuestion() {
         solveQuizCollectionView.setContentOffset(CGPoint(x: Int(UIScreen.main.bounds.width) * min(index + 1, 2), y: 0), animated: true)
+
+        if index == 2 {
+            showResultQuizViewController()
+        }
     }
 }
