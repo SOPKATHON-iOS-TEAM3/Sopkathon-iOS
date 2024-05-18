@@ -33,6 +33,20 @@ extension SolveQuizService {
         })
     }
     
+    func getQuizList(inviteCode: String, completion: @escaping (NetworkResult<Any>) -> Void) {
+        solveQuizProvider.request(.getQuizList(inviteCode: "code"), completion: { result in
+            switch result {
+            case .success(let response):
+                let statusCode = response.statusCode
+                let data = response.data
+                let networkResult = self.judgeStatus(by: statusCode, data, GetQuizListResponse.self)
+                completion(networkResult)
+            case .failure:
+                completion(.networkFail)
+            }
+        })
+    }
+    
     public func judgeStatus<T: Codable>(by statusCode: Int, _ data: Data, _ object: T.Type) -> NetworkResult<Any> {
         
         switch statusCode {

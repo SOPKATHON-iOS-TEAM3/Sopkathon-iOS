@@ -10,6 +10,7 @@ import Foundation
 import Moya
 
 enum SolveQuizTargetType {
+    case getQuizList(inviteCode: String)
     case postUserChoice(req: PostUserChoiceRequest)
 }
 
@@ -25,6 +26,8 @@ extension SolveQuizTargetType: TargetType {
         switch self {
         case .postUserChoice:
             return "/api/v1/user-choice"
+        case .getQuizList:
+            return "/api/v1/quiz"
         }
     }
     
@@ -32,6 +35,8 @@ extension SolveQuizTargetType: TargetType {
         switch self {
         case .postUserChoice:
             return .post
+        case .getQuizList:
+            return .get
         }
     }
     
@@ -39,6 +44,11 @@ extension SolveQuizTargetType: TargetType {
         switch self {
         case .postUserChoice(let req):
             return .requestJSONEncodable(req)
+        case .getQuizList(inviteCode: let inviteCode):
+            let parameters: [String: Any] = [
+                "inviteCode": inviteCode
+            ]
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
         }
     }
     

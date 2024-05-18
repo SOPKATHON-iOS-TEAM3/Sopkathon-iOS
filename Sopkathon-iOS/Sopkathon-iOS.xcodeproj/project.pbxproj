@@ -66,6 +66,7 @@
 		A2C93E162BF9538B00CF7932 /* PostUserChoiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C93E152BF9538B00CF7932 /* PostUserChoiceRequest.swift */; };
 		A2C93E182BF9543A00CF7932 /* SolveQuizService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C93E172BF9543A00CF7932 /* SolveQuizService.swift */; };
 		A2C93E1A2BF9545600CF7932 /* SolveQuizTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C93E192BF9545600CF7932 /* SolveQuizTargetType.swift */; };
+		A2C93E1C2BF9586800CF7932 /* GetQuizListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C93E1B2BF9586800CF7932 /* GetQuizListResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +124,7 @@
 		A2C93E152BF9538B00CF7932 /* PostUserChoiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUserChoiceRequest.swift; sourceTree = "<group>"; };
 		A2C93E172BF9543A00CF7932 /* SolveQuizService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveQuizService.swift; sourceTree = "<group>"; };
 		A2C93E192BF9545600CF7932 /* SolveQuizTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveQuizTargetType.swift; sourceTree = "<group>"; };
+		A2C93E1B2BF9586800CF7932 /* GetQuizListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetQuizListResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +287,7 @@
 				0D6A0FE22BF94A5100BD8A15 /* SignUpMemberResponseModel.swift */,
 				0D6A0FE62BF94B8900BD8A15 /* SignUpMemberRequestModel.swift */,
 				A2C93E152BF9538B00CF7932 /* PostUserChoiceRequest.swift */,
+				A2C93E1B2BF9586800CF7932 /* GetQuizListResponse.swift */,
 				0D6A0FE42BF94B1100BD8A15 /* UserTargetType.swift */,
 				7125315C2BF9467D0099E8F8 /* NetworkResult.swift */,
 				7125315E2BF946B00099E8F8 /* MainTargetType.swift */,
@@ -515,6 +518,7 @@
 				7125315F2BF946B00099E8F8 /* MainTargetType.swift in Sources */,
 				A2C93E0C2BF9147300CF7932 /* SolveQuizCollectionViewCell.swift in Sources */,
 				A2C93E142BF9410400CF7932 /* HomeViewController.swift in Sources */,
+				A2C93E1C2BF9586800CF7932 /* GetQuizListResponse.swift in Sources */,
 				A2AE1B0F2BF9024100490751 /* ResultQuizViewController.swift in Sources */,
 				0D6A0FE52BF94B1100BD8A15 /* UserTargetType.swift in Sources */,
 				0D58BE2D2BF8EC23008FE0BD /* NumOfFriendsViewController.swift in Sources */,
