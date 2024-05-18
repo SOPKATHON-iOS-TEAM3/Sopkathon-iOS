@@ -449,8 +449,8 @@ import Then
 ```
 
 ## 6. 시연 영상 🎥
-|ㅇㄹㅇㄹㅇ|
-|--|
+|![Simulator Screen Recording - iPhone 13 Pro - 2024-05-19 at 08 26 46](https://github.com/SOPKATHON-iOS-TEAM3/Sopkathon-iOS/assets/87434861/d50be952-6d68-4c0e-b91d-e51ac284afc8)||
+|--|--|
 
 ## 7. 아요 팀원들의 사진 📸
 ### Before 😎
