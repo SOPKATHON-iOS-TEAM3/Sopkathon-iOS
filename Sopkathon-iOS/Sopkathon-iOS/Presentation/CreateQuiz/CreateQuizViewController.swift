@@ -149,6 +149,8 @@ extension CreateQuizeViewController: CreateQuizProtocol {
                        index: index)
             self.createQuizeView.collectionView.setContentOffset(.init(x: Int(UIScreen.main.bounds.width) * 2, y: 0), animated: true)
         default:
+            createQuiz(data: data,
+                       index: index)
             let vc = CreateQuizResultViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         }
@@ -160,7 +162,8 @@ extension CreateQuizeViewController: CreateQuizProtocol {
 extension CreateQuizeViewController {
     func createQuiz(data: CreateQuizViewDataItem,
                     index: Int) {
-        CreateQuizService.shared.postCreateQuiz(body: .init(quizID: index + 1,
+        let userId = UserDefaults.standard.integer(forKey: "userId")
+        CreateQuizService.shared.postCreateQuiz(body: .init(quizID: userId,
                                                             questionText: data.quizQuestionList.data),
                                                 completion: { result in
             switch result {

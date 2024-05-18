@@ -13,11 +13,11 @@
 		0D6A0FE52BF94B1100BD8A15 /* UserTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A0FE42BF94B1100BD8A15 /* UserTargetType.swift */; };
 		0D6A0FE72BF94B8900BD8A15 /* SignUpMemberRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A0FE62BF94B8900BD8A15 /* SignUpMemberRequestModel.swift */; };
 		0D6A0FE92BF9541200BD8A15 /* MemberSevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A0FE82BF9541200BD8A15 /* MemberSevice.swift */; };
-		36879A042BF8FDB100CDF610 /* CreateQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A032BF8FDB100CDF610 /* CreateQuizViewController.swift */; };
 		3612C16A2BF9457C007144C2 /* CreateQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3612C1692BF9457C007144C2 /* CreateQuizViewController.swift */; };
 		3612C16C2BF94ED4007144C2 /* CreateQuizProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3612C16B2BF94ED4007144C2 /* CreateQuizProtocol.swift */; };
 		36594E382BF92BCD0064F341 /* CreateQuizResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36594E372BF92BCD0064F341 /* CreateQuizResultViewController.swift */; };
 		36594E3C2BF92DA90064F341 /* CopyCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36594E3B2BF92DA90064F341 /* CopyCodeView.swift */; };
+		3662D13D2BF9640100907B70 /* CreateQuizReqeustBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3662D13C2BF9640100907B70 /* CreateQuizReqeustBody.swift */; };
 		367DDE462BF93CAE00649832 /* CreateQuizResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367DDE452BF93CAE00649832 /* CreateQuizResultView.swift */; };
 		367DDE4A2BF93CCA00649832 /* CreateQuizResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367DDE482BF93CCA00649832 /* CreateQuizResultView.swift */; };
 		367DDE4C2BF9424100649832 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367DDE4B2BF9424100649832 /* UIColor+.swift */; };
@@ -89,12 +89,12 @@
 		0D6A0FE42BF94B1100BD8A15 /* UserTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTargetType.swift; sourceTree = "<group>"; };
 		0D6A0FE62BF94B8900BD8A15 /* SignUpMemberRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMemberRequestModel.swift; sourceTree = "<group>"; };
 		0D6A0FE82BF9541200BD8A15 /* MemberSevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberSevice.swift; sourceTree = "<group>"; };
-		36879A032BF8FDB100CDF610 /* CreateQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizViewController.swift; sourceTree = "<group>"; };
 		3612C1692BF9457C007144C2 /* CreateQuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuizViewController.swift; sourceTree = "<group>"; };
 		3612C16B2BF94ED4007144C2 /* CreateQuizProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizProtocol.swift; sourceTree = "<group>"; };
 		36594E372BF92BCD0064F341 /* CreateQuizResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizResultViewController.swift; sourceTree = "<group>"; };
 		36594E392BF92BF30064F341 /* CreateQuizResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizResultView.swift; sourceTree = "<group>"; };
 		36594E3B2BF92DA90064F341 /* CopyCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyCodeView.swift; sourceTree = "<group>"; };
+		3662D13C2BF9640100907B70 /* CreateQuizReqeustBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizReqeustBody.swift; sourceTree = "<group>"; };
 		367DDE422BF93C7900649832 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		367DDE452BF93CAE00649832 /* CreateQuizResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateQuizResultView.swift; path = Base/CreateQuizResultView.swift; sourceTree = "<group>"; };
 		367DDE482BF93CCA00649832 /* CreateQuizResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuizResultView.swift; sourceTree = "<group>"; };
@@ -287,6 +287,7 @@
 				368A75E52BF955BE0071F2BE /* CreateAnswoerModel.swift */,
 				368A75E72BF955DA0071F2BE /* CreateQuizModel.swift */,
 				368A75E92BF957100071F2BE /* CreateQuizResponseDTO.swift */,
+				3662D13C2BF9640100907B70 /* CreateQuizReqeustBody.swift */,
 			);
 			path = CreateQuize;
 			sourceTree = "<group>";
@@ -563,6 +564,7 @@
 				A2C93E102BF92F1300CF7932 /* NextButtonProtocol.swift in Sources */,
 				36879A102BF900F200CDF610 /* QuizeNavigationProtocol.swift in Sources */,
 				712DF5912BF5225200F0BCCB /* FontLiterals.swift in Sources */,
+				3662D13D2BF9640100907B70 /* CreateQuizReqeustBody.swift in Sources */,
 				368A75EA2BF957100071F2BE /* CreateQuizResponseDTO.swift in Sources */,
 				368A75E42BF954590071F2BE /* CreateQuizTypeTargetType.swift in Sources */,
 				A2AE1B0D2BF9021400490751 /* SolveQuizViewController.swift in Sources */,

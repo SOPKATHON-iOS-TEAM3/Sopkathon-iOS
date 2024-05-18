@@ -21,7 +21,6 @@ extension MemberService {
         userProvider.request(.signUp(request: request)) { result in
             switch result {
             case .success(let response):
-                UserDefaults.standard.setValue(1, forKey: "userId")
                 print("🫶 memberID는 \(String(describing: response.response?.allHeaderFields["Location"]))")
                 
                 let statusCode = response.statusCode

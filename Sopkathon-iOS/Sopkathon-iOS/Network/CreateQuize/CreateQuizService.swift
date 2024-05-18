@@ -17,6 +17,22 @@ final class CreateQuizService {
 }
 
 extension CreateQuizService {
+    func posetCreateFirstQuiz(body: CreateQuizReqeustBody, completion: @escaping (NetworkResult<Any>) -> Void) {
+        createQuizProvider.request(.postQuiz(request: body), completion: { result in
+            switch result {
+            case .success(let response):
+                let statusCode = response.statusCode
+                let data = response.data
+                
+                let networkResult = self.judgeStatus(by: statusCode, data, CreateQuizResponseDTO.self)
+                completion(networkResult)
+                
+            case .failure:
+                completion(.networkFail)
+            }
+        })
+    }
+    
     func postCreateQuiz(body: CreateQuizModel, completion: @escaping (NetworkResult<Any>) -> Void) {
         createQuizProvider.request(.postQuestionId(requestBody: body), completion: { result in
             switch result {

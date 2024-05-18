@@ -9,6 +9,7 @@ import Foundation
 import Moya
 
 enum CreateQuizTypeTargetType {
+    case postQuiz(request: CreateQuizReqeustBody)
     case postQuestionId(requestBody: CreateQuizModel)
     case createAnswer(requestBody: CreateAnswoerModel)
 }
@@ -27,6 +28,8 @@ extension CreateQuizTypeTargetType: TargetType {
             return "/api/v1/question"
         case .createAnswer:
             return "/api/v1/answers"
+        case .postQuiz:
+            return "/api/v1/quiz"
         }
     }
     
@@ -36,6 +39,8 @@ extension CreateQuizTypeTargetType: TargetType {
             return .post
         case .createAnswer:
             return .post
+        case .postQuiz:
+            return .post
         }
     }
     
@@ -44,6 +49,8 @@ extension CreateQuizTypeTargetType: TargetType {
         case .createAnswer(let body):
             return .requestJSONEncodable(body)
         case .postQuestionId(let body):
+            return .requestJSONEncodable(body)
+        case .postQuiz(let body):
             return .requestJSONEncodable(body)
         }
     }

@@ -18,12 +18,14 @@ final class CopyCodeView: UIView {
     }
     // MARK: - UIComponents
     private let backgroundImageView = UIImageView().then {
+        $0.isUserInteractionEnabled = true
         $0.image = .copyCodeButtonBackground
         $0.contentMode = .scaleAspectFill
         $0.clipsToBounds = true
         $0.layer.cornerRadius = 10
     }
     private let iconImageView = UIImageView().then {
+        $0.isUserInteractionEnabled = true
         $0.contentMode = .scaleAspectFill
         $0.image = .icCodeIcon
     }
