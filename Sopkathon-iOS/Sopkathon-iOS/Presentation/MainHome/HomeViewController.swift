@@ -263,8 +263,28 @@ final class HomeViewController: UIViewController {
     
     @objc
     private func pushToMakeQuizViewController() {
-        let vc = ViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+        let userId = UserDefaults.standard.integer(forKey: "userId")
+        CreateQuizService.shared.posetCreateFirstQuiz(body: .init(memberId: userId),
+                                                      completion: { result in
+            switch result {
+            case .success(let t):
+                let vc = CreateQuizeViewController()
+                self.navigationController?.pushViewController(vc, animated: true)
+                if let result = t as? CreateQuizResponseDTO {
+                    print(result.message)
+                }
+            case .requestErr:
+                print("requestErr")
+            case .decodedErr:
+                print("decodedErr")
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+        })
     }
     
     @objc
@@ -274,12 +294,14 @@ final class HomeViewController: UIViewController {
     }
     
     func setData(data: memberDTO) {
+        numOfFriendLabel.text = "\(data.targetFriend)명"
+        homeMainTitleLabel.text = "\(data.nickName)님의 투투"
         pointHomeMainLabel.text = "\(data.targetFriend)"
     }
     
     private func fetchData() {
-        
-        MainService.shared.fetctMemberData(memberId: 0) { [weak self] response in
+        let userId = UserDefaults.standard.integer(forKey: "userId")
+        MainService.shared.fetctMemberData(memberId: userId) { [weak self] response in
             switch response {
             case .success(let data):
                 guard let data = data as? memberDTO else { return }

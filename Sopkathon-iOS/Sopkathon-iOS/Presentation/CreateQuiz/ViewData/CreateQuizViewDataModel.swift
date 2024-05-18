@@ -8,6 +8,7 @@ struct CreateQuizViewDataItem: Hashable {
     var order: Int
     var title: String
     var subTitle: String
+    var subTitleThin: String
     var quizQuestionList: QuizQuestion
     var quizCorrectAnswerList: QuizQuestion
     var quizInCorrectAnswerList: QuizQuestion
