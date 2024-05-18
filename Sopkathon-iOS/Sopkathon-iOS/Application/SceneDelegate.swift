@@ -16,11 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowScene)
-<<<<<<< HEAD
-        let vc = NumOfFriendsViewController()
-=======
-        let vc = UINavigationController(rootViewController: HomeViewController())
->>>>>>> 37fe2a4aeacfad74b0a8006ecd07262545c528d8
+        let vc = UINavigationController(rootViewController: NumOfFriendsViewController())
         window.rootViewController = vc
         self.window = window
         window.makeKeyAndVisible()

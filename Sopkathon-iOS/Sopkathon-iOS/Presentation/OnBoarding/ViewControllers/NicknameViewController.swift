@@ -14,7 +14,7 @@ import Then
 final class NicknameViewController: UIViewController {
 
     private let characterImageView = UIImageView().then {
-        $0.image = .imgOnBoarding
+        $0.image = .imgOnboarding
     }
     
     private let nicknameLabel = UILabel().then {
