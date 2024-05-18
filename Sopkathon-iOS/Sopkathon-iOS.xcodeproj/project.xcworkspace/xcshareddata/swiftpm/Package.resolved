@@ -50,8 +50,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SOPKATHON-iOS-TEAM3/Sopkathon-iOS-Extension",
       "state" : {
-        "revision" : "3b6992086c1be941d5504dc1cc710d38bee8b992",
-        "version" : "1.0.2"
+        "revision" : "fe2cd056d4b740e59b313dce8db7c4e65d106598",
+        "version" : "1.0.1"
       }
     },
     {
