@@ -17,12 +17,15 @@ final class CopyCodeView: UIView {
         setConfig()
     }
     // MARK: - UIComponents
+    private let backgroundImageView = UIImageView().then {
+        $0.image = .copyCodeButtonBackground
+        $0.contentMode = .scaleAspectFill
+        $0.clipsToBounds = true
+        $0.layer.cornerRadius = 10
+    }
     private let iconImageView = UIImageView().then {
         $0.contentMode = .scaleAspectFill
         $0.image = .icCodeIcon
-    }
-    private let contentImageView = UIImageView().then {
-        $0.contentMode = .scaleAspectFill
     }
     private let titleLabel = UILabel().then {
         $0.font = .title4_b_18
@@ -36,20 +39,26 @@ final class CopyCodeView: UIView {
     private let descriptionLabel = UILabel().then {
         $0.font = .body8_r_12
         $0.textColor = .white
+        $0.text = "남이 보는 나? 궁금하다면 지금 바로 공유하세요!"
     }
     
     // MARK: - Life Cycles
     // MARK: - UI & Layout
     private func setUI() {
         self.backgroundColor = .lightGray
+        self.clipsToBounds = true
+        self.layer.cornerRadius = 10
     }
     
     private func setLayout() {
-        self.addSubviews(iconImageView,
-                         contentImageView,
+        self.addSubviews(backgroundImageView,
+                         iconImageView,
                          titleLabel,
                          codeLabel,
                          descriptionLabel)
+        backgroundImageView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
         iconImageView.snp.makeConstraints {
             $0.top.equalToSuperview().offset(24)
             $0.leading.equalToSuperview().offset(20)
@@ -64,15 +73,8 @@ final class CopyCodeView: UIView {
             $0.leading.equalToSuperview().offset(24)
         }
         descriptionLabel.snp.makeConstraints {
-            $0.top.equalTo(codeLabel.snp.bottom).offset(31)
             $0.bottom.equalToSuperview().inset(14)
-            $0.leading.equalToSuperview().offset(24)
-        }
-        contentImageView.snp.makeConstraints {
-            $0.bottom.equalToSuperview().inset(14)
-            $0.trailing.equalToSuperview().offset(27)
-            $0.width.equalTo(175)
-            $0.height.equalTo(144)
+            $0.leading.equalToSuperview().offset(14)
         }
         
     }
