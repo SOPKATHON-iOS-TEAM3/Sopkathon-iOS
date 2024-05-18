@@ -15,6 +15,12 @@
 		712531532BF929D50099E8F8 /* Arita4.0_T.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7125314E2BF929D50099E8F8 /* Arita4.0_T.otf */; };
 		712531542BF929D50099E8F8 /* Arita4.0_SB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7125314F2BF929D50099E8F8 /* Arita4.0_SB.otf */; };
 		712531552BF929D50099E8F8 /* Arita4.0_M.otf in Resources */ = {isa = PBXBuildFile; fileRef = 712531502BF929D50099E8F8 /* Arita4.0_M.otf */; };
+		7125314B2BF920AB0099E8F8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7125314A2BF920AB0099E8F8 /* HomeViewController.swift */; };
+		712531512BF929D50099E8F8 /* Arita4.0_B.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7125314C2BF929D50099E8F8 /* Arita4.0_B.otf */; };
+		712531522BF929D50099E8F8 /* Arita4.0_L.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7125314D2BF929D50099E8F8 /* Arita4.0_L.otf */; };
+		712531532BF929D50099E8F8 /* Arita4.0_T.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7125314E2BF929D50099E8F8 /* Arita4.0_T.otf */; };
+		712531542BF929D50099E8F8 /* Arita4.0_SB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7125314F2BF929D50099E8F8 /* Arita4.0_SB.otf */; };
+		712531552BF929D50099E8F8 /* Arita4.0_M.otf in Resources */ = {isa = PBXBuildFile; fileRef = 712531502BF929D50099E8F8 /* Arita4.0_M.otf */; };
 		36594E382BF92BCD0064F341 /* CreateQuizResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36594E372BF92BCD0064F341 /* CreateQuizResultViewController.swift */; };
 		36594E3A2BF92BF30064F341 /* CreateQuizResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36594E392BF92BF30064F341 /* CreateQuizResultView.swift */; };
 		36594E3C2BF92DA90064F341 /* CopyCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36594E3B2BF92DA90064F341 /* CopyCodeView.swift */; };
@@ -67,6 +73,12 @@
 /* Begin PBXFileReference section */
 		0D58BE2A2BF8E40D008FE0BD /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
 		0D58BE2C2BF8EC23008FE0BD /* NumOfFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumOfFriendsViewController.swift; sourceTree = "<group>"; };
+		7125314A2BF920AB0099E8F8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7125314C2BF929D50099E8F8 /* Arita4.0_B.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_B.otf; sourceTree = "<group>"; };
+		7125314D2BF929D50099E8F8 /* Arita4.0_L.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_L.otf; sourceTree = "<group>"; };
+		7125314E2BF929D50099E8F8 /* Arita4.0_T.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_T.otf; sourceTree = "<group>"; };
+		7125314F2BF929D50099E8F8 /* Arita4.0_SB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_SB.otf; sourceTree = "<group>"; };
+		712531502BF929D50099E8F8 /* Arita4.0_M.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_M.otf; sourceTree = "<group>"; };
 		7125314A2BF920AB0099E8F8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7125314C2BF929D50099E8F8 /* Arita4.0_B.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_B.otf; sourceTree = "<group>"; };
 		7125314D2BF929D50099E8F8 /* Arita4.0_L.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_L.otf; sourceTree = "<group>"; };
@@ -158,6 +170,7 @@
 				7125314A2BF920AB0099E8F8 /* HomeViewController.swift */,
 			);
 			path = Home;
+                };
 		36879A022BF8FD7800CDF610 /* CreateQuiz */ = {
 			isa = PBXGroup;
 			children = (
