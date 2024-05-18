@@ -39,6 +39,8 @@
 		71EB61A72BF52EBD006E0707 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB61A62BF52EBD006E0707 /* MoyaLoggingPlugin.swift */; };
 		A2AE1B0D2BF9021400490751 /* SolveQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AE1B0C2BF9021400490751 /* SolveQuizViewController.swift */; };
 		A2AE1B0F2BF9024100490751 /* ResultQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AE1B0E2BF9024100490751 /* ResultQuizViewController.swift */; };
+		A2C93E0C2BF9147300CF7932 /* SolveQuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C93E0B2BF9147300CF7932 /* SolveQuizCollectionViewCell.swift */; };
+		A2C93E0E2BF91DEC00CF7932 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C93E0D2BF91DEC00CF7932 /* AnswerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		71EB61A62BF52EBD006E0707 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
 		A2AE1B0C2BF9021400490751 /* SolveQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveQuizViewController.swift; sourceTree = "<group>"; };
 		A2AE1B0E2BF9024100490751 /* ResultQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultQuizViewController.swift; sourceTree = "<group>"; };
+		A2C93E0B2BF9147300CF7932 /* SolveQuizCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveQuizCollectionViewCell.swift; sourceTree = "<group>"; };
+		A2C93E0D2BF91DEC00CF7932 /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,10 +223,20 @@
 		A2AE1B0B2BF901E900490751 /* SolveQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				A2C93E0A2BF9146200CF7932 /* Cell */,
 				A2AE1B0C2BF9021400490751 /* SolveQuizViewController.swift */,
 				A2AE1B0E2BF9024100490751 /* ResultQuizViewController.swift */,
+				A2C93E0D2BF91DEC00CF7932 /* AnswerView.swift */,
 			);
 			path = SolveQuiz;
+			sourceTree = "<group>";
+		};
+		A2C93E0A2BF9146200CF7932 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A2C93E0B2BF9147300CF7932 /* SolveQuizCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,11 +338,13 @@
 			files = (
 				712DF5912BF5225200F0BCCB /* FontLiterals.swift in Sources */,
 				A2AE1B0D2BF9021400490751 /* SolveQuizViewController.swift in Sources */,
+				A2C93E0E2BF91DEC00CF7932 /* AnswerView.swift in Sources */,
 				712DF5692BF5160A00F0BCCB /* ViewController.swift in Sources */,
 				71B5A3B82BF7DBD700D0E957 /* Config.swift in Sources */,
 				712DF5652BF5160A00F0BCCB /* AppDelegate.swift in Sources */,
 				712DF5672BF5160A00F0BCCB /* SceneDelegate.swift in Sources */,
 				71EB61A02BF52B8D006E0707 /* UIView+.swift in Sources */,
+				A2C93E0C2BF9147300CF7932 /* SolveQuizCollectionViewCell.swift in Sources */,
 				A2AE1B0F2BF9024100490751 /* ResultQuizViewController.swift in Sources */,
 				71EB61A32BF52BE8006E0707 /* className.swift in Sources */,
 				71EB61A72BF52EBD006E0707 /* MoyaLoggingPlugin.swift in Sources */,
