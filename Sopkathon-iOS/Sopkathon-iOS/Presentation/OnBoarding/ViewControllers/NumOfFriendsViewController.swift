@@ -51,7 +51,7 @@ final class NumOfFriendsViewController: UIViewController {
     
     
     private lazy var completeButton = CustomButton(title: "완료")
-      .setColor(bgColor: .key1, disableColor: .gray08)
+      .setColor(bgColor: .mainPink, disableColor: .gray08)
       .setEnabled(true)
 
     override func viewDidLoad() {
