@@ -13,8 +13,6 @@ import Then
 
 final class NumOfFriendsViewController: UIViewController {
     
-    private let logoImageView = UIImageView(image: .logoType)
-    
     private let friendsLabel = UILabel().then {
         $0.text = "내가 친해지고 싶은 친구는.."
         $0.textColor = .white
@@ -70,7 +68,7 @@ final class NumOfFriendsViewController: UIViewController {
 private extension NumOfFriendsViewController {
     
     func setHierarchy() {
-        view.addSubviews(logoImageView, friendsLabel, numStackView, completeButton)
+        view.addSubviews(friendsLabel, numStackView, completeButton)
         
     }
     
@@ -78,12 +76,6 @@ private extension NumOfFriendsViewController {
         self.view.backgroundColor = .background
         //navigationItem.hidesBackButton = true
         
-        logoImageView.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(58)
-            $0.centerX.equalToSuperview()
-            $0.width.equalTo(150)
-            $0.height.equalTo(70)
-        }
         
         friendsLabel.snp.makeConstraints {
             $0.top.equalToSuperview().inset(241)
