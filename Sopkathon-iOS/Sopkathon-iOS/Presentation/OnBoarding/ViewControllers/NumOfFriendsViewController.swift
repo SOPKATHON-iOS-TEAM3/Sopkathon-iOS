@@ -79,6 +79,7 @@ private extension NumOfFriendsViewController {
     
     func setLayout() {
         self.view.backgroundColor = .white
+        navigationItem.hidesBackButton = true
         
         friendsLabel.snp.makeConstraints {
             $0.top.equalToSuperview().inset(241)

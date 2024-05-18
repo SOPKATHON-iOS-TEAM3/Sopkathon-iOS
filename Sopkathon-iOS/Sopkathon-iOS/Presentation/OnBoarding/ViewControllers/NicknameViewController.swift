@@ -25,11 +25,12 @@ final class NicknameViewController: UIViewController {
         $0.backgroundColor = .gray
     }
     
-    private let nextButton = UIButton().then {
+    private lazy var nextButton = UIButton().then {
         $0.backgroundColor = .gray
         $0.setTitle("다음", for: .normal)
         $0.titleLabel?.font = UIFont(name: "Pretendard-Bold", size: 14)
         $0.layer.cornerRadius = 10
+        $0.addTarget(self, action: #selector(nextButtonClicked), for: .touchUpInside)
     }
 
     override func viewDidLoad() {
@@ -73,6 +74,16 @@ private extension NicknameViewController {
     }
     
     func setDelegate() {
-        
+
+    }
+    
+    /// 화면 전환
+    @objc func nextButtonClicked() {
+        pushToNumOfFriendsVC()
+    }
+    
+    private func pushToNumOfFriendsVC() {
+        let numOfFriendsViewController = NumOfFriendsViewController()
+        self.navigationController?.pushViewController(numOfFriendsViewController, animated: true)
     }
 }
