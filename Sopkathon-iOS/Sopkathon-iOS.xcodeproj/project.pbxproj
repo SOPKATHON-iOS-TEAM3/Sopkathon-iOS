@@ -32,6 +32,7 @@
 		7125315F2BF946B00099E8F8 /* MainTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7125315E2BF946B00099E8F8 /* MainTargetType.swift */; };
 		712531612BF946F20099E8F8 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712531602BF946F20099E8F8 /* MainService.swift */; };
 		712531632BF948220099E8F8 /* memberDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712531622BF948220099E8F8 /* memberDTO.swift */; };
+		712531652BF953DE0099E8F8 /* InviteCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712531642BF953DE0099E8F8 /* InviteCodeViewController.swift */; };
 		712DF5652BF5160A00F0BCCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DF5642BF5160A00F0BCCB /* AppDelegate.swift */; };
 		712DF5672BF5160A00F0BCCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DF5662BF5160A00F0BCCB /* SceneDelegate.swift */; };
 		712DF5692BF5160A00F0BCCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DF5682BF5160A00F0BCCB /* ViewController.swift */; };
@@ -95,6 +96,7 @@
 		7125315E2BF946B00099E8F8 /* MainTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTargetType.swift; sourceTree = "<group>"; };
 		712531602BF946F20099E8F8 /* MainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
 		712531622BF948220099E8F8 /* memberDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memberDTO.swift; sourceTree = "<group>"; };
+		712531642BF953DE0099E8F8 /* InviteCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteCodeViewController.swift; sourceTree = "<group>"; };
 		712DF5612BF5160A00F0BCCB /* Sopkathon-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sopkathon-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		712DF5642BF5160A00F0BCCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		712DF5662BF5160A00F0BCCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -394,6 +396,7 @@
 			isa = PBXGroup;
 			children = (
 				A2C93E132BF9410400CF7932 /* HomeViewController.swift */,
+				712531642BF953DE0099E8F8 /* InviteCodeViewController.swift */,
 			);
 			path = MainHome;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				A2AE1B0D2BF9021400490751 /* SolveQuizViewController.swift in Sources */,
 				0D6A0FE32BF94A5100BD8A15 /* SignUpMemberResponseModel.swift in Sources */,
 				7125315D2BF9467D0099E8F8 /* NetworkResult.swift in Sources */,
+				712531652BF953DE0099E8F8 /* InviteCodeViewController.swift in Sources */,
 				A2C93E0E2BF91DEC00CF7932 /* AnswerView.swift in Sources */,
 				712DF5692BF5160A00F0BCCB /* ViewController.swift in Sources */,
 				36879A072BF8FE2600CDF610 /* CustomPageIndexView.swift in Sources */,
