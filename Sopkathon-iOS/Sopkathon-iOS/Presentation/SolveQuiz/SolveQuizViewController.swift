@@ -81,7 +81,6 @@ final class SolveQuizViewController: UIViewController {
     
     private func postUserChoices() {
         let req = PostUserChoiceRequest(memberId: 0, questionId: 1, answerId: 1)
-        /// UserService 싱글톤 객체를 사용하여 서버로 회원가입 요청 전송 및 응답 처리
         SolveQuizService.shared.postUserChoice(req: req, completion: { response in
             switch response {
             case .success(let data):
