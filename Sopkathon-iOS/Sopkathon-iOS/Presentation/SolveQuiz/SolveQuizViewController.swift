@@ -20,11 +20,12 @@ final class SolveQuizViewController: UIViewController {
     private let flowLayout = UICollectionViewFlowLayout().then {
         $0.scrollDirection = .horizontal
         $0.minimumInteritemSpacing = 0
-        $0.itemSize = CGSize(width: UIScreen.main.bounds.width, height: 140)
+        $0.itemSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
     }
         
     private lazy var solveQuizCollectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout).then {
         $0.backgroundColor = .gray
+        $0.showsHorizontalScrollIndicator = false
         $0.delegate = self
         $0.dataSource = self
         $0.register(SolveQuizCollectionViewCell.self, forCellWithReuseIdentifier: SolveQuizCollectionViewCell.className)
@@ -65,7 +66,7 @@ extension SolveQuizViewController: UICollectionViewDelegate {
 
 extension SolveQuizViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        1
+        3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

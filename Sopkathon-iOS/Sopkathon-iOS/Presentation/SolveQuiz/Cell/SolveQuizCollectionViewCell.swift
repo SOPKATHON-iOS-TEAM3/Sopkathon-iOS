@@ -15,7 +15,6 @@ class SolveQuizCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Properties
     
-    
     // MARK: - UI Components
     
     private let questionLabel = UILabel().then {
@@ -26,6 +25,8 @@ class SolveQuizCollectionViewCell: UICollectionViewCell {
     
     private let firstAnswerView = AnswerView()
     private let secondAnswerView = AnswerView()
+    
+    private let nextButton = CustomButton(title: "다음")
     
     // MARK: - Init
     
@@ -45,7 +46,7 @@ class SolveQuizCollectionViewCell: UICollectionViewCell {
     // MARK: - UI&Layout
     
     private func setLayout() {
-        addSubviews(questionLabel, firstAnswerView, secondAnswerView)
+        addSubviews(questionLabel, firstAnswerView, secondAnswerView, nextButton)
         
         questionLabel.snp.makeConstraints {
             $0.top.equalToSuperview().inset(113)
@@ -60,6 +61,11 @@ class SolveQuizCollectionViewCell: UICollectionViewCell {
             $0.horizontalEdges.equalToSuperview().inset(20)
             $0.top.equalTo(firstAnswerView.snp.bottom).offset(18)
             $0.height.equalTo(140)
+        }
+        nextButton.snp.makeConstraints {
+            $0.bottom.equalToSuperview().inset(52)
+            $0.horizontalEdges.equalToSuperview().inset(20)
+            $0.height.equalTo(60)
         }
     }
     
