@@ -49,12 +49,13 @@ final class ResultQuizViewController: UIViewController {
         $0.text = "점수를 보여주고 친구와 오늘부터 0일~"
     }
     
-    private let shareButton = UIButton().then {
+    private lazy var shareButton = UIButton().then {
         $0.titleLabel?.textColor = .black
         $0.setTitle("결과 공유하기", for: .normal)
         $0.titleLabel?.font = .systemFont(ofSize: 16)
         $0.layer.cornerRadius = 10
         $0.backgroundColor = .gray
+        $0.addTarget(self, action: #selector(shareButtonDidTap), for: .touchUpInside)
     }
     
     private let goHomeButton = UIButton().then {
@@ -126,5 +127,12 @@ final class ResultQuizViewController: UIViewController {
     
     // MARK: - Methods
     
-
+    @objc
+    private func shareButtonDidTap(_ sender: Any) {
+        guard let image = resultCardView.transfromToImage() else {
+            return
+        }
+        let vc = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        present(vc, animated: true)
+    }
 }
