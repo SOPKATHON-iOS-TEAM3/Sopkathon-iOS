@@ -29,6 +29,7 @@ final class NumOfFriendsViewController: UIViewController {
         $0.backgroundColor = .white
         $0.textColor = .gray15
         $0.textAlignment = .center
+        $0.keyboardType = .numberPad
         let attributes: [NSAttributedString.Key: Any] = [
             .foregroundColor: UIColor.black,
             .font: UIFont.title1
@@ -107,6 +108,18 @@ private extension NumOfFriendsViewController {
     }
     
     func setDelegate() {
-        
+        numTextField.delegate = self
     }
+}
+
+extension NumOfFriendsViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    
+        guard Int(string) != nil || string == "" else { return false }
+            
+        return true
+    }
+    
+
+  
 }
