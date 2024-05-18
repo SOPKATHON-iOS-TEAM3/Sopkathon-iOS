@@ -11,6 +11,11 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Arita4.0_B.otf</string>
+		<string>Arita4.0_L.otf</string>
+		<string>Arita4.0_M.otf</string>
+		<string>Arita4.0_SB.otf</string>
+		<string>Arita4.0_T.otf</string>
 		<string>Pretendard-Bold.otf</string>
 		<string>Pretendard-ExtraBold.otf</string>
 		<string>Pretendard-Light.otf</string>

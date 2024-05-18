@@ -27,6 +27,11 @@
 		7195ACDF2BF8D1DA00CD4579 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 7195ACDE2BF8D1DA00CD4579 /* Moya */; };
 		7195ACE12BF8D1DA00CD4579 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 7195ACE02BF8D1DA00CD4579 /* ReactiveMoya */; };
 		7195ACE32BF8D1DA00CD4579 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 7195ACE22BF8D1DA00CD4579 /* RxMoya */; };
+		7195ACE92BF8D69100CD4579 /* Arita4.0_M.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7195ACE42BF8D69100CD4579 /* Arita4.0_M.otf */; };
+		7195ACEA2BF8D69100CD4579 /* Arita4.0_B.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7195ACE52BF8D69100CD4579 /* Arita4.0_B.otf */; };
+		7195ACEB2BF8D69100CD4579 /* Arita4.0_SB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7195ACE62BF8D69100CD4579 /* Arita4.0_SB.otf */; };
+		7195ACEC2BF8D69100CD4579 /* Arita4.0_L.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7195ACE72BF8D69100CD4579 /* Arita4.0_L.otf */; };
+		7195ACED2BF8D69100CD4579 /* Arita4.0_T.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7195ACE82BF8D69100CD4579 /* Arita4.0_T.otf */; };
 		71B5A3B82BF7DBD700D0E957 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5A3B72BF7DBD700D0E957 /* Config.swift */; };
 		71EB61A02BF52B8D006E0707 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB619F2BF52B8D006E0707 /* UIView+.swift */; };
 		71EB61A32BF52BE8006E0707 /* className.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB61A22BF52BE8006E0707 /* className.swift */; };
@@ -49,6 +54,11 @@
 		712DF5872BF51E5800F0BCCB /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		712DF5882BF51E5800F0BCCB /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		712DF5902BF5225200F0BCCB /* FontLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontLiterals.swift; sourceTree = "<group>"; };
+		7195ACE42BF8D69100CD4579 /* Arita4.0_M.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_M.otf; sourceTree = "<group>"; };
+		7195ACE52BF8D69100CD4579 /* Arita4.0_B.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_B.otf; sourceTree = "<group>"; };
+		7195ACE62BF8D69100CD4579 /* Arita4.0_SB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_SB.otf; sourceTree = "<group>"; };
+		7195ACE72BF8D69100CD4579 /* Arita4.0_L.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_L.otf; sourceTree = "<group>"; };
+		7195ACE82BF8D69100CD4579 /* Arita4.0_T.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_T.otf; sourceTree = "<group>"; };
 		71B5A3B72BF7DBD700D0E957 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		71EB619F2BF52B8D006E0707 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		71EB61A22BF52BE8006E0707 /* className.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = className.swift; sourceTree = "<group>"; };
@@ -176,6 +186,11 @@
 				712DF5882BF51E5800F0BCCB /* Pretendard-Medium.otf */,
 				712DF5872BF51E5800F0BCCB /* Pretendard-Regular.otf */,
 				712DF5832BF51E5800F0BCCB /* Pretendard-SemiBold.otf */,
+				7195ACE52BF8D69100CD4579 /* Arita4.0_B.otf */,
+				7195ACE72BF8D69100CD4579 /* Arita4.0_L.otf */,
+				7195ACE42BF8D69100CD4579 /* Arita4.0_M.otf */,
+				7195ACE62BF8D69100CD4579 /* Arita4.0_SB.otf */,
+				7195ACE82BF8D69100CD4579 /* Arita4.0_T.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -271,13 +286,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				712DF5892BF51E5800F0BCCB /* Pretendard-SemiBold.otf in Resources */,
+				7195ACEA2BF8D69100CD4579 /* Arita4.0_B.otf in Resources */,
+				7195ACE92BF8D69100CD4579 /* Arita4.0_M.otf in Resources */,
 				712DF58B2BF51E5800F0BCCB /* Pretendard-Bold.otf in Resources */,
 				712DF58C2BF51E5800F0BCCB /* Pretendard-ExtraBold.otf in Resources */,
 				712DF58E2BF51E5800F0BCCB /* Pretendard-Medium.otf in Resources */,
+				7195ACEB2BF8D69100CD4579 /* Arita4.0_SB.otf in Resources */,
 				712DF58A2BF51E5800F0BCCB /* Pretendard-Light.otf in Resources */,
 				712DF58D2BF51E5800F0BCCB /* Pretendard-Regular.otf in Resources */,
 				712DF5712BF5160B00F0BCCB /* LaunchScreen.storyboard in Resources */,
 				712DF56E2BF5160B00F0BCCB /* Assets.xcassets in Resources */,
+				7195ACEC2BF8D69100CD4579 /* Arita4.0_L.otf in Resources */,
+				7195ACED2BF8D69100CD4579 /* Arita4.0_T.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

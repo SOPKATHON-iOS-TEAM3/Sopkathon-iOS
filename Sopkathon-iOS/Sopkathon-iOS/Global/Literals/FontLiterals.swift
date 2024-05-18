@@ -21,6 +21,12 @@ enum FontName: String {
     case pretendardMedium = "Pretendard-Medium"
     case pretendardRegular = "Pretendard-Regular"
     case pretendardSemiBold = "Pretendard-SemiBold"
+    
+    case aritaBold = "Arita4.0_B"
+    case aritaLight = "Arita4.0_L"
+    case aritaMedium = "Arita4.0_M"
+    case aritaSemiBold = "Arita4.0_SB"
+    case aritaThin = "Arita4.0_T"
 }
 
 extension UIFont {
