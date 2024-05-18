@@ -90,11 +90,11 @@ enum FontName: String {
     case pretendardRegular = "Pretendard-Regular"
     case pretendardSemiBold = "Pretendard-SemiBold"
     
-    case aritaBold = "Arita4.0_B"
-    case aritaLight = "Arita4.0_L"
-    case aritaMedium = "Arita4.0_M"
-    case aritaSemiBold = "Arita4.0_SB"
-    case aritaThin = "Arita4.0_T"
+    case aritaBold = "Arita-dotum-Bold_OTF"
+    case aritaLight = "Arita-dotum-Light_OTF"
+    case aritaMedium = "Arita-dotum-Medium_OTF"
+    case aritaSemiBold = "Arita-dotum-SemiBold_OTF"
+    case aritaThin = "Arita-dotum-Thin_OTF"
 }
 
 extension UIFont {
