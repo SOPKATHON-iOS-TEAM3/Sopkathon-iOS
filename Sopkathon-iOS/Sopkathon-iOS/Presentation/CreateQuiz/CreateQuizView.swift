@@ -28,7 +28,7 @@ final class CreateQuizView: UIView {
     // MARK: - Life Cycles
     // MARK: - UI & Layout
     private func setUI() {
-        self.backgroundColor = .lightGray
+        self.backgroundColor = UIColor(hexCode: "#018CF1")
     }
     
     private func setLayout() {
@@ -40,7 +40,7 @@ final class CreateQuizView: UIView {
         }
         
         collectionView.snp.makeConstraints {
-            $0.top.equalTo(navigationView.snp.bottom)
+            $0.top.equalTo(navigationView.snp.bottom).offset(64)
             $0.horizontalEdges.equalToSuperview()
             $0.bottom.equalToSuperview()
         }
@@ -48,6 +48,7 @@ final class CreateQuizView: UIView {
     // MARK: - Methods
     private func setConfig() {
         self.collectionView.delegate = self
+        self.collectionView.backgroundColor = .clear
     }
     // MARK: - Data Source
     // MARK: - Actions
@@ -56,5 +57,13 @@ final class CreateQuizView: UIView {
 extension CreateQuizView: UICollectionViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         navigationView.pageIndexView.setIndex(offsetX: scrollView.contentOffset.x)
+        switch navigationView.pageIndexView.index {
+        case 0:
+            self.backgroundColor = UIColor(hexCode: "#018CF1")
+        case 1:
+            self.backgroundColor = UIColor(hexCode: "#E93660")
+        default:
+            self.backgroundColor = UIColor(hexCode: "#6147FE")
+        }
     }
 }

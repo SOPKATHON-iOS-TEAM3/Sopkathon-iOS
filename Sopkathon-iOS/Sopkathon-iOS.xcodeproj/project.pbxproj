@@ -9,15 +9,14 @@
 /* Begin PBXBuildFile section */
 		0D58BE2B2BF8E40D008FE0BD /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58BE2A2BF8E40D008FE0BD /* NicknameViewController.swift */; };
 		0D58BE2D2BF8EC23008FE0BD /* NumOfFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58BE2C2BF8EC23008FE0BD /* NumOfFriendsViewController.swift */; };
+		3612C16A2BF9457C007144C2 /* CreateQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3612C1692BF9457C007144C2 /* CreateQuizViewController.swift */; };
 		36594E382BF92BCD0064F341 /* CreateQuizResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36594E372BF92BCD0064F341 /* CreateQuizResultViewController.swift */; };
 		36594E3C2BF92DA90064F341 /* CopyCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36594E3B2BF92DA90064F341 /* CopyCodeView.swift */; };
-		367DDE442BF93C7900649832 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367DDE422BF93C7900649832 /* HomeViewController.swift */; };
 		367DDE462BF93CAE00649832 /* CreateQuizResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367DDE452BF93CAE00649832 /* CreateQuizResultView.swift */; };
 		367DDE4A2BF93CCA00649832 /* CreateQuizResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367DDE482BF93CCA00649832 /* CreateQuizResultView.swift */; };
 		367DDE4C2BF9424100649832 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367DDE4B2BF9424100649832 /* UIColor+.swift */; };
 		367DDE4E2BF9432300649832 /* CreateAlreadyQuizResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367DDE4D2BF9432300649832 /* CreateAlreadyQuizResultView.swift */; };
 		367DDE502BF943A300649832 /* CreateQuizAlreadyResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367DDE4F2BF943A300649832 /* CreateQuizAlreadyResultViewController.swift */; };
-		36879A042BF8FDB100CDF610 /* CreateQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A032BF8FDB100CDF610 /* CreateQuizViewController.swift */; };
 		36879A072BF8FE2600CDF610 /* CustomPageIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A062BF8FE2600CDF610 /* CustomPageIndexView.swift */; };
 		36879A0A2BF8FEBE00CDF610 /* CustomPageIndexItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A092BF8FEBE00CDF610 /* CustomPageIndexItem.swift */; };
 		36879A0C2BF9004B00CDF610 /* CreateQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A0B2BF9004B00CDF610 /* CreateQuizView.swift */; };
@@ -28,11 +27,6 @@
 		36879A1A2BF907DD00CDF610 /* CreateQuizViewDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A192BF907DD00CDF610 /* CreateQuizViewDataModel.swift */; };
 		36879A1C2BF9095300CDF610 /* InputQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A1B2BF9095300CDF610 /* InputQuestionView.swift */; };
 		36879A1E2BF918D100CDF610 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A1D2BF918D100CDF610 /* PaddingLabel.swift */; };
-		712531512BF929D50099E8F8 /* Arita4.0_B.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7125314C2BF929D50099E8F8 /* Arita4.0_B.otf */; };
-		712531522BF929D50099E8F8 /* Arita4.0_L.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7125314D2BF929D50099E8F8 /* Arita4.0_L.otf */; };
-		712531532BF929D50099E8F8 /* Arita4.0_T.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7125314E2BF929D50099E8F8 /* Arita4.0_T.otf */; };
-		712531542BF929D50099E8F8 /* Arita4.0_SB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7125314F2BF929D50099E8F8 /* Arita4.0_SB.otf */; };
-		712531552BF929D50099E8F8 /* Arita4.0_M.otf in Resources */ = {isa = PBXBuildFile; fileRef = 712531502BF929D50099E8F8 /* Arita4.0_M.otf */; };
 		712531512BF929D50099E8F8 /* Arita4.0_B.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7125314C2BF929D50099E8F8 /* Arita4.0_B.otf */; };
 		712531522BF929D50099E8F8 /* Arita4.0_L.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7125314D2BF929D50099E8F8 /* Arita4.0_L.otf */; };
 		712531532BF929D50099E8F8 /* Arita4.0_T.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7125314E2BF929D50099E8F8 /* Arita4.0_T.otf */; };
@@ -74,7 +68,7 @@
 /* Begin PBXFileReference section */
 		0D58BE2A2BF8E40D008FE0BD /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
 		0D58BE2C2BF8EC23008FE0BD /* NumOfFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumOfFriendsViewController.swift; sourceTree = "<group>"; };
-		36879A032BF8FDB100CDF610 /* CreateQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizViewController.swift; sourceTree = "<group>"; };
+		3612C1692BF9457C007144C2 /* CreateQuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuizViewController.swift; sourceTree = "<group>"; };
 		36594E372BF92BCD0064F341 /* CreateQuizResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizResultViewController.swift; sourceTree = "<group>"; };
 		36594E392BF92BF30064F341 /* CreateQuizResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizResultView.swift; sourceTree = "<group>"; };
 		36594E3B2BF92DA90064F341 /* CopyCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyCodeView.swift; sourceTree = "<group>"; };
@@ -94,11 +88,6 @@
 		36879A192BF907DD00CDF610 /* CreateQuizViewDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizViewDataModel.swift; sourceTree = "<group>"; };
 		36879A1B2BF9095300CDF610 /* InputQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputQuestionView.swift; sourceTree = "<group>"; };
 		36879A1D2BF918D100CDF610 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
-		7125314C2BF929D50099E8F8 /* Arita4.0_B.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_B.otf; sourceTree = "<group>"; };
-		7125314D2BF929D50099E8F8 /* Arita4.0_L.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_L.otf; sourceTree = "<group>"; };
-		7125314E2BF929D50099E8F8 /* Arita4.0_T.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_T.otf; sourceTree = "<group>"; };
-		7125314F2BF929D50099E8F8 /* Arita4.0_SB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_SB.otf; sourceTree = "<group>"; };
-		712531502BF929D50099E8F8 /* Arita4.0_M.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_M.otf; sourceTree = "<group>"; };
 		7125314C2BF929D50099E8F8 /* Arita4.0_B.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_B.otf; sourceTree = "<group>"; };
 		7125314D2BF929D50099E8F8 /* Arita4.0_L.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_L.otf; sourceTree = "<group>"; };
 		7125314E2BF929D50099E8F8 /* Arita4.0_T.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_T.otf; sourceTree = "<group>"; };
@@ -171,16 +160,9 @@
 			isa = PBXGroup;
 			children = (
 				36594E392BF92BF30064F341 /* CreateQuizResultView.swift */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
-		367DDE432BF93C7900649832 /* Home */ = {
-			isa = PBXGroup;
-			children = (
 				367DDE422BF93C7900649832 /* HomeViewController.swift */,
 			);
-			path = Home;
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		367DDE492BF93CCA00649832 /* Base */ = {
@@ -195,6 +177,7 @@
 		36879A022BF8FD7800CDF610 /* CreateQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				3612C1692BF9457C007144C2 /* CreateQuizViewController.swift */,
 				367DDE492BF93CCA00649832 /* Base */,
 				367DDE452BF93CAE00649832 /* CreateQuizResultView.swift */,
 				36594E372BF92BCD0064F341 /* CreateQuizResultViewController.swift */,
@@ -529,9 +512,9 @@
 				367DDE4A2BF93CCA00649832 /* CreateQuizResultView.swift in Sources */,
 				367DDE462BF93CAE00649832 /* CreateQuizResultView.swift in Sources */,
 				36879A072BF8FE2600CDF610 /* CustomPageIndexView.swift in Sources */,
-				367DDE442BF93C7900649832 /* HomeViewController.swift in Sources */,
 				36594E3C2BF92DA90064F341 /* CopyCodeView.swift in Sources */,
 				36879A172BF904F400CDF610 /* InputAnswerView.swift in Sources */,
+				3612C16A2BF9457C007144C2 /* CreateQuizViewController.swift in Sources */,
 				71B5A3B82BF7DBD700D0E957 /* Config.swift in Sources */,
 				367DDE4E2BF9432300649832 /* CreateAlreadyQuizResultView.swift in Sources */,
 				36879A132BF903AE00CDF610 /* CreateQuizCollectionViewCell.swift in Sources */,

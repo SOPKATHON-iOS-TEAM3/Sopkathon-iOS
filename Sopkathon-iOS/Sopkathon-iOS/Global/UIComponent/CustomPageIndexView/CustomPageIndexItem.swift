@@ -9,6 +9,7 @@ final class CustomPageIndexItem: UIView {
     init() {
         super.init(frame: .zero)
         self.setLayout()
+        self.setUI()
     }
     
     required init?(coder: NSCoder) {
@@ -20,6 +21,9 @@ final class CustomPageIndexItem: UIView {
     }
     // MARK: - Life Cycles
     // MARK: - UI & Layout
+    private func setUI() {
+        self.backgroundColor = UIColor(hexCode: "#242424")
+    }
     private func setLayout() {
         self.addSubview(titleLabel)
         
@@ -34,11 +38,11 @@ final class CustomPageIndexItem: UIView {
     // MARK: - Actions
     func bindState(state: Bool) {
         if state {
-            self.backgroundColor = .black
+            self.backgroundColor = UIColor(hexCode: "#242424")
             self.titleLabel.textColor = .white
         } else {
-            self.backgroundColor = .white
-            self.titleLabel.textColor = .black
+            self.backgroundColor = UIColor(hexCode: "#242424")
+            self.titleLabel.textColor = UIColor(hexCode: "#3D3D3D")
         }
     }
     
