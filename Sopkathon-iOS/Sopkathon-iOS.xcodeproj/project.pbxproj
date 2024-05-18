@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		0D58BE2B2BF8E40D008FE0BD /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58BE2A2BF8E40D008FE0BD /* NicknameViewController.swift */; };
 		0D58BE2D2BF8EC23008FE0BD /* NumOfFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58BE2C2BF8EC23008FE0BD /* NumOfFriendsViewController.swift */; };
+		36879A042BF8FDB100CDF610 /* CreateQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A032BF8FDB100CDF610 /* CreateQuizViewController.swift */; };
+		36879A072BF8FE2600CDF610 /* CustomPageIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A062BF8FE2600CDF610 /* CustomPageIndexView.swift */; };
+		36879A0A2BF8FEBE00CDF610 /* CustomPageIndexItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A092BF8FEBE00CDF610 /* CustomPageIndexItem.swift */; };
+		36879A0C2BF9004B00CDF610 /* CreateQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A0B2BF9004B00CDF610 /* CreateQuizView.swift */; };
+		36879A0E2BF9009B00CDF610 /* QuizNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A0D2BF9009B00CDF610 /* QuizNavigationView.swift */; };
+		36879A102BF900F200CDF610 /* QuizeNavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A0F2BF900F200CDF610 /* QuizeNavigationProtocol.swift */; };
+		36879A132BF903AE00CDF610 /* CreateQuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A122BF903AE00CDF610 /* CreateQuizCollectionViewCell.swift */; };
+		36879A172BF904F400CDF610 /* InputAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A162BF904F400CDF610 /* InputAnswerView.swift */; };
+		36879A1A2BF907DD00CDF610 /* CreateQuizViewDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A192BF907DD00CDF610 /* CreateQuizViewDataModel.swift */; };
+		36879A1C2BF9095300CDF610 /* InputQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A1B2BF9095300CDF610 /* InputQuestionView.swift */; };
+		36879A1E2BF918D100CDF610 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A1D2BF918D100CDF610 /* PaddingLabel.swift */; };
 		712DF5652BF5160A00F0BCCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DF5642BF5160A00F0BCCB /* AppDelegate.swift */; };
 		712DF5672BF5160A00F0BCCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DF5662BF5160A00F0BCCB /* SceneDelegate.swift */; };
 		712DF5692BF5160A00F0BCCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DF5682BF5160A00F0BCCB /* ViewController.swift */; };
@@ -22,7 +33,6 @@
 		712DF58E2BF51E5800F0BCCB /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 712DF5882BF51E5800F0BCCB /* Pretendard-Medium.otf */; };
 		712DF5912BF5225200F0BCCB /* FontLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DF5902BF5225200F0BCCB /* FontLiterals.swift */; };
 		7195ACD12BF8CFE500CD4579 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7195ACD02BF8CFE500CD4579 /* SnapKit */; };
-		7195ACD32BF8CFE500CD4579 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 7195ACD22BF8CFE500CD4579 /* SnapKit-Dynamic */; };
 		7195ACD72BF8D0FC00CD4579 /* Sopkathon-iOS-Extension in Frameworks */ = {isa = PBXBuildFile; productRef = 7195ACD62BF8D0FC00CD4579 /* Sopkathon-iOS-Extension */; };
 		7195ACDA2BF8D1BB00CD4579 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 7195ACD92BF8D1BB00CD4579 /* Then */; };
 		7195ACDD2BF8D1DA00CD4579 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 7195ACDC2BF8D1DA00CD4579 /* CombineMoya */; };
@@ -49,6 +59,17 @@
 /* Begin PBXFileReference section */
 		0D58BE2A2BF8E40D008FE0BD /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
 		0D58BE2C2BF8EC23008FE0BD /* NumOfFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumOfFriendsViewController.swift; sourceTree = "<group>"; };
+		36879A032BF8FDB100CDF610 /* CreateQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizViewController.swift; sourceTree = "<group>"; };
+		36879A062BF8FE2600CDF610 /* CustomPageIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageIndexView.swift; sourceTree = "<group>"; };
+		36879A092BF8FEBE00CDF610 /* CustomPageIndexItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageIndexItem.swift; sourceTree = "<group>"; };
+		36879A0B2BF9004B00CDF610 /* CreateQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizView.swift; sourceTree = "<group>"; };
+		36879A0D2BF9009B00CDF610 /* QuizNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizNavigationView.swift; sourceTree = "<group>"; };
+		36879A0F2BF900F200CDF610 /* QuizeNavigationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizeNavigationProtocol.swift; sourceTree = "<group>"; };
+		36879A122BF903AE00CDF610 /* CreateQuizCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizCollectionViewCell.swift; sourceTree = "<group>"; };
+		36879A162BF904F400CDF610 /* InputAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAnswerView.swift; sourceTree = "<group>"; };
+		36879A192BF907DD00CDF610 /* CreateQuizViewDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizViewDataModel.swift; sourceTree = "<group>"; };
+		36879A1B2BF9095300CDF610 /* InputQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputQuestionView.swift; sourceTree = "<group>"; };
+		36879A1D2BF918D100CDF610 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		712DF5612BF5160A00F0BCCB /* Sopkathon-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sopkathon-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		712DF5642BF5160A00F0BCCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		712DF5662BF5160A00F0BCCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +110,6 @@
 				7195ACD12BF8CFE500CD4579 /* SnapKit in Frameworks */,
 				7195ACD72BF8D0FC00CD4579 /* Sopkathon-iOS-Extension in Frameworks */,
 				7195ACDF2BF8D1DA00CD4579 /* Moya in Frameworks */,
-				7195ACD32BF8CFE500CD4579 /* SnapKit-Dynamic in Frameworks */,
 				7195ACDD2BF8D1DA00CD4579 /* CombineMoya in Frameworks */,
 				7195ACE32BF8D1DA00CD4579 /* RxMoya in Frameworks */,
 				7195ACDA2BF8D1BB00CD4579 /* Then in Frameworks */,
@@ -114,6 +134,71 @@
 				0D58BE2C2BF8EC23008FE0BD /* NumOfFriendsViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		36879A022BF8FD7800CDF610 /* CreateQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				36879A032BF8FDB100CDF610 /* CreateQuizViewController.swift */,
+				36879A182BF907D300CDF610 /* ViewData */,
+				36879A142BF904D100CDF610 /* Components */,
+				36879A112BF903A300CDF610 /* Cell */,
+				36879A0B2BF9004B00CDF610 /* CreateQuizView.swift */,
+			);
+			path = CreateQuiz;
+			sourceTree = "<group>";
+		};
+		36879A052BF8FDFC00CDF610 /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				36879A152BF904DC00CDF610 /* NavigationView */,
+				36879A082BF8FE9200CDF610 /* CustomPageIndexView */,
+			);
+			path = UIComponent;
+			sourceTree = "<group>";
+		};
+		36879A082BF8FE9200CDF610 /* CustomPageIndexView */ = {
+			isa = PBXGroup;
+			children = (
+				36879A062BF8FE2600CDF610 /* CustomPageIndexView.swift */,
+				36879A092BF8FEBE00CDF610 /* CustomPageIndexItem.swift */,
+			);
+			path = CustomPageIndexView;
+			sourceTree = "<group>";
+		};
+		36879A112BF903A300CDF610 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				36879A122BF903AE00CDF610 /* CreateQuizCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		36879A142BF904D100CDF610 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				36879A162BF904F400CDF610 /* InputAnswerView.swift */,
+				36879A1B2BF9095300CDF610 /* InputQuestionView.swift */,
+				36879A1D2BF918D100CDF610 /* PaddingLabel.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		36879A152BF904DC00CDF610 /* NavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				36879A0D2BF9009B00CDF610 /* QuizNavigationView.swift */,
+				36879A0F2BF900F200CDF610 /* QuizeNavigationProtocol.swift */,
+			);
+			path = NavigationView;
+			sourceTree = "<group>";
+		};
+		36879A182BF907D300CDF610 /* ViewData */ = {
+			isa = PBXGroup;
+			children = (
+				36879A192BF907DD00CDF610 /* CreateQuizViewDataModel.swift */,
+			);
+			path = ViewData;
 			sourceTree = "<group>";
 		};
 		712DF5582BF5160A00F0BCCB = {
@@ -158,6 +243,7 @@
 		712DF57A2BF51CDD00F0BCCB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				36879A022BF8FD7800CDF610 /* CreateQuiz */,
 				A2AE1B0B2BF901E900490751 /* SolveQuiz */,
 				0D58BE282BF8E3C3008FE0BD /* OnBoarding */,
 				712DF5682BF5160A00F0BCCB /* ViewController.swift */,
@@ -178,6 +264,7 @@
 		712DF57C2BF51CFB00F0BCCB /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				36879A052BF8FDFC00CDF610 /* UIComponent */,
 				712DF57F2BF51D8A00F0BCCB /* Extension */,
 				712DF58F2BF51EE000F0BCCB /* Literals */,
 				712DF57E2BF51D4B00F0BCCB /* Resource */,
@@ -282,7 +369,6 @@
 			name = "Sopkathon-iOS";
 			packageProductDependencies = (
 				7195ACD02BF8CFE500CD4579 /* SnapKit */,
-				7195ACD22BF8CFE500CD4579 /* SnapKit-Dynamic */,
 				7195ACD62BF8D0FC00CD4579 /* Sopkathon-iOS-Extension */,
 				7195ACD92BF8D1BB00CD4579 /* Then */,
 				7195ACDC2BF8D1DA00CD4579 /* CombineMoya */,
@@ -361,22 +447,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36879A102BF900F200CDF610 /* QuizeNavigationProtocol.swift in Sources */,
 				712DF5912BF5225200F0BCCB /* FontLiterals.swift in Sources */,
 				A2AE1B0D2BF9021400490751 /* SolveQuizViewController.swift in Sources */,
 				A2C93E0E2BF91DEC00CF7932 /* AnswerView.swift in Sources */,
 				712DF5692BF5160A00F0BCCB /* ViewController.swift in Sources */,
+				36879A072BF8FE2600CDF610 /* CustomPageIndexView.swift in Sources */,
+				36879A172BF904F400CDF610 /* InputAnswerView.swift in Sources */,
 				71B5A3B82BF7DBD700D0E957 /* Config.swift in Sources */,
+				36879A132BF903AE00CDF610 /* CreateQuizCollectionViewCell.swift in Sources */,
+				36879A1A2BF907DD00CDF610 /* CreateQuizViewDataModel.swift in Sources */,
+				36879A042BF8FDB100CDF610 /* CreateQuizViewController.swift in Sources */,
+				36879A0E2BF9009B00CDF610 /* QuizNavigationView.swift in Sources */,
 				712DF5652BF5160A00F0BCCB /* AppDelegate.swift in Sources */,
 				7195ACF02BF9018700CD4579 /* CustomButton.swift in Sources */,
 				712DF5672BF5160A00F0BCCB /* SceneDelegate.swift in Sources */,
+				36879A1C2BF9095300CDF610 /* InputQuestionView.swift in Sources */,
 				71EB61A02BF52B8D006E0707 /* UIView+.swift in Sources */,
 				A2C93E0C2BF9147300CF7932 /* SolveQuizCollectionViewCell.swift in Sources */,
 				A2AE1B0F2BF9024100490751 /* ResultQuizViewController.swift in Sources */,
 				0D58BE2D2BF8EC23008FE0BD /* NumOfFriendsViewController.swift in Sources */,
 				0D58BE2B2BF8E40D008FE0BD /* NicknameViewController.swift in Sources */,
 				71EB61A32BF52BE8006E0707 /* className.swift in Sources */,
+				36879A0C2BF9004B00CDF610 /* CreateQuizView.swift in Sources */,
+				36879A1E2BF918D100CDF610 /* PaddingLabel.swift in Sources */,
 				71EB61A72BF52EBD006E0707 /* MoyaLoggingPlugin.swift in Sources */,
 				71EB61A52BF52E87006E0707 /* DTO.swift in Sources */,
+				36879A0A2BF8FEBE00CDF610 /* CustomPageIndexItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,7 +618,7 @@
 				BASE_URL = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LM9BKUSL5K;
+				DEVELOPMENT_TEAM = U24ZACT97M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Sopkathon-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -550,7 +647,7 @@
 				BASE_URL = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LM9BKUSL5K;
+				DEVELOPMENT_TEAM = U24ZACT97M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Sopkathon-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -634,11 +731,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7195ACCF2BF8CFE500CD4579 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		7195ACD22BF8CFE500CD4579 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7195ACCF2BF8CFE500CD4579 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
 		};
 		7195ACD62BF8D0FC00CD4579 /* Sopkathon-iOS-Extension */ = {
 			isa = XCSwiftPackageProductDependency;
