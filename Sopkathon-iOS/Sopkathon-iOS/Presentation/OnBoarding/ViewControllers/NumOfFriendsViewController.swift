@@ -15,21 +15,22 @@ final class NumOfFriendsViewController: UIViewController {
     
     private let friendsLabel = UILabel().then {
         $0.text = "내가 친해지고 싶은 친구는.."
-        $0.textColor = .black
+        $0.textColor = .white
         $0.textAlignment = .center
         $0.numberOfLines = 1
-        $0.font = .title1
+        $0.font = .title1_b_28
     }
     
     private let numTextField = UITextField().then {
-        $0.font = .title1
+        $0.font = .body3_sb_22
         $0.layer.cornerRadius = 10
-        $0.backgroundColor = .gray
-        $0.textColor = .white
+        $0.backgroundColor = .white
+        $0.textColor = .gray15
         $0.textAlignment = .center
+        $0.keyboardType = .numberPad
         let attributes: [NSAttributedString.Key: Any] = [
-            .foregroundColor: UIColor.black,
-            .font: UIFont.title1
+            .foregroundColor: UIColor.gray08,
+            .font: UIFont.body3_sb_22
         ]
         let attributedPlaceholder = NSAttributedString(string: "0", attributes: attributes)
         $0.attributedPlaceholder = attributedPlaceholder
@@ -37,8 +38,9 @@ final class NumOfFriendsViewController: UIViewController {
     
     private let numLabel = UILabel().then {
         $0.text = "명"
-        $0.textColor = .black
+        $0.textColor = .white
         $0.textAlignment = .center
+        $0.font = .title1_b_28
         $0.numberOfLines = 1
         $0.font = .title1
     }
@@ -50,12 +52,9 @@ final class NumOfFriendsViewController: UIViewController {
     }
     
     
-    private let completeButton = UIButton().then {
-        $0.backgroundColor = .gray
-        $0.setTitle("완료", for: .normal)
-        $0.titleLabel?.font = UIFont(name: "Pretendard-Bold", size: 14)
-        $0.layer.cornerRadius = 10
-    }
+    private lazy var completeButton = CustomButton(title: "완료")
+      .setColor(bgColor: .subBlue, disableColor: .gray08)
+      .setEnabled(false)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,8 +73,9 @@ private extension NumOfFriendsViewController {
     }
     
     func setLayout() {
-        self.view.backgroundColor = .white
-        navigationItem.hidesBackButton = true
+        self.view.backgroundColor = .background
+        //navigationItem.hidesBackButton = true
+        
         
         friendsLabel.snp.makeConstraints {
             $0.top.equalToSuperview().inset(241)
@@ -101,6 +101,25 @@ private extension NumOfFriendsViewController {
     }
     
     func setDelegate() {
-        
+        numTextField.delegate = self
+    }
+}
+
+extension NumOfFriendsViewController: UITextFieldDelegate {
+    
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        updateButtonState(for: textField.text ?? "")
+    }
+    
+    private func updateButtonState(for text: String) {
+        let regularExpression = "^[0-9]+$"
+        let target = text
+        print(target)
+        if let targetIndex = target.range(of: regularExpression, options: .regularExpression) {
+            completeButton.setEnabled(true)
+        } else {
+            completeButton.setEnabled(false)
+        }
+
     }
 }
