@@ -10,6 +10,7 @@
 		0D58BE2B2BF8E40D008FE0BD /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58BE2A2BF8E40D008FE0BD /* NicknameViewController.swift */; };
 		0D58BE2D2BF8EC23008FE0BD /* NumOfFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58BE2C2BF8EC23008FE0BD /* NumOfFriendsViewController.swift */; };
 		3612C16A2BF9457C007144C2 /* CreateQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3612C1692BF9457C007144C2 /* CreateQuizViewController.swift */; };
+		3612C16C2BF94ED4007144C2 /* CreateQuizProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3612C16B2BF94ED4007144C2 /* CreateQuizProtocol.swift */; };
 		36594E382BF92BCD0064F341 /* CreateQuizResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36594E372BF92BCD0064F341 /* CreateQuizResultViewController.swift */; };
 		36594E3C2BF92DA90064F341 /* CopyCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36594E3B2BF92DA90064F341 /* CopyCodeView.swift */; };
 		367DDE462BF93CAE00649832 /* CreateQuizResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367DDE452BF93CAE00649832 /* CreateQuizResultView.swift */; };
@@ -69,6 +70,7 @@
 		0D58BE2A2BF8E40D008FE0BD /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
 		0D58BE2C2BF8EC23008FE0BD /* NumOfFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumOfFriendsViewController.swift; sourceTree = "<group>"; };
 		3612C1692BF9457C007144C2 /* CreateQuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuizViewController.swift; sourceTree = "<group>"; };
+		3612C16B2BF94ED4007144C2 /* CreateQuizProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizProtocol.swift; sourceTree = "<group>"; };
 		36594E372BF92BCD0064F341 /* CreateQuizResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizResultViewController.swift; sourceTree = "<group>"; };
 		36594E392BF92BF30064F341 /* CreateQuizResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizResultView.swift; sourceTree = "<group>"; };
 		36594E3B2BF92DA90064F341 /* CopyCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyCodeView.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				36879A112BF903A300CDF610 /* Cell */,
 				36879A0B2BF9004B00CDF610 /* CreateQuizView.swift */,
 				367DDE4F2BF943A300649832 /* CreateQuizAlreadyResultViewController.swift */,
+				3612C16B2BF94ED4007144C2 /* CreateQuizProtocol.swift */,
 			);
 			path = CreateQuiz;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				A2C93E0E2BF91DEC00CF7932 /* AnswerView.swift in Sources */,
 				712DF5692BF5160A00F0BCCB /* ViewController.swift in Sources */,
 				367DDE4A2BF93CCA00649832 /* CreateQuizResultView.swift in Sources */,
+				3612C16C2BF94ED4007144C2 /* CreateQuizProtocol.swift in Sources */,
 				367DDE462BF93CAE00649832 /* CreateQuizResultView.swift in Sources */,
 				36879A072BF8FE2600CDF610 /* CustomPageIndexView.swift in Sources */,
 				36594E3C2BF92DA90064F341 /* CopyCodeView.swift in Sources */,

@@ -44,6 +44,7 @@ class CreateQuizeViewController: UIViewController {
         super.viewDidLoad()
         bindDataSource()
         setDataSource()
+        setConfig()
     }
     
     override func viewDidLayoutSubviews() {
@@ -62,6 +63,44 @@ class CreateQuizeViewController: UIViewController {
     // MARK: - Methods
     private func setConfig() {
         createQuizeView.navigationView.delegate = self
+        createQuizeView.button.addTarget(self,
+                                         action: #selector(didButtonTapped(_:)),
+                                         for: .touchUpInside)
+    }
+    
+    @objc private func didButtonTapped(_ sender: UIButton) {
+        let index = createQuizeView.navigationView.pageIndexView.index
+        switch index {
+        case 0:
+            self.getCurrentPageInfo(index: 0)
+            self.createQuizeView.collectionView.setContentOffset(.init(x: Int(UIScreen.main.bounds.width), y: 0), animated: true)
+        case 1:
+            self.getCurrentPageInfo(index: 1)
+            self.createQuizeView.collectionView.setContentOffset(.init(x: Int(UIScreen.main.bounds.width) * 2, y: 0), animated: true)
+        default:
+            self.getCurrentPageInfo(index: 2)
+            let vc = CreateQuizResultViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
+    }
+    
+    
+    private func getCurrentPageInfo(index: Int) {
+        switch index {
+        case 0:
+            if let currentCell = createQuizeView.collectionView.cellForItem(at: .init(row: 0, section: 0)) as? CreateQuizCollectionViewCell {
+                currentCell.getCellCurrentData()
+            }
+        case 1:
+            if let currentCell = createQuizeView.collectionView.cellForItem(at: .init(row: 1, section: 0)) as? CreateQuizCollectionViewCell {
+                currentCell.getCellCurrentData()
+            }
+        default:
+            if let currentCell = createQuizeView.collectionView.cellForItem(at: .init(row: 2, section: 0)) as? CreateQuizCollectionViewCell {
+                currentCell.getCellCurrentData()
+            }
+        }
     }
     // MARK: - Data Source
     private var createQuizDict = [UUID: CreateQuizViewDataItem]()
@@ -88,6 +127,7 @@ class CreateQuizeViewController: UIViewController {
             if let item = self.createQuizDict[identifier] {
                 cell.bindData(data: item)
             }
+            cell.delegate = self
             
             return cell
         })
@@ -98,5 +138,10 @@ class CreateQuizeViewController: UIViewController {
 extension CreateQuizeViewController: QuizeNavigationProtocol {
     func backButtonTap() {
         self.navigationController?.popViewController(animated: true)
+    }
+}
+extension CreateQuizeViewController: CreateQuizProtocol {
+    func getItem(data: CreateQuizViewDataItem) {
+        print(data)
     }
 }

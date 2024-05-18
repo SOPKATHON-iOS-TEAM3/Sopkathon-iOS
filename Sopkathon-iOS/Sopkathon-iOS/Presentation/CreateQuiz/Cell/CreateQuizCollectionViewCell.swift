@@ -5,6 +5,8 @@ import Sopkathon_iOS_Extension
 import Then
 
 final class CreateQuizCollectionViewCell: UICollectionViewCell {
+    weak var delegate: CreateQuizProtocol?
+
     // MARK: properties
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -78,13 +80,28 @@ final class CreateQuizCollectionViewCell: UICollectionViewCell {
     }
     // MARK: - Methods
     // MARK: - Data Source
+    var item: CreateQuizViewDataItem?
     func bindData(data: CreateQuizViewDataItem) {
+        self.item = data
         quizTitleLabel.text = data.title
         quizSubTitleLabel.text = data.subTitle
         quizeSubTitleThinLabel.text = data.subTitleThin
         quizTextView.placeHolderLabel.text = data.quizQuestionList.placeHolder
         quizCorrectAnswerView.textField.placeholder = data.quizCorrectAnswerList.placeHolder
         quizInCorrectAnswerView.textField.placeholder = data.quizInCorrectAnswerList.placeHolder
+    }
+    func getCellCurrentData() {
+        guard let item else { return }
+        delegate?.getItem(data: .init(order: item.order,
+                                      title: item.title,
+                                      subTitle: item.subTitle,
+                                      subTitleThin: item.subTitleThin,
+                                      quizQuestionList: .init(placeHolder: item.quizQuestionList.placeHolder,
+                                                              data: quizTextView.textView.text),
+                                      quizCorrectAnswerList: .init(placeHolder: item.quizCorrectAnswerList.placeHolder,
+                                                                   data: quizCorrectAnswerView.textField.text ?? ""),
+                                      quizInCorrectAnswerList: .init(placeHolder: item.quizInCorrectAnswerList.placeHolder,
+                                                                     data: quizInCorrectAnswerView.textField.text ?? "")))
     }
     // MARK: - Delegate
     // MARK: - Actions

@@ -22,9 +22,14 @@ final class CreateQuizView: UIView {
                                           collectionViewLayout: UICollectionViewFlowLayout()).then {
         $0.backgroundColor = .lightGray
         $0.isPagingEnabled = true
+        $0.isScrollEnabled = false
         $0.register(CreateQuizCollectionViewCell.self,
                     forCellWithReuseIdentifier: CreateQuizCollectionViewCell.reuseIdentifier)
     }
+    let button = CustomButton(title: "다음")
+        .setColor(bgColor: UIColor(hexCode: "#343641", alpha: 1.0),
+                  disableColor: UIColor(hexCode: "#343641", alpha: 1.0),
+                  textColor: .white)
     // MARK: - Life Cycles
     // MARK: - UI & Layout
     private func setUI() {
@@ -32,7 +37,7 @@ final class CreateQuizView: UIView {
     }
     
     private func setLayout() {
-        self.addSubviews(navigationView, collectionView)
+        self.addSubviews(navigationView, collectionView, button)
         
         navigationView.snp.makeConstraints {
             $0.top.equalTo(safeAreaLayoutGuide)
@@ -43,6 +48,12 @@ final class CreateQuizView: UIView {
             $0.top.equalTo(navigationView.snp.bottom).offset(64)
             $0.horizontalEdges.equalToSuperview()
             $0.bottom.equalToSuperview()
+        }
+        
+        button.snp.makeConstraints {
+            $0.bottom.equalTo(safeAreaLayoutGuide).inset(18)
+            $0.leading.trailing.equalToSuperview().inset(20)
+            $0.height.equalTo(60)
         }
     }
     // MARK: - Methods
