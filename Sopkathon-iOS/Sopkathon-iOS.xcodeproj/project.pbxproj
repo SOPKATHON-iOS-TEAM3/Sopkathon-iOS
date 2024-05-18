@@ -63,6 +63,9 @@
 		A2C93E0E2BF91DEC00CF7932 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C93E0D2BF91DEC00CF7932 /* AnswerView.swift */; };
 		A2C93E102BF92F1300CF7932 /* NextButtonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C93E0F2BF92F1300CF7932 /* NextButtonProtocol.swift */; };
 		A2C93E142BF9410400CF7932 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C93E132BF9410400CF7932 /* HomeViewController.swift */; };
+		A2C93E162BF9538B00CF7932 /* PostUserChoiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C93E152BF9538B00CF7932 /* PostUserChoiceRequest.swift */; };
+		A2C93E182BF9543A00CF7932 /* SolveQuizService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C93E172BF9543A00CF7932 /* SolveQuizService.swift */; };
+		A2C93E1A2BF9545600CF7932 /* SolveQuizTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C93E192BF9545600CF7932 /* SolveQuizTargetType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +120,9 @@
 		A2C93E0D2BF91DEC00CF7932 /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
 		A2C93E0F2BF92F1300CF7932 /* NextButtonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButtonProtocol.swift; sourceTree = "<group>"; };
 		A2C93E132BF9410400CF7932 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A2C93E152BF9538B00CF7932 /* PostUserChoiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUserChoiceRequest.swift; sourceTree = "<group>"; };
+		A2C93E172BF9543A00CF7932 /* SolveQuizService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveQuizService.swift; sourceTree = "<group>"; };
+		A2C93E192BF9545600CF7932 /* SolveQuizTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveQuizTargetType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,10 +284,13 @@
 				71EB61A62BF52EBD006E0707 /* MoyaLoggingPlugin.swift */,
 				0D6A0FE22BF94A5100BD8A15 /* SignUpMemberResponseModel.swift */,
 				0D6A0FE62BF94B8900BD8A15 /* SignUpMemberRequestModel.swift */,
+				A2C93E152BF9538B00CF7932 /* PostUserChoiceRequest.swift */,
 				0D6A0FE42BF94B1100BD8A15 /* UserTargetType.swift */,
 				7125315C2BF9467D0099E8F8 /* NetworkResult.swift */,
 				7125315E2BF946B00099E8F8 /* MainTargetType.swift */,
 				712531602BF946F20099E8F8 /* MainService.swift */,
+				A2C93E172BF9543A00CF7932 /* SolveQuizService.swift */,
+				A2C93E192BF9545600CF7932 /* SolveQuizTargetType.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -502,6 +511,7 @@
 				712DF5672BF5160A00F0BCCB /* SceneDelegate.swift in Sources */,
 				36879A1C2BF9095300CDF610 /* InputQuestionView.swift in Sources */,
 				71EB61A02BF52B8D006E0707 /* UIView+.swift in Sources */,
+				A2C93E182BF9543A00CF7932 /* SolveQuizService.swift in Sources */,
 				7125315F2BF946B00099E8F8 /* MainTargetType.swift in Sources */,
 				A2C93E0C2BF9147300CF7932 /* SolveQuizCollectionViewCell.swift in Sources */,
 				A2C93E142BF9410400CF7932 /* HomeViewController.swift in Sources */,
@@ -511,11 +521,12 @@
 				0D58BE2B2BF8E40D008FE0BD /* NicknameViewController.swift in Sources */,
 				71EB61A32BF52BE8006E0707 /* className.swift in Sources */,
 				36879A0C2BF9004B00CDF610 /* CreateQuizView.swift in Sources */,
+				A2C93E162BF9538B00CF7932 /* PostUserChoiceRequest.swift in Sources */,
 				0D6A0FE72BF94B8900BD8A15 /* SignUpMemberRequestModel.swift in Sources */,
 				36879A1E2BF918D100CDF610 /* PaddingLabel.swift in Sources */,
 				71EB61A72BF52EBD006E0707 /* MoyaLoggingPlugin.swift in Sources */,
-				7125314B2BF920AB0099E8F8 /* HomeViewController.swift in Sources */,
 				712531612BF946F20099E8F8 /* MainService.swift in Sources */,
+				A2C93E1A2BF9545600CF7932 /* SolveQuizTargetType.swift in Sources */,
 				71EB61A52BF52E87006E0707 /* DTO.swift in Sources */,
 				36879A0A2BF8FEBE00CDF610 /* CustomPageIndexItem.swift in Sources */,
 				712531632BF948220099E8F8 /* memberDTO.swift in Sources */,

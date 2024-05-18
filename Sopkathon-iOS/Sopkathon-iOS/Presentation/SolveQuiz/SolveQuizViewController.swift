@@ -28,7 +28,7 @@ final class SolveQuizViewController: UIViewController {
         $0.minimumLineSpacing = 0
         $0.itemSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
     }
-        
+    
     private lazy var solveQuizCollectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout).then {
         $0.backgroundColor = .subBlue
         $0.showsHorizontalScrollIndicator = false
@@ -78,6 +78,29 @@ final class SolveQuizViewController: UIViewController {
         let resultQuizViewController = ResultQuizViewController()
         self.navigationController?.pushViewController(resultQuizViewController, animated: true)
     }
+    
+    private func postUserChoices() {
+        let req = PostUserChoiceRequest(memberId: 0, questionId: 1, answerId: 1)
+        /// UserService 싱글톤 객체를 사용하여 서버로 회원가입 요청 전송 및 응답 처리
+        SolveQuizService.shared.postUserChoice(req: req, completion: { response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? SignUpMemberResponseModel else { return }
+                print("답변이 전송되었습니다~")
+                dump(data)
+            case .requestErr:
+                print("요청 오류 입니다")
+            case .decodedErr:
+                print("디코딩 오류 입니다")
+            case .pathErr:
+                print("경로 오류 입니다")
+            case .serverErr:
+                print("서버 오류입니다")
+            case .networkFail:
+                print("네트워크 오류입니다")
+            }
+        })
+    }
 }
 
 // MARK: - UICollectionViewDelegate
@@ -114,9 +137,11 @@ extension SolveQuizViewController: NextButtonProtocol {
     func pagingToNextQuestion() {
         solveQuizCollectionView.backgroundColor = backgroundColors[min(index + 1, 2)]
         solveQuizCollectionView.setContentOffset(CGPoint(x: Int(UIScreen.main.bounds.width) * min(index + 1, 2), y: 0), animated: true)
-
+        
         if index == 2 {
             showResultQuizViewController()
         }
+        
+        postUserChoices()
     }
 }
