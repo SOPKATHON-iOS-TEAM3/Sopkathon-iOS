@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowScene)
-        let vc = UINavigationController(rootViewController: NicknameViewController())
+        let vc = UINavigationController(rootViewController: CreateQuizResultViewController())
         window.rootViewController = vc
         self.window = window
         window.makeKeyAndVisible()
