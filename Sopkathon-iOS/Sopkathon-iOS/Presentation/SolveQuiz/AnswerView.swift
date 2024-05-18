@@ -14,7 +14,7 @@ class AnswerView: UIView {
     
     var isTop: Bool
         
-    private let answerLabel = UILabel().then {
+    let answerLabel = UILabel().then {
         $0.text = "정답을 입력하세요.정답을정답을"
         $0.textColor = .white
         $0.font = .title4_b_18

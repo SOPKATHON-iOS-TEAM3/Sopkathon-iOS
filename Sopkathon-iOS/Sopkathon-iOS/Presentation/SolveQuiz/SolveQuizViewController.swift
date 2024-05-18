@@ -11,9 +11,17 @@ import SnapKit
 import Sopkathon_iOS_Extension
 import Then
 
+struct QuizDummy {
+    var quizStr = ["내 퍼스널 컬러는?", "내 주량은?", "난 댕댕이파 vs 냥냥이파"]
+    var firstAnswerArray = ["봄웜", "내 주량은?", "댕댕"]
+    var secondAnswerArray = ["겨울쿨", "소주 한잔", "냥냥"]
+}
+
 final class SolveQuizViewController: UIViewController {
     
     // MARK: - Properties
+    
+    var dummy = QuizDummy()
     
     var index = 0
     var backgroundColors: [UIColor] = [.subBlue, .mainPink, .subPurple]
@@ -115,7 +123,7 @@ extension SolveQuizViewController: UICollectionViewDelegate {
 
 extension SolveQuizViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        3
+        dummy.quizStr.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -126,6 +134,9 @@ extension SolveQuizViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         cell.delegate = self
+        cell.questionLabel.text = dummy.quizStr[indexPath.row]
+        cell.firstAnswerView.answerLabel.text = dummy.firstAnswerArray[indexPath.row]
+        cell.secondAnswerView.answerLabel.text = dummy.secondAnswerArray[indexPath.row]
         return cell
     }
 }
