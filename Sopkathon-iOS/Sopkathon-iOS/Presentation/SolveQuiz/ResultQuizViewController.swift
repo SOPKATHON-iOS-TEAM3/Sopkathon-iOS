@@ -53,9 +53,9 @@ final class ResultQuizViewController: UIViewController {
         $0.addTarget(self, action: #selector(shareButtonDidTap), for: .touchUpInside)
     }
     
-    private let goHomeButton = CustomButton(title: "홈으로")//.then {
-//        $0.addTarget(self, action: #selector(shareButtonDidTap), for: .touchUpInside)
-//    }
+    private lazy var goHomeButton = CustomButton(title: "홈으로").then {
+        $0.addTarget(self, action: #selector(goHomeButtonDidTap), for: .touchUpInside)
+    }
     
     // MARK: - Life Cycle
     
@@ -125,5 +125,12 @@ final class ResultQuizViewController: UIViewController {
         }
         let vc = UIActivityViewController(activityItems: [image], applicationActivities: nil)
         present(vc, animated: true)
+    }
+    
+    @objc
+    private func goHomeButtonDidTap(_ sender: Any) {
+        UIView.animate(withDuration: 0.4) {
+            self.navigationController?.viewControllers = [HomeViewController()]
+        }
     }
 }

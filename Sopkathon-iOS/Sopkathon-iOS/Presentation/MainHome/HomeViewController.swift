@@ -269,7 +269,7 @@ final class HomeViewController: UIViewController {
     
     @objc
     private func pushToSolveQuizViewController() {
-        let vc = ViewController()
+        let vc = SolveQuizViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
