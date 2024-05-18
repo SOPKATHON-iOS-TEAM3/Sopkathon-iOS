@@ -8,6 +8,7 @@
 import UIKit
 
 import SnapKit
+import Sopkathon_iOS_Extension
 import Then
 
 final class NumOfFriendsViewController: UIViewController {
@@ -68,10 +69,7 @@ final class NumOfFriendsViewController: UIViewController {
 private extension NumOfFriendsViewController {
     
     func setHierarchy() {
-        [friendsLabel, numStackView, completeButton].forEach { [weak self] view in
-            guard let self = self else { return }
-            self.view.addSubview(view)
-        }
+        view.addSubviews(friendsLabel, numStackView, completeButton)
         
     }
     

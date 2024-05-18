@@ -12,8 +12,7 @@ import Sopkathon_iOS_Extension
 import Then
 
 final class NicknameViewController: UIViewController {
-    @IBOutlet weak var textField: UITextField!
-    
+
     private let nicknameLabel = UILabel().then {
         $0.text = "닉네임을 입력하세요"
         $0.textColor = .black
