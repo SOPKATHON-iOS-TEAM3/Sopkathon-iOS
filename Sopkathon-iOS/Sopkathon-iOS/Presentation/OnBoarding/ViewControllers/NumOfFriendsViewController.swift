@@ -13,9 +13,11 @@ import Then
 
 final class NumOfFriendsViewController: UIViewController {
     
+    private let logoImageView = UIImageView(image: .logoType)
+    
     private let friendsLabel = UILabel().then {
         $0.text = "내가 친해지고 싶은 친구는.."
-        $0.textColor = .black
+        $0.textColor = .white
         $0.textAlignment = .center
         $0.numberOfLines = 1
         $0.font = .title1
@@ -24,8 +26,8 @@ final class NumOfFriendsViewController: UIViewController {
     private let numTextField = UITextField().then {
         $0.font = .title1
         $0.layer.cornerRadius = 10
-        $0.backgroundColor = .gray
-        $0.textColor = .white
+        $0.backgroundColor = .white
+        $0.textColor = .gray15
         $0.textAlignment = .center
         let attributes: [NSAttributedString.Key: Any] = [
             .foregroundColor: UIColor.black,
@@ -37,7 +39,7 @@ final class NumOfFriendsViewController: UIViewController {
     
     private let numLabel = UILabel().then {
         $0.text = "명"
-        $0.textColor = .black
+        $0.textColor = .white
         $0.textAlignment = .center
         $0.numberOfLines = 1
         $0.font = .title1
@@ -66,13 +68,20 @@ final class NumOfFriendsViewController: UIViewController {
 private extension NumOfFriendsViewController {
     
     func setHierarchy() {
-        view.addSubviews(friendsLabel, numStackView, completeButton)
+        view.addSubviews(logoImageView, friendsLabel, numStackView, completeButton)
         
     }
     
     func setLayout() {
-        self.view.backgroundColor = .white
-        navigationItem.hidesBackButton = true
+        self.view.backgroundColor = .background
+        //navigationItem.hidesBackButton = true
+        
+        logoImageView.snp.makeConstraints {
+            $0.top.equalToSuperview().inset(58)
+            $0.centerX.equalToSuperview()
+            $0.width.equalTo(150)
+            $0.height.equalTo(70)
+        }
         
         friendsLabel.snp.makeConstraints {
             $0.top.equalToSuperview().inset(241)

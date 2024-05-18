@@ -12,6 +12,7 @@ import Sopkathon_iOS_Extension
 import Then
 
 final class NicknameViewController: UIViewController {
+    private let logoImageView = UIImageView(image: .logoType)
 
     private let nicknameLabel = UILabel().then {
         $0.text = "닉네임을 입력하세요"
@@ -54,11 +55,18 @@ final class NicknameViewController: UIViewController {
 private extension NicknameViewController {
     
     func setHierarchy() {
-        view.addSubviews(nicknameLabel, nicknameTextField, nextButton)
+        view.addSubviews(logoImageView, nicknameLabel, nicknameTextField, nextButton)
     }
     
     func setLayout() {
         self.view.backgroundColor = .background
+        
+        logoImageView.snp.makeConstraints {
+            $0.top.equalToSuperview().inset(58)
+            $0.centerX.equalToSuperview()
+            $0.width.equalTo(150)
+            $0.height.equalTo(70)
+        }
         
         nicknameLabel.snp.makeConstraints {
             $0.top.equalToSuperview().inset(278)
@@ -74,7 +82,7 @@ private extension NicknameViewController {
         nextButton.snp.makeConstraints {
             $0.bottom.equalToSuperview().inset(84)
             $0.leading.trailing.equalToSuperview().inset(20)
-            $0.height.equalTo(56)
+            $0.height.equalTo(60)
         }
     }
     
