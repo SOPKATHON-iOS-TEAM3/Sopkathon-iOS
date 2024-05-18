@@ -140,6 +140,7 @@
 				7125314A2BF920AB0099E8F8 /* HomeViewController.swift */,
 			);
 			path = Home;
+        };
 		36879A022BF8FD7800CDF610 /* CreateQuiz */ = {
 			isa = PBXGroup;
 			children = (
