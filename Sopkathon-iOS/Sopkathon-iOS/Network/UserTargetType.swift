@@ -21,7 +21,7 @@ extension UserTargetType: TargetType {
     var path: String {
         switch self {
         case .signUp:
-            return "/member/join"
+            return "/api/v1/member"
         }
     }
     

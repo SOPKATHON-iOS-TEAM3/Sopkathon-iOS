@@ -8,6 +8,6 @@
 import Foundation
 
 struct SignUpMemberResponseModel: Codable {
-    let code: Int
+    let status: Int
     let message: String
 }
