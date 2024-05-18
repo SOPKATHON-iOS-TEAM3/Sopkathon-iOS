@@ -20,19 +20,19 @@ final class NumOfFriendsViewController: UIViewController {
         $0.textColor = .white
         $0.textAlignment = .center
         $0.numberOfLines = 1
-        $0.font = .title1
+        $0.font = .title1_b_28
     }
     
     private let numTextField = UITextField().then {
-        $0.font = .title1
+        $0.font = .body3_sb_22
         $0.layer.cornerRadius = 10
         $0.backgroundColor = .white
         $0.textColor = .gray15
         $0.textAlignment = .center
         $0.keyboardType = .numberPad
         let attributes: [NSAttributedString.Key: Any] = [
-            .foregroundColor: UIColor.black,
-            .font: UIFont.title1
+            .foregroundColor: UIColor.gray08,
+            .font: UIFont.body3_sb_22
         ]
         let attributedPlaceholder = NSAttributedString(string: "0", attributes: attributes)
         $0.attributedPlaceholder = attributedPlaceholder
@@ -42,6 +42,7 @@ final class NumOfFriendsViewController: UIViewController {
         $0.text = "명"
         $0.textColor = .white
         $0.textAlignment = .center
+        $0.font = .title1_b_28
         $0.numberOfLines = 1
         $0.font = .title1
     }
@@ -54,8 +55,8 @@ final class NumOfFriendsViewController: UIViewController {
     
     
     private lazy var completeButton = CustomButton(title: "완료")
-      .setColor(bgColor: .mainPink, disableColor: .gray08)
-      .setEnabled(true)
+      .setColor(bgColor: .subBlue, disableColor: .gray08)
+      .setEnabled(false)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -113,13 +114,20 @@ private extension NumOfFriendsViewController {
 }
 
 extension NumOfFriendsViewController: UITextFieldDelegate {
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
     
-        guard Int(string) != nil || string == "" else { return false }
-            
-        return true
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        updateButtonState(for: textField.text ?? "")
     }
     
+    private func updateButtonState(for text: String) {
+        let regularExpression = "^[0-9]+$"
+        let target = text
+        print(target)
+        if let targetIndex = target.range(of: regularExpression, options: .regularExpression) {
+            completeButton.setEnabled(true)
+        } else {
+            completeButton.setEnabled(false)
+        }
 
-  
+    }
 }

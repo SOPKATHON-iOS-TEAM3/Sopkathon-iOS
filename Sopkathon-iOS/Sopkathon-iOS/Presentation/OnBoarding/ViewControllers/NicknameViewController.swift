@@ -19,11 +19,11 @@ final class NicknameViewController: UIViewController {
         $0.textColor = .white
         $0.textAlignment = .center
         $0.numberOfLines = 1
-        $0.font = UIFont(name: "Arita4.0_SB", size: 28)
+        $0.font = .title1_b_28
     }
     
     private let nicknameTextField = UITextField().then {
-        $0.font = .title1
+        $0.font = .body3_sb_22
         $0.backgroundColor = UIColor.gray03
         $0.textAlignment = .center
         $0.layer.cornerRadius = 10
@@ -31,14 +31,14 @@ final class NicknameViewController: UIViewController {
         $0.layer.borderColor = UIColor.gray06.cgColor
         let attributes: [NSAttributedString.Key: Any] = [
             .foregroundColor: UIColor.gray08,
-            .font: UIFont.title1
+            .font: UIFont.body3_sb_22
         ]
         let attributedPlaceholder = NSAttributedString(string: "ex. 동글이(최대 5글자)", attributes: attributes)
         $0.attributedPlaceholder = attributedPlaceholder
     }
     
     private lazy var nextButton = CustomButton(title: "다음")
-      .setColor(bgColor: .mainPink, disableColor: .gray08)
+      .setColor(bgColor: .subBlue, disableColor: .gray08)
       .setEnabled(false).then {
           $0.addTarget(self, action: #selector(nextButtonClicked), for: .touchUpInside)
       }
