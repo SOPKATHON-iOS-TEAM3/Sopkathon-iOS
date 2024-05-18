@@ -29,7 +29,7 @@ class SolveQuizCollectionViewCell: UICollectionViewCell {
     
     private lazy var firstAnswerView = AnswerView(isTop: true)
         .then {
-            let tap = UITapGestureRecognizer(target: self, 
+            let tap = UITapGestureRecognizer(target: self,
                                              action: #selector(answerViewDidTap(_:)))
             $0.addGestureRecognizer(tap)
         }
@@ -95,16 +95,40 @@ class SolveQuizCollectionViewCell: UICollectionViewCell {
     }
     
     @objc
-    func answerViewDidTap(_ sender: UIView) {
-        guard let sender = sender as? AnswerView else { return }
-//        if sender.isTop {
-//            isFirstAnswerChecked.toggle()
-//            firstAnswerView.layer.borderColor = isFirstAnswerChecked ? UIColor.white.cgColor : nil
-//            firstAnswerView.layer.borderWidth = isFirstAnswerChecked ? 1.0 : 0.0
-//        } else {
-//            isSecondAnswerChecked.toggle()
-//            secondAnswerView.layer.borderColor = isSecondAnswerChecked ? UIColor.white.cgColor : nil
-//            secondAnswerView.layer.borderWidth = isSecondAnswerChecked ? 1.0 : 0.0
-//        }
+    func answerViewDidTap(_ sender: UITapGestureRecognizer) {
+        guard let senderView = sender.view as? AnswerView else { return }
+        
+        if senderView.isTop {
+            if !isFirstAnswerChecked {
+                isFirstAnswerChecked = true
+                isSecondAnswerChecked = false
+            } else {
+                isFirstAnswerChecked = false
+            }
+        } else {
+            if !isSecondAnswerChecked {
+                isSecondAnswerChecked = true
+                isFirstAnswerChecked = false
+            } else {
+                isSecondAnswerChecked = false
+            }
+        }
+        
+        updateBorders()
+    }
+    
+    private func updateBorders() {
+        updateBorder(for: firstAnswerView, isSelected: isFirstAnswerChecked)
+        updateBorder(for: secondAnswerView, isSelected: isSecondAnswerChecked)
+    }
+    
+    private func updateBorder(for view: AnswerView, isSelected: Bool) {
+        if isSelected {
+            view.layer.borderColor = UIColor.white.cgColor
+            view.layer.borderWidth = 1.0
+        } else {
+            view.layer.borderColor = nil
+            view.layer.borderWidth = 0.0
+        }
     }
 }
