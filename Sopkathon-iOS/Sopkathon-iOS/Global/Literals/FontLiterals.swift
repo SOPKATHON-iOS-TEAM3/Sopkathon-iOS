@@ -12,6 +12,18 @@ extension UIFont {
     @nonobjc class var title1: UIFont {
         return UIFont.font(.pretendardBold, ofSize: 30)
     }
+    
+    @nonobjc class var title1_b_28: UIFont {
+        return UIFont.font(.aritaBold, ofSize: 28)
+    }
+    
+    @nonobjc class var title1_b_16: UIFont {
+        return UIFont.font(.pretendardBold, ofSize: 16)
+    }
+    
+    @nonobjc class var body1_sb_22: UIFont {
+        return UIFont.font(.aritaSemiBold, ofSize: 22)
+    }
 }
 
 enum FontName: String {

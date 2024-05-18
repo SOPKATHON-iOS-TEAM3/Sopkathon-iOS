@@ -32,6 +32,7 @@
 		7195ACEB2BF8D69100CD4579 /* Arita4.0_SB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7195ACE62BF8D69100CD4579 /* Arita4.0_SB.otf */; };
 		7195ACEC2BF8D69100CD4579 /* Arita4.0_L.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7195ACE72BF8D69100CD4579 /* Arita4.0_L.otf */; };
 		7195ACED2BF8D69100CD4579 /* Arita4.0_T.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7195ACE82BF8D69100CD4579 /* Arita4.0_T.otf */; };
+		7195ACF02BF9018700CD4579 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195ACEF2BF9018700CD4579 /* CustomButton.swift */; };
 		71B5A3B82BF7DBD700D0E957 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5A3B72BF7DBD700D0E957 /* Config.swift */; };
 		71EB61A02BF52B8D006E0707 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB619F2BF52B8D006E0707 /* UIView+.swift */; };
 		71EB61A32BF52BE8006E0707 /* className.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB61A22BF52BE8006E0707 /* className.swift */; };
@@ -59,6 +60,7 @@
 		7195ACE62BF8D69100CD4579 /* Arita4.0_SB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_SB.otf; sourceTree = "<group>"; };
 		7195ACE72BF8D69100CD4579 /* Arita4.0_L.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_L.otf; sourceTree = "<group>"; };
 		7195ACE82BF8D69100CD4579 /* Arita4.0_T.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arita4.0_T.otf; sourceTree = "<group>"; };
+		7195ACEF2BF9018700CD4579 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		71B5A3B72BF7DBD700D0E957 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		71EB619F2BF52B8D006E0707 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		71EB61A22BF52BE8006E0707 /* className.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = className.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				712DF5682BF5160A00F0BCCB /* ViewController.swift */,
+				7195ACEF2BF9018700CD4579 /* CustomButton.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				712DF5692BF5160A00F0BCCB /* ViewController.swift in Sources */,
 				71B5A3B82BF7DBD700D0E957 /* Config.swift in Sources */,
 				712DF5652BF5160A00F0BCCB /* AppDelegate.swift in Sources */,
+				7195ACF02BF9018700CD4579 /* CustomButton.swift in Sources */,
 				712DF5672BF5160A00F0BCCB /* SceneDelegate.swift in Sources */,
 				71EB61A02BF52B8D006E0707 /* UIView+.swift in Sources */,
 				71EB61A32BF52BE8006E0707 /* className.swift in Sources */,
