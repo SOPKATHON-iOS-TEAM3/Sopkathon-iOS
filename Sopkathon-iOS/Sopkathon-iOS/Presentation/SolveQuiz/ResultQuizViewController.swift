@@ -33,14 +33,17 @@ final class ResultQuizViewController: UIViewController {
         $0.font = .title1_b_28
         $0.textColor = .white
         $0.numberOfLines = 0
-        $0.textAlignment = .center
         let attrString = NSMutableAttributedString(string: str)
         attrString.addAttribute(
             .font,
             value: UIFont.body9_b_50,
             range: NSRange.init(location: 3, length: 5)
         )
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = 20
+        attrString.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attrString.length))
         $0.attributedText = attrString
+        $0.textAlignment = .center
     }
     
     private let guideLabel = UILabel().then {

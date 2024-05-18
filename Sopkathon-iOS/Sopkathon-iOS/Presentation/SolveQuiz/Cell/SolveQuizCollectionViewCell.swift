@@ -21,19 +21,19 @@ class SolveQuizCollectionViewCell: UICollectionViewCell {
     
     // MARK: - UI Components
     
-    private let questionLabel = UILabel().then {
+    let questionLabel = UILabel().then {
         $0.font = .title1_b_28
         $0.text = "내가 좋아하는 색깔은?"
         $0.textColor = .white
     }
     
-    private lazy var firstAnswerView = AnswerView(isTop: true)
+    lazy var firstAnswerView = AnswerView(isTop: true)
         .then {
             let tap = UITapGestureRecognizer(target: self,
                                              action: #selector(answerViewDidTap(_:)))
             $0.addGestureRecognizer(tap)
         }
-    private lazy var secondAnswerView = AnswerView()
+    lazy var secondAnswerView = AnswerView()
         .then {
             let tap = UITapGestureRecognizer(target: self,
                                              action: #selector(answerViewDidTap(_:)))
@@ -125,7 +125,7 @@ class SolveQuizCollectionViewCell: UICollectionViewCell {
     private func updateBorder(for view: AnswerView, isSelected: Bool) {
         if isSelected {
             view.layer.borderColor = UIColor.white.cgColor
-            view.layer.borderWidth = 1.0
+            view.layer.borderWidth = 2.0
         } else {
             view.layer.borderColor = nil
             view.layer.borderWidth = 0.0
