@@ -160,7 +160,7 @@ extension CreateQuizeViewController: CreateQuizProtocol {
 extension CreateQuizeViewController {
     func createQuiz(data: CreateQuizViewDataItem,
                     index: Int) {
-        CreateQuizService.shared.postCreateQuiz(body: .init(quizID: index,
+        CreateQuizService.shared.postCreateQuiz(body: .init(quizID: index + 1,
                                                             questionText: data.quizQuestionList.data),
                                                 completion: { result in
             switch result {
@@ -168,7 +168,7 @@ extension CreateQuizeViewController {
                 if let result = t as? CreateQuizResponseDTO {
                     print(result.message)
                     self.createAnswer(data: data,
-                                      index: index)
+                                      index: index + 1)
                 }
             case .requestErr:
                 print("requestErr")
@@ -190,7 +190,7 @@ extension CreateQuizeViewController {
                                                               answers: [.init(answerText: data.quizCorrectAnswerList.data,
                                                                               isCorrect: true),
                                                                         .init(answerText: data.quizInCorrectAnswerList.data,
-                                                                              isCorrect: true)]), completion: { result in
+                                                                              isCorrect: false)]), completion: { result in
             switch result {
             case .success(let t):
                 if let result = t as? CreateQuizResponseDTO {

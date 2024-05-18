@@ -279,7 +279,7 @@ final class HomeViewController: UIViewController {
     
     private func fetchData() {
         
-        MainService.shared.fetctMemberData(memberId: 0) { [weak self] response in
+        MainService.shared.fetctMemberData(memberId: 1) { [weak self] response in
             switch response {
             case .success(let data):
                 guard let data = data as? memberDTO else { return }
