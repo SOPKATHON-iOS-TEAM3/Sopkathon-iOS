@@ -56,6 +56,7 @@ final class NicknameViewController: UIViewController {
         setHierarchy()
         setLayout()
         setDelegate()
+        setupTapGesture()
     }
 }
 
@@ -113,6 +114,15 @@ private extension NicknameViewController {
         let numOfFriendsViewController = NumOfFriendsViewController()
         numOfFriendsViewController.setLabelText(nickName: nicknameTextField.text)
         self.navigationController?.pushViewController(numOfFriendsViewController, animated: true)
+    }
+    
+    private func setupTapGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc private func dismissKeyboard() {
+        view.endEditing(true)
     }
     
 }
