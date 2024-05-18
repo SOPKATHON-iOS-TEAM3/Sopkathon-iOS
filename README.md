@@ -1,6 +1,12 @@
 ## 1. 서비스 이름 및 간단한 소개 📱 
+### To.0 (가제)
+- 의미: Too = 함께라는 의미, 모르는 사람의 정보가 0이 되도록 돕겠다는 의미
+- 간단 소개: 서로에 대한 사전 정보를 퀴즈라는 게임식 형태로, 미리 제공함으로써 첫 대화를 수월하게 도와준다.
 
 ## 2. 주요 기능 🛠️
+- 친해져야 하는 사람의 숫자, 시각적으로 제공
+- 본인의 정보에 대한 퀴즈 제작
+- 퀴즈 제공자의 퀴즈 풀기
 
 ## 3. 팀원 역할 분담 ❤️‍🔥
 | 이명진<br/>([@thingineeer](https://github.com/thingineeer)) | 박익범<br/>([@parkikbum](https://github.com/parkikbum)) | 서은수<br/>([@EunsuSeo01](https://github.com/EunsuSeo01)) | 김민서<br/>([@kms0233](https://github.com/kms0233)) |
