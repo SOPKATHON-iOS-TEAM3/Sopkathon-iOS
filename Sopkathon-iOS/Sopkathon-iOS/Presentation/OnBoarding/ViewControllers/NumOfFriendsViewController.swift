@@ -13,6 +13,9 @@ import Then
 
 final class NumOfFriendsViewController: UIViewController {
     
+    private let characterImageView = UIImageView().then {
+        $0.image = .imgOnboarding2
+    }
     private let friendsLabel = UILabel().then {
         $0.text = "내가 친해지고 싶은 친구는.."
         $0.textColor = .white
@@ -68,7 +71,7 @@ final class NumOfFriendsViewController: UIViewController {
 private extension NumOfFriendsViewController {
     
     func setHierarchy() {
-        view.addSubviews(friendsLabel, numStackView, completeButton)
+        view.addSubviews(characterImageView,friendsLabel, numStackView, completeButton)
         
     }
     
@@ -78,7 +81,7 @@ private extension NumOfFriendsViewController {
         
         
         friendsLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(241)
+            $0.top.equalToSuperview().inset(250)
             $0.leading.trailing.equalToSuperview()
         }
         
@@ -88,8 +91,15 @@ private extension NumOfFriendsViewController {
         }
         
         numStackView.snp.makeConstraints {
-            $0.top.equalTo(friendsLabel.snp.bottom).offset(87)
+            $0.top.equalTo(friendsLabel.snp.bottom).offset(23)
             $0.centerX.equalToSuperview()
+        }
+        
+        characterImageView.snp.makeConstraints {
+            $0.top.equalTo(numStackView.snp.bottom).offset(47)
+            $0.centerX.equalToSuperview()
+            $0.width.equalTo(223)
+            $0.height.equalTo(162)
         }
         
         completeButton.snp.makeConstraints {
@@ -115,7 +125,7 @@ extension NumOfFriendsViewController: UITextFieldDelegate {
         let regularExpression = "^[0-9]+$"
         let target = text
         print(target)
-        if let targetIndex = target.range(of: regularExpression, options: .regularExpression) {
+        if target.range(of: regularExpression, options: .regularExpression) != nil {
             completeButton.setEnabled(true)
         } else {
             completeButton.setEnabled(false)
