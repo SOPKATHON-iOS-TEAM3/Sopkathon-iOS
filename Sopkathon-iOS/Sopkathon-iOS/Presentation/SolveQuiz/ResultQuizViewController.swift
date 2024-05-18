@@ -49,22 +49,13 @@ final class ResultQuizViewController: UIViewController {
         $0.text = "점수를 보여주고 친구와 오늘부터 0일~"
     }
     
-    private lazy var shareButton = UIButton().then {
-        $0.titleLabel?.textColor = .black
-        $0.setTitle("결과 공유하기", for: .normal)
-        $0.titleLabel?.font = .systemFont(ofSize: 16)
-        $0.layer.cornerRadius = 10
-        $0.backgroundColor = .gray
+    private lazy var shareButton = CustomButton(title: "결과 공유하기").then {
         $0.addTarget(self, action: #selector(shareButtonDidTap), for: .touchUpInside)
     }
     
-    private let goHomeButton = UIButton().then {
-        $0.titleLabel?.textColor = .black
-        $0.setTitle("홈으로", for: .normal)
-        $0.titleLabel?.font = .systemFont(ofSize: 16)
-        $0.layer.cornerRadius = 10
-        $0.backgroundColor = .gray
-    }
+    private let goHomeButton = CustomButton(title: "홈으로")//.then {
+//        $0.addTarget(self, action: #selector(shareButtonDidTap), for: .touchUpInside)
+//    }
     
     // MARK: - Life Cycle
     
