@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		0D58BE2B2BF8E40D008FE0BD /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58BE2A2BF8E40D008FE0BD /* NicknameViewController.swift */; };
 		0D58BE2D2BF8EC23008FE0BD /* NumOfFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58BE2C2BF8EC23008FE0BD /* NumOfFriendsViewController.swift */; };
+<<<<<<< HEAD
 		0D7657912BF93F160041D0C8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7657902BF93F160041D0C8 /* HomeViewController.swift */; };
+=======
+>>>>>>> 37fe2a4aeacfad74b0a8006ecd07262545c528d8
 		36879A042BF8FDB100CDF610 /* CreateQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A032BF8FDB100CDF610 /* CreateQuizViewController.swift */; };
 		36879A072BF8FE2600CDF610 /* CustomPageIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A062BF8FE2600CDF610 /* CustomPageIndexView.swift */; };
 		36879A0A2BF8FEBE00CDF610 /* CustomPageIndexItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A092BF8FEBE00CDF610 /* CustomPageIndexItem.swift */; };
@@ -53,12 +56,19 @@
 		71EB61A72BF52EBD006E0707 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB61A62BF52EBD006E0707 /* MoyaLoggingPlugin.swift */; };
 		A2AE1B0D2BF9021400490751 /* SolveQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AE1B0C2BF9021400490751 /* SolveQuizViewController.swift */; };
 		A2AE1B0F2BF9024100490751 /* ResultQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AE1B0E2BF9024100490751 /* ResultQuizViewController.swift */; };
+		A2C93E0C2BF9147300CF7932 /* SolveQuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C93E0B2BF9147300CF7932 /* SolveQuizCollectionViewCell.swift */; };
+		A2C93E0E2BF91DEC00CF7932 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C93E0D2BF91DEC00CF7932 /* AnswerView.swift */; };
+		A2C93E102BF92F1300CF7932 /* NextButtonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C93E0F2BF92F1300CF7932 /* NextButtonProtocol.swift */; };
+		A2C93E142BF9410400CF7932 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C93E132BF9410400CF7932 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D58BE2A2BF8E40D008FE0BD /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
 		0D58BE2C2BF8EC23008FE0BD /* NumOfFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumOfFriendsViewController.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		0D7657902BF93F160041D0C8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> 37fe2a4aeacfad74b0a8006ecd07262545c528d8
 		36879A032BF8FDB100CDF610 /* CreateQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizViewController.swift; sourceTree = "<group>"; };
 		36879A062BF8FE2600CDF610 /* CustomPageIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageIndexView.swift; sourceTree = "<group>"; };
 		36879A092BF8FEBE00CDF610 /* CustomPageIndexItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageIndexItem.swift; sourceTree = "<group>"; };
@@ -97,6 +107,10 @@
 		71EB61A62BF52EBD006E0707 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
 		A2AE1B0C2BF9021400490751 /* SolveQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveQuizViewController.swift; sourceTree = "<group>"; };
 		A2AE1B0E2BF9024100490751 /* ResultQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultQuizViewController.swift; sourceTree = "<group>"; };
+		A2C93E0B2BF9147300CF7932 /* SolveQuizCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveQuizCollectionViewCell.swift; sourceTree = "<group>"; };
+		A2C93E0D2BF91DEC00CF7932 /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
+		A2C93E0F2BF92F1300CF7932 /* NextButtonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButtonProtocol.swift; sourceTree = "<group>"; };
+		A2C93E132BF9410400CF7932 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +148,7 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		0D76578F2BF93F160041D0C8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +157,8 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> 37fe2a4aeacfad74b0a8006ecd07262545c528d8
 		36879A022BF8FD7800CDF610 /* CreateQuiz */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,9 +266,14 @@
 		712DF57A2BF51CDD00F0BCCB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				0D76578F2BF93F160041D0C8 /* Home */,
 				A2AE1B0B2BF901E900490751 /* SolveQuiz */,
+=======
+				A2C93E122BF9410400CF7932 /* MainHome */,
+>>>>>>> 37fe2a4aeacfad74b0a8006ecd07262545c528d8
 				36879A022BF8FD7800CDF610 /* CreateQuiz */,
+				A2AE1B0B2BF901E900490751 /* SolveQuiz */,
 				0D58BE282BF8E3C3008FE0BD /* OnBoarding */,
 				712DF5682BF5160A00F0BCCB /* ViewController.swift */,
 				7195ACEF2BF9018700CD4579 /* CustomButton.swift */,
@@ -342,10 +364,29 @@
 		A2AE1B0B2BF901E900490751 /* SolveQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				A2C93E0A2BF9146200CF7932 /* Cell */,
 				A2AE1B0C2BF9021400490751 /* SolveQuizViewController.swift */,
 				A2AE1B0E2BF9024100490751 /* ResultQuizViewController.swift */,
+				A2C93E0D2BF91DEC00CF7932 /* AnswerView.swift */,
 			);
 			path = SolveQuiz;
+			sourceTree = "<group>";
+		};
+		A2C93E0A2BF9146200CF7932 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A2C93E0B2BF9147300CF7932 /* SolveQuizCollectionViewCell.swift */,
+				A2C93E0F2BF92F1300CF7932 /* NextButtonProtocol.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A2C93E122BF9410400CF7932 /* MainHome */ = {
+			isa = PBXGroup;
+			children = (
+				A2C93E132BF9410400CF7932 /* HomeViewController.swift */,
+			);
+			path = MainHome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,9 +485,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2C93E102BF92F1300CF7932 /* NextButtonProtocol.swift in Sources */,
 				36879A102BF900F200CDF610 /* QuizeNavigationProtocol.swift in Sources */,
 				712DF5912BF5225200F0BCCB /* FontLiterals.swift in Sources */,
 				A2AE1B0D2BF9021400490751 /* SolveQuizViewController.swift in Sources */,
+				A2C93E0E2BF91DEC00CF7932 /* AnswerView.swift in Sources */,
 				712DF5692BF5160A00F0BCCB /* ViewController.swift in Sources */,
 				36879A072BF8FE2600CDF610 /* CustomPageIndexView.swift in Sources */,
 				36879A172BF904F400CDF610 /* InputAnswerView.swift in Sources */,
@@ -461,6 +504,8 @@
 				712DF5672BF5160A00F0BCCB /* SceneDelegate.swift in Sources */,
 				36879A1C2BF9095300CDF610 /* InputQuestionView.swift in Sources */,
 				71EB61A02BF52B8D006E0707 /* UIView+.swift in Sources */,
+				A2C93E0C2BF9147300CF7932 /* SolveQuizCollectionViewCell.swift in Sources */,
+				A2C93E142BF9410400CF7932 /* HomeViewController.swift in Sources */,
 				A2AE1B0F2BF9024100490751 /* ResultQuizViewController.swift in Sources */,
 				0D58BE2D2BF8EC23008FE0BD /* NumOfFriendsViewController.swift in Sources */,
 				0D58BE2B2BF8E40D008FE0BD /* NicknameViewController.swift in Sources */,
