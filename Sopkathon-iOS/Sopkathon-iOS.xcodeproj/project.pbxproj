@@ -54,6 +54,7 @@
 		A2AE1B0F2BF9024100490751 /* ResultQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AE1B0E2BF9024100490751 /* ResultQuizViewController.swift */; };
 		A2C93E0C2BF9147300CF7932 /* SolveQuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C93E0B2BF9147300CF7932 /* SolveQuizCollectionViewCell.swift */; };
 		A2C93E0E2BF91DEC00CF7932 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C93E0D2BF91DEC00CF7932 /* AnswerView.swift */; };
+		A2C93E102BF92F1300CF7932 /* NextButtonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C93E0F2BF92F1300CF7932 /* NextButtonProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		A2AE1B0E2BF9024100490751 /* ResultQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultQuizViewController.swift; sourceTree = "<group>"; };
 		A2C93E0B2BF9147300CF7932 /* SolveQuizCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveQuizCollectionViewCell.swift; sourceTree = "<group>"; };
 		A2C93E0D2BF91DEC00CF7932 /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
+		A2C93E0F2BF92F1300CF7932 /* NextButtonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButtonProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				A2C93E0B2BF9147300CF7932 /* SolveQuizCollectionViewCell.swift */,
+				A2C93E0F2BF92F1300CF7932 /* NextButtonProtocol.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2C93E102BF92F1300CF7932 /* NextButtonProtocol.swift in Sources */,
 				36879A102BF900F200CDF610 /* QuizeNavigationProtocol.swift in Sources */,
 				712DF5912BF5225200F0BCCB /* FontLiterals.swift in Sources */,
 				A2AE1B0D2BF9021400490751 /* SolveQuizViewController.swift in Sources */,

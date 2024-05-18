@@ -15,6 +15,8 @@ final class SolveQuizViewController: UIViewController {
     
     // MARK: - Properties
     
+    var index = 0
+    
     // MARK: - UI Components
     
     private let navigationView = QuizNavigationView()
@@ -22,14 +24,17 @@ final class SolveQuizViewController: UIViewController {
     private let flowLayout = UICollectionViewFlowLayout().then {
         $0.scrollDirection = .horizontal
         $0.minimumInteritemSpacing = 0
+        $0.minimumLineSpacing = 0
         $0.itemSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
     }
         
     private lazy var solveQuizCollectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout).then {
         $0.backgroundColor = .gray
         $0.showsHorizontalScrollIndicator = false
+        $0.isScrollEnabled = false
         $0.delegate = self
         $0.dataSource = self
+        $0.contentInsetAdjustmentBehavior = .never
         $0.register(SolveQuizCollectionViewCell.self, forCellWithReuseIdentifier: SolveQuizCollectionViewCell.className)
     }
     
@@ -67,7 +72,10 @@ final class SolveQuizViewController: UIViewController {
 // MARK: - UICollectionViewDelegate
 
 extension SolveQuizViewController: UICollectionViewDelegate {
-    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        self.index = Int(max(ceil(((UIScreen.main.bounds.width / 2.0) + scrollView.contentOffset.x) / UIScreen.main.bounds.width) - 1, 0))
+        navigationView.pageIndexView.setIndex(selectedIndex: index)
+    }
 }
 
 // MARK: - UICollectionViewDataSource
@@ -84,7 +92,15 @@ extension SolveQuizViewController: UICollectionViewDataSource {
         ) as? SolveQuizCollectionViewCell else {
             return UICollectionViewCell()
         }
-        
+        cell.delegate = self
         return cell
+    }
+}
+
+// MARK: - NextButtonProtocol
+
+extension SolveQuizViewController: NextButtonProtocol {
+    func pagingToNextQuestion() {
+        solveQuizCollectionView.setContentOffset(CGPoint(x: Int(UIScreen.main.bounds.width) * min(index + 1, 2), y: 0), animated: true)
     }
 }

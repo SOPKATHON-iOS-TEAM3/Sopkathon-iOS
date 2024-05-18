@@ -37,6 +37,14 @@ class CustomPageIndexView: UIStackView {
         }
     }
     
+    func setIndex(selectedIndex: Int) {
+        subviews.enumerated().forEach { index, view in
+            if let itemView = view as? CustomPageIndexItem {
+                itemView.bindState(state: index == Int(selectedIndex))
+            }
+        }
+    }
+    
     func setPageCount(count: Int) -> CustomPageIndexView {
         for index in 1 ... count {
             let customItem = CustomPageIndexItem()

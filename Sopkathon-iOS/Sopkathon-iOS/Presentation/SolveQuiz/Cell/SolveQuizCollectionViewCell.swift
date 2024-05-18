@@ -15,6 +15,8 @@ class SolveQuizCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Properties
     
+    var delegate: NextButtonProtocol?
+    
     // MARK: - UI Components
     
     private let questionLabel = UILabel().then {
@@ -26,7 +28,9 @@ class SolveQuizCollectionViewCell: UICollectionViewCell {
     private let firstAnswerView = AnswerView()
     private let secondAnswerView = AnswerView()
     
-    private let nextButton = CustomButton(title: "다음")
+    private lazy var nextButton = CustomButton(title: "다음").then {
+        $0.addTarget(self, action: #selector(nextButtonDidTap), for: .touchUpInside)
+    }
     
     // MARK: - Init
     
@@ -71,4 +75,8 @@ class SolveQuizCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Methods
     
+    @objc
+    func nextButtonDidTap() {
+        delegate?.pagingToNextQuestion()
+    }
 }
