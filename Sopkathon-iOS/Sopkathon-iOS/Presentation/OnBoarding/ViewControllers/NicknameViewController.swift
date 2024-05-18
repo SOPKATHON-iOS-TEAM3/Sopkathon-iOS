@@ -38,7 +38,9 @@ final class NicknameViewController: UIViewController {
     
     private lazy var nextButton = CustomButton(title: "다음")
       .setColor(bgColor: .key1, disableColor: .gray08)
-      .setEnabled(false)
+      .setEnabled(false).then {
+          $0.addTarget(self, action: #selector(nextButtonClicked), for: .touchUpInside)
+      }
     
     override func viewDidLoad() {
         super.viewDidLoad()

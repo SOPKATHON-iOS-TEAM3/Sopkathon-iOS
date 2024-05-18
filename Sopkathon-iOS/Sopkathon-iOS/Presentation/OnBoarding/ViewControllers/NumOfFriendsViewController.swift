@@ -50,12 +50,9 @@ final class NumOfFriendsViewController: UIViewController {
     }
     
     
-    private let completeButton = UIButton().then {
-        $0.backgroundColor = .gray
-        $0.setTitle("완료", for: .normal)
-        $0.titleLabel?.font = UIFont(name: "Pretendard-Bold", size: 14)
-        $0.layer.cornerRadius = 10
-    }
+    private lazy var completeButton = CustomButton(title: "완료")
+      .setColor(bgColor: .key1, disableColor: .gray08)
+      .setEnabled(true)
 
     override func viewDidLoad() {
         super.viewDidLoad()
