@@ -14,6 +14,10 @@ import Combine
 
 final class HomeViewController: UIViewController {
     
+    // MARK: - properties
+    
+    var memberId: Int?
+    
     // MARK: - UIComponents
     
     private let mainLogoVoew = UIImageView().then {
@@ -144,8 +148,7 @@ final class HomeViewController: UIViewController {
         setUI()
         setHierarchy()
         setLayout()
-        setDelegate()
-        setRegister()
+        fetchData()
         
     }
     // MARK: - UI & Layout
@@ -258,14 +261,6 @@ final class HomeViewController: UIViewController {
     // MARK: - Methods
     
     
-    private func setDelegate() {
-        
-    }
-    
-    private func setRegister() {
-        
-    }
-    
     @objc
     private func pushToMakeQuizViewController() {
         let vc = ViewController()
@@ -276,6 +271,31 @@ final class HomeViewController: UIViewController {
     private func pushToSolveQuizViewController() {
         let vc = ViewController()
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func setData(data: memberDTO) {
+        pointHomeMainLabel.text = "\(data.targetFriend)"
+    }
+    
+    private func fetchData() {
+        
+        MainService.shared.fetctMemberData(memberId: 0) { [weak self] response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? memberDTO else { return }
+                self?.setData(data: data)
+            case .requestErr:
+                print("요청 오류 입니다")
+            case .decodedErr:
+                print("디코딩 오류 입니다")
+            case .pathErr:
+                print("경로 오류 입니다")
+            case .serverErr:
+                print("서버 오류입니다")
+            case .networkFail:
+                print("네트워크 오류입니다")
+            }
+        }
     }
     
 }
