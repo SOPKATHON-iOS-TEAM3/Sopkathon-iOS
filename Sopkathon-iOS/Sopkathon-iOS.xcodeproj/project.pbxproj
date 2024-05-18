@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0D58BE2B2BF8E40D008FE0BD /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58BE2A2BF8E40D008FE0BD /* NicknameViewController.swift */; };
 		0D58BE2D2BF8EC23008FE0BD /* NumOfFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58BE2C2BF8EC23008FE0BD /* NumOfFriendsViewController.swift */; };
+		0D6A0FE32BF94A5100BD8A15 /* SignUpMemberResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A0FE22BF94A5100BD8A15 /* SignUpMemberResponseModel.swift */; };
+		0D6A0FE52BF94B1100BD8A15 /* UserTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A0FE42BF94B1100BD8A15 /* UserTargetType.swift */; };
+		0D6A0FE72BF94B8900BD8A15 /* SignUpMemberRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A0FE62BF94B8900BD8A15 /* SignUpMemberRequestModel.swift */; };
 		36879A042BF8FDB100CDF610 /* CreateQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A032BF8FDB100CDF610 /* CreateQuizViewController.swift */; };
 		36879A072BF8FE2600CDF610 /* CustomPageIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A062BF8FE2600CDF610 /* CustomPageIndexView.swift */; };
 		36879A0A2BF8FEBE00CDF610 /* CustomPageIndexItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36879A092BF8FEBE00CDF610 /* CustomPageIndexItem.swift */; };
@@ -65,6 +68,9 @@
 /* Begin PBXFileReference section */
 		0D58BE2A2BF8E40D008FE0BD /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
 		0D58BE2C2BF8EC23008FE0BD /* NumOfFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumOfFriendsViewController.swift; sourceTree = "<group>"; };
+		0D6A0FE22BF94A5100BD8A15 /* SignUpMemberResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMemberResponseModel.swift; sourceTree = "<group>"; };
+		0D6A0FE42BF94B1100BD8A15 /* UserTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTargetType.swift; sourceTree = "<group>"; };
+		0D6A0FE62BF94B8900BD8A15 /* SignUpMemberRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMemberRequestModel.swift; sourceTree = "<group>"; };
 		36879A032BF8FDB100CDF610 /* CreateQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizViewController.swift; sourceTree = "<group>"; };
 		36879A062BF8FE2600CDF610 /* CustomPageIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageIndexView.swift; sourceTree = "<group>"; };
 		36879A092BF8FEBE00CDF610 /* CustomPageIndexItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageIndexItem.swift; sourceTree = "<group>"; };
@@ -270,6 +276,9 @@
 			children = (
 				71B5A3B72BF7DBD700D0E957 /* Config.swift */,
 				71EB61A62BF52EBD006E0707 /* MoyaLoggingPlugin.swift */,
+				0D6A0FE22BF94A5100BD8A15 /* SignUpMemberResponseModel.swift */,
+				0D6A0FE62BF94B8900BD8A15 /* SignUpMemberRequestModel.swift */,
+				0D6A0FE42BF94B1100BD8A15 /* UserTargetType.swift */,
 				7125315C2BF9467D0099E8F8 /* NetworkResult.swift */,
 				7125315E2BF946B00099E8F8 /* MainTargetType.swift */,
 				712531602BF946F20099E8F8 /* MainService.swift */,
@@ -477,6 +486,7 @@
 				36879A102BF900F200CDF610 /* QuizeNavigationProtocol.swift in Sources */,
 				712DF5912BF5225200F0BCCB /* FontLiterals.swift in Sources */,
 				A2AE1B0D2BF9021400490751 /* SolveQuizViewController.swift in Sources */,
+				0D6A0FE32BF94A5100BD8A15 /* SignUpMemberResponseModel.swift in Sources */,
 				7125315D2BF9467D0099E8F8 /* NetworkResult.swift in Sources */,
 				A2C93E0E2BF91DEC00CF7932 /* AnswerView.swift in Sources */,
 				712DF5692BF5160A00F0BCCB /* ViewController.swift in Sources */,
@@ -496,10 +506,12 @@
 				A2C93E0C2BF9147300CF7932 /* SolveQuizCollectionViewCell.swift in Sources */,
 				A2C93E142BF9410400CF7932 /* HomeViewController.swift in Sources */,
 				A2AE1B0F2BF9024100490751 /* ResultQuizViewController.swift in Sources */,
+				0D6A0FE52BF94B1100BD8A15 /* UserTargetType.swift in Sources */,
 				0D58BE2D2BF8EC23008FE0BD /* NumOfFriendsViewController.swift in Sources */,
 				0D58BE2B2BF8E40D008FE0BD /* NicknameViewController.swift in Sources */,
 				71EB61A32BF52BE8006E0707 /* className.swift in Sources */,
 				36879A0C2BF9004B00CDF610 /* CreateQuizView.swift in Sources */,
+				0D6A0FE72BF94B8900BD8A15 /* SignUpMemberRequestModel.swift in Sources */,
 				36879A1E2BF918D100CDF610 /* PaddingLabel.swift in Sources */,
 				71EB61A72BF52EBD006E0707 /* MoyaLoggingPlugin.swift in Sources */,
 				7125314B2BF920AB0099E8F8 /* HomeViewController.swift in Sources */,

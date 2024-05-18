@@ -13,9 +13,12 @@ import Then
 
 final class NumOfFriendsViewController: UIViewController {
     
+    private var nickName: String?
+    
     private let characterImageView = UIImageView().then {
         $0.image = .imgOnboarding2
     }
+  
     private let friendsLabel = UILabel().then {
         $0.text = "내가 친해지고 싶은 친구는.."
         $0.textColor = .white
@@ -68,7 +71,7 @@ final class NumOfFriendsViewController: UIViewController {
     }
 }
 
-private extension NumOfFriendsViewController {
+extension NumOfFriendsViewController {
     
     func setHierarchy() {
         view.addSubviews(characterImageView,friendsLabel, numStackView, completeButton)
@@ -112,6 +115,16 @@ private extension NumOfFriendsViewController {
     
     func setDelegate() {
         numTextField.delegate = self
+    }
+    
+
+    
+    func setLabelText(nickName: String?) {
+        self.nickName = nickName
+    }
+    
+    @objc private func completeButtonDidTap() {
+    
     }
 }
 
