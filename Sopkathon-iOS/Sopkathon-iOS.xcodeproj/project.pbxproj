@@ -37,6 +37,8 @@
 		71EB61A32BF52BE8006E0707 /* className.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB61A22BF52BE8006E0707 /* className.swift */; };
 		71EB61A52BF52E87006E0707 /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB61A42BF52E87006E0707 /* DTO.swift */; };
 		71EB61A72BF52EBD006E0707 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB61A62BF52EBD006E0707 /* MoyaLoggingPlugin.swift */; };
+		A2AE1B0D2BF9021400490751 /* SolveQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AE1B0C2BF9021400490751 /* SolveQuizViewController.swift */; };
+		A2AE1B0F2BF9024100490751 /* ResultQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AE1B0E2BF9024100490751 /* ResultQuizViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		71EB61A22BF52BE8006E0707 /* className.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = className.swift; sourceTree = "<group>"; };
 		71EB61A42BF52E87006E0707 /* DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
 		71EB61A62BF52EBD006E0707 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
+		A2AE1B0C2BF9021400490751 /* SolveQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveQuizViewController.swift; sourceTree = "<group>"; };
+		A2AE1B0E2BF9024100490751 /* ResultQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultQuizViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 		712DF57A2BF51CDD00F0BCCB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				A2AE1B0B2BF901E900490751 /* SolveQuiz */,
 				712DF5682BF5160A00F0BCCB /* ViewController.swift */,
 			);
 			path = Presentation;
@@ -209,6 +214,15 @@
 				71EB61A22BF52BE8006E0707 /* className.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		A2AE1B0B2BF901E900490751 /* SolveQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				A2AE1B0C2BF9021400490751 /* SolveQuizViewController.swift */,
+				A2AE1B0E2BF9024100490751 /* ResultQuizViewController.swift */,
+			);
+			path = SolveQuiz;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,11 +323,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				712DF5912BF5225200F0BCCB /* FontLiterals.swift in Sources */,
+				A2AE1B0D2BF9021400490751 /* SolveQuizViewController.swift in Sources */,
 				712DF5692BF5160A00F0BCCB /* ViewController.swift in Sources */,
 				71B5A3B82BF7DBD700D0E957 /* Config.swift in Sources */,
 				712DF5652BF5160A00F0BCCB /* AppDelegate.swift in Sources */,
 				712DF5672BF5160A00F0BCCB /* SceneDelegate.swift in Sources */,
 				71EB61A02BF52B8D006E0707 /* UIView+.swift in Sources */,
+				A2AE1B0F2BF9024100490751 /* ResultQuizViewController.swift in Sources */,
 				71EB61A32BF52BE8006E0707 /* className.swift in Sources */,
 				71EB61A72BF52EBD006E0707 /* MoyaLoggingPlugin.swift in Sources */,
 				71EB61A52BF52E87006E0707 /* DTO.swift in Sources */,
