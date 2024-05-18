@@ -45,7 +45,7 @@ extension CustomButton {
         self.setAttributedTitle(
             NSAttributedString(
                 string: title,
-                attributes: [.font: UIFont.title1, .foregroundColor: UIColor.white]
+                attributes: [.font: UIFont.title2_b_16, .foregroundColor: UIColor.white]
             ),
             for: .normal
         )
@@ -60,7 +60,7 @@ extension CustomButton {
         self.setAttributedTitle(
             NSAttributedString(
                 string: self.titleLabel?.text ?? "",
-                attributes: [.font: UIFont.title1_b_16, .foregroundColor: textColor]),
+                attributes: [.font: UIFont.title2_b_16, .foregroundColor: textColor]),
             for: .normal)
         
         return self
@@ -79,7 +79,7 @@ extension CustomButton {
         self.setAttributedTitle(
             NSAttributedString(
                 string: title,
-                attributes: [.font: UIFont.title1_b_16, .foregroundColor: UIColor.white]
+                attributes: [.font: UIFont.title2_b_16, .foregroundColor: UIColor.white]
             ),
             for: .normal
         )
