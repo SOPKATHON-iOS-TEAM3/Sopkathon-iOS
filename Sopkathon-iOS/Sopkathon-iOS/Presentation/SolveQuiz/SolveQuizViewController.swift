@@ -17,6 +17,8 @@ final class SolveQuizViewController: UIViewController {
     
     // MARK: - UI Components
     
+    private let navigationView = QuizNavigationView()
+    
     private let flowLayout = UICollectionViewFlowLayout().then {
         $0.scrollDirection = .horizontal
         $0.minimumInteritemSpacing = 0
@@ -44,8 +46,14 @@ final class SolveQuizViewController: UIViewController {
     
     private func setLayout() {
         view.addSubviews(
-            solveQuizCollectionView
+            solveQuizCollectionView,
+            navigationView
         )
+        
+        navigationView.snp.makeConstraints {
+            $0.top.equalTo(view.safeAreaLayoutGuide).offset(24)
+            $0.leading.trailing.equalToSuperview()
+        }
         
         solveQuizCollectionView.snp.makeConstraints {
             $0.edges.equalToSuperview()

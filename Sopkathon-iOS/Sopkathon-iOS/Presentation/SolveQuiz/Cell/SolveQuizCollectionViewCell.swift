@@ -49,7 +49,7 @@ class SolveQuizCollectionViewCell: UICollectionViewCell {
         addSubviews(questionLabel, firstAnswerView, secondAnswerView, nextButton)
         
         questionLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(113)
+            $0.top.equalToSuperview().inset(157)
             $0.centerX.equalToSuperview()
         }
         firstAnswerView.snp.makeConstraints {
