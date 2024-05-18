@@ -63,9 +63,10 @@
 5. 머지 후 ( 해당 브랜치 바로 제거 )
 6. pull 받아서 다음 이슈 진행
 
+<br>
 
 <details>
- <summary> ⭐️ 코딩 컨벤션 </summary>
+ <summary> ⭐️ Coding Convention </summary>
  <div markdown="1">       
 
  ---
