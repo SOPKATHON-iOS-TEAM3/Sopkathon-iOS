@@ -15,7 +15,6 @@ final class CopyCodeView: UIView {
         setUI()
         setLayout()
         setConfig()
-        codeLabel.text = UserDefaults.standard.string(forKey: "code")
     }
     // MARK: - UIComponents
     private let backgroundImageView = UIImageView().then {

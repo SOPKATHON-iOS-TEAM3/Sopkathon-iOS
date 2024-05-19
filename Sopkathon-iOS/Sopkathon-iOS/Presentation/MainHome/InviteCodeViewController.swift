@@ -91,12 +91,8 @@ final class InviteCodeViewController: UIViewController {
     
     @objc
     private func nextButtonDidTap() {
-        let vc = SolveQuizViewController()
-        
         guard let text = inviteCodeTextField.text else { return }
         getQuizList(code: text)
-        
-        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     private func getQuizList(code: String) {
@@ -104,6 +100,10 @@ final class InviteCodeViewController: UIViewController {
             switch response {
             case .success(let data):
                 guard let data = data as? GetQuizListResponse else { return }
+                let vc = SolveQuizViewController()
+                print(data)
+                vc.dummy = data
+                self.navigationController?.pushViewController(vc, animated: true)
                 print("질문 받아옴")
                 dump(data)
             case .requestErr:

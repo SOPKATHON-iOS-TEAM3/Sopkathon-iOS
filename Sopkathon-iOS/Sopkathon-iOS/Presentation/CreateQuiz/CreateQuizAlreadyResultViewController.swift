@@ -17,6 +17,7 @@ class CreateQuizAlreadyResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
     // MARK: - UI & Layout
     // MARK: - Methods
     // MARK: - Data Source

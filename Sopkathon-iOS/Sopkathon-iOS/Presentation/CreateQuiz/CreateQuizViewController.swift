@@ -151,8 +151,6 @@ extension CreateQuizeViewController: CreateQuizProtocol {
         default:
             createQuiz(data: data,
                        index: index)
-            let vc = CreateQuizResultViewController()
-            self.navigationController?.pushViewController(vc, animated: true)
         }
         
         print(data)
@@ -198,7 +196,13 @@ extension CreateQuizeViewController {
             case .success(let t):
                 if let result = t as? CreateQuizResponseDTO {
                     print(result.message)
-                    UserDefaults.standard.setValue(result.inviteCode, forKey: "code")
+                    print(result.message, "초대코드")
+                    UserDefaults.standard.setValue(result.message, forKey: "code")
+                    
+                    if index == 3 {
+                        let vc = CreateQuizResultViewController()
+                        self.navigationController?.pushViewController(vc, animated: true)
+                    }
                 }
             case .requestErr:
                 print("requestErr")

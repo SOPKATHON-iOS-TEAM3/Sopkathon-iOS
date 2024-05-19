@@ -63,6 +63,7 @@ final class ResultQuizViewController: UIViewController {
         .then {
             $0.addTarget(self, action: #selector(goHomeButtonDidTap), for: .touchUpInside)
         }
+
     
     // MARK: - Life Cycle
     
@@ -121,6 +122,7 @@ final class ResultQuizViewController: UIViewController {
             $0.bottom.equalToSuperview().inset(45)
             $0.centerX.equalToSuperview()
         }
+
     }
     
     // MARK: - Methods
@@ -140,4 +142,5 @@ final class ResultQuizViewController: UIViewController {
             self.navigationController?.viewControllers = [HomeViewController()]
         }
     }
+
 }

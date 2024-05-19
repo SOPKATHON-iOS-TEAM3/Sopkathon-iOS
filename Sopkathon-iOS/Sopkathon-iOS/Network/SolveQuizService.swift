@@ -34,7 +34,7 @@ extension SolveQuizService {
     }
     
     func getQuizList(inviteCode: String, completion: @escaping (NetworkResult<Any>) -> Void) {
-        solveQuizProvider.request(.getQuizList(inviteCode: "code"), completion: { result in
+        solveQuizProvider.request(.getQuizList(inviteCode: inviteCode), completion: { result in
             switch result {
             case .success(let response):
                 let statusCode = response.statusCode

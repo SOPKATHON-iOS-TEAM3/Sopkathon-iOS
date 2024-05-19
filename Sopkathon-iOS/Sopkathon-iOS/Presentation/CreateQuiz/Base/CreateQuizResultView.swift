@@ -31,6 +31,18 @@ final class CreateQuizResultView: UIView {
         .setColor(bgColor: UIColor(hexCode: "#018CF1", alpha: 1.0),
                   disableColor: UIColor(hexCode: "#018CF1", alpha: 1.0),
                   textColor: .white)
+    var toastView = UIView().then {
+        let titleLabel = UILabel()
+        titleLabel.font = .body8_r_12
+        titleLabel.textColor = .white
+        titleLabel.text = "초대코드가 복사되었어요"
+        titleLabel.textAlignment = .center
+        $0.addSubview(titleLabel)
+        titleLabel.snp.makeConstraints {
+            $0.edges.equalToSuperview().inset(11)
+        }
+        $0.backgroundColor = UIColor(hexCode: "#3D3D3D", alpha: 1.0)
+    }
     
     // MARK: - Life Cycles
     // MARK: - UI & Layout
@@ -43,7 +55,8 @@ final class CreateQuizResultView: UIView {
         self.addSubviews(titleLabel,
                          contentImageView,
                          copyCodeView,
-                         button)
+                         button,
+                         toastView)
         
         titleLabel.snp.makeConstraints {
             $0.top.equalTo(safeAreaLayoutGuide).offset(86)
@@ -67,7 +80,12 @@ final class CreateQuizResultView: UIView {
             $0.leading.trailing.equalToSuperview().inset(21)
             $0.height.equalTo(60)
         }
-        
+        toastView.snp.makeConstraints {
+            $0.bottom.equalTo(button.snp.top)
+            $0.leading.trailing.equalToSuperview().inset(20)
+            $0.height.equalTo(40)
+        }
+        toastView.isHidden = true
     }
     // MARK: - Methods
     private func setConfig() {

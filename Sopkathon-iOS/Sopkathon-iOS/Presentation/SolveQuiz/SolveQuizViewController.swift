@@ -21,8 +21,7 @@ final class SolveQuizViewController: UIViewController {
     
     // MARK: - Properties
     
-    var dummy = QuizDummy()
-    
+    var dummy: GetQuizListResponse?
     var index = 0
     var backgroundColors: [UIColor] = [.subBlue, .mainPink, .subPurple]
     
@@ -123,7 +122,8 @@ extension SolveQuizViewController: UICollectionViewDelegate {
 
 extension SolveQuizViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        dummy.quizStr.count
+        guard let dummy else { return 0}
+        return dummy.questions.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -133,10 +133,13 @@ extension SolveQuizViewController: UICollectionViewDataSource {
         ) as? SolveQuizCollectionViewCell else {
             return UICollectionViewCell()
         }
-        cell.delegate = self
-        cell.questionLabel.text = dummy.quizStr[indexPath.row]
-        cell.firstAnswerView.answerLabel.text = dummy.firstAnswerArray[indexPath.row]
-        cell.secondAnswerView.answerLabel.text = dummy.secondAnswerArray[indexPath.row]
+        if let dummy {
+            cell.delegate = self
+            cell.questionLabel.text = dummy.questions[indexPath.row].questionText
+            cell.firstAnswerView.answerLabel.text = dummy.answers[indexPath.row * 2].answerText
+            cell.secondAnswerView.answerLabel.text = dummy.answers[indexPath.row * 2 + 1].answerText
+        }
+        
         return cell
     }
 }
