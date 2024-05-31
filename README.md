@@ -458,5 +458,5 @@ import Then
 |--|--|
 
 ### After 🤤
-| | |
+| <img width="788" alt="image" src="https://github.com/SOPKATHON-iOS-TEAM3/Sopkathon-iOS/assets/88179341/54b3facd-1354-4c00-87ba-192bef1cc03d"> |
 |--|--|
